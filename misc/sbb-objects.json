@@ -1,0 +1,108 @@
+{
+	"sbb.osc.analog" : 	{
+		"description" : "Anti-aliased waveforms and noise oscillators with pulse-width modulation and hard sync.",
+		"digest" : "Analog oscillators"
+	}
+,
+	"sbb.osc.fm" : 	{
+		"description" : "A single FM operator.",
+		"digest" : "FM operator"
+	}
+,
+	"sbb.osc.additive" : 	{
+		"description" : "An additive synthesis voice with parameters for number of partials, harmonic even/odd balance, harmonic decay, and more.",
+		"digest" : "Additive synthesis voice"
+	}
+,
+	"sbb.osc.karplus" : 	{
+		"description" : "A Karplus-Strong physical model for a plucked string.",
+		"digest" : "Karplus-Strong voice"
+	}
+,
+	"sbb.osc.granular" : 	{
+		"description" : "A granular synthesis voice with pitch control.",
+		"digest" : "Granular synthesis voice"
+	}
+,
+	"sbb.osc.wavetable" : 	{
+		"description" : "A two-dimensional scanning, interpolating wavetable oscillator with oversampling for anti-aliasing.",
+		"digest" : "Two-dimensional wavetable oscillator"
+	}
+,
+	"sbb.osc.sampler" : 	{
+		"description" : "A basic sampler with one-shot and de-clicked looping modes",
+		"digest" : "Simple sampler"
+	}
+,
+	"sbb.filter.lp" : 	{
+		"description" : "A biquad lowpass filter.",
+		"digest" : "Lowpass filter"
+	}
+,
+	"sbb.filter.hp" : 	{
+		"description" : "A biquad highpass filter.",
+		"digest" : "Highpass filter"
+	}
+,
+	"sbb.filter.bp" : 	{
+		"description" : "A biquad bandpass filter.",
+		"digest" : "Bandpass filter"
+	}
+,
+	"sbb.filter.br" : 	{
+		"description" : "A biquad band reject filter.",
+		"digest" : "Band reject (notch) filter"
+	}
+,
+	"sbb.filter.ladder" : 	{
+		"description" : "A lowpass ladder filter emulation.",
+		"digest" : "Ladder filter emulation"
+	}
+,
+	"sbb.env.ad" : 	{
+		"description" : "An attack-decay envelope with built-in attenuator.",
+		"digest" : "AD envelope"
+	}
+,
+	"sbb.env.adsr" : 	{
+		"description" : "An attack-decay-sustain-release envelope with built-in attenuator.",
+		"digest" : "ADSR envelope"
+	}
+,
+	"sbb.env.follower" : 	{
+		"description" : "An envelope follower.",
+		"digest" : "Envelope follower"
+	}
+,
+	"sbb.env.lpg" : 	{
+		"description" : "A lowpass gate circuit emulation.",
+		"digest" : "Lowpass gate"
+	}
+,
+	"sbb.mod.lfo" : 	{
+		"description" : "A low frequency oscillator with multiple shapes.",
+		"digest" : "Low frequency oscillator"
+	}
+,
+	"sbb.mod.rand" : 	{
+		"description" : "A signal-rate randomness source and a random sample-and-hold in one.",
+		"digest" : "Randomness source"
+	}
+,
+	"sbb.mod.seq" : 	{
+		"description" : "A simple step sequencer of arbitrary length.",
+		"digest" : "Simple sequencer"
+	}
+,
+	"sbb.mod.arp" : 	{
+		"description" : "A simple note argpeggiator.",
+		"digest" : "Simple arpeggiator"
+	}
+,
+	"sbb.util.sustain" : 	{
+		"description" : "A utility for sustaining held notes.",
+		"digest" : "MIDI sustain"
+	}
+
+}
+
