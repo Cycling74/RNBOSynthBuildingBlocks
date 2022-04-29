@@ -1798,7 +1798,7 @@
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "rnbo @title smooth",
+					"text" : "p @title smooth",
 					"varname" : "smooth"
 				}
 
@@ -2659,7 +2659,7 @@
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "rnbo @title jitter",
+					"text" : "p @title jitter",
 					"varname" : "jitter"
 				}
 
@@ -4340,7 +4340,7 @@
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "rnbo @title square",
+					"text" : "p @title square",
 					"varname" : "square"
 				}
 
@@ -5478,7 +5478,7 @@
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "rnbo @title rect",
+					"text" : "p @title rect",
 					"varname" : "rect"
 				}
 

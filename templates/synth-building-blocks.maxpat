@@ -3179,7 +3179,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @title env.adsr",
+									"text" : "p @title env.adsr",
 									"varname" : "env.adsr"
 								}
 

@@ -775,7 +775,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.lpg",
+									"text" : "p @file sbb.env.lpg",
 									"varname" : "env.lpg"
 								}
 

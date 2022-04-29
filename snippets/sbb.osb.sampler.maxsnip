@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "osc.sampler",
-					"text" : "rnbo @file sbb.osc.sampler",
+					"text" : "p @file sbb.osc.sampler",
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"id" : "obj-57",

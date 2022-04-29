@@ -952,7 +952,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.wavetable",
+									"text" : "p @file sbb.osc.wavetable",
 									"varname" : "osc.wavetable"
 								}
 

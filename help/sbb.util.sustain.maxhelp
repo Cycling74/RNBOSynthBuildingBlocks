@@ -1599,7 +1599,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.util.sustain",
+									"text" : "p @file sbb.util.sustain",
 									"varname" : "util.sustain"
 								}
 

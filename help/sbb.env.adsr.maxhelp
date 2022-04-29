@@ -2653,7 +2653,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.adsr",
+									"text" : "p @file sbb.env.adsr",
 									"varname" : "env.adsr"
 								}
 

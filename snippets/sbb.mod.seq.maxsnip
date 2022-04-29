@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "mod.seq",
-					"text" : "rnbo @file sbb.mod.seq",
+					"text" : "p @file sbb.mod.seq",
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"id" : "obj-52",

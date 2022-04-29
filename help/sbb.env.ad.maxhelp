@@ -1988,7 +1988,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.ad",
+									"text" : "p @file sbb.env.ad",
 									"varname" : "env.adsr"
 								}
 

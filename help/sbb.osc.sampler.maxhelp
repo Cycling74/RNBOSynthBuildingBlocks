@@ -2348,7 +2348,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.sampler",
+									"text" : "p @file sbb.osc.sampler",
 									"varname" : "osc.analog[1]"
 								}
 

@@ -2196,7 +2196,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.mod.lfo",
+									"text" : "p @file sbb.mod.lfo",
 									"varname" : "osc.analog[1]"
 								}
 

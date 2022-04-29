@@ -1753,7 +1753,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.mod.seq",
+									"text" : "p @file sbb.mod.seq",
 									"varname" : "mod.seq"
 								}
 

@@ -1590,7 +1590,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.karplus",
+									"text" : "p @file sbb.osc.karplus",
 									"varname" : "osc.analog"
 								}
 

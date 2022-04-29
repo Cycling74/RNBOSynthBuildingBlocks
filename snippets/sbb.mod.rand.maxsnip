@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "mod.rand",
-					"text" : "rnbo @file sbb.mod.rand",
+					"text" : "p @file sbb.mod.rand",
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"id" : "obj-51",

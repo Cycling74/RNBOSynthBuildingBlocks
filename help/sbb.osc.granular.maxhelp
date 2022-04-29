@@ -2225,7 +2225,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.granular",
+									"text" : "p @file sbb.osc.granular",
 									"varname" : "osc.analog[1]"
 								}
 

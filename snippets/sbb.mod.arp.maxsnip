@@ -3,7 +3,7 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "rnbo @file sbb.mod.arp",
+					"text" : "p @file sbb.mod.arp",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"patching_rect" : [ 10.0, 10.0, 130.0, 23.0 ],

@@ -941,7 +941,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.fm",
+									"text" : "p @file sbb.osc.fm",
 									"varname" : "osc.analog"
 								}
 

@@ -1519,7 +1519,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.additive",
+									"text" : "p @file sbb.osc.additive",
 									"varname" : "osc.analog"
 								}
 

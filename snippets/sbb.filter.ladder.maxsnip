@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "filter.ladder",
-					"text" : "rnbo @file sbb.filter.ladder",
+					"text" : "p @file sbb.filter.ladder",
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"id" : "obj-11",

@@ -3062,7 +3062,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.sampler @title sampler",
+									"text" : "p @file sbb.osc.sampler @title sampler",
 									"varname" : "sampler"
 								}
 

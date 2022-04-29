@@ -1484,7 +1484,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.adsr.stereo",
+									"text" : "p @file sbb.env.adsr.stereo",
 									"varname" : "env.adsr"
 								}
 
@@ -3690,7 +3690,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.granular @title granular",
+									"text" : "p @file sbb.osc.granular @title granular",
 									"varname" : "granular"
 								}
 

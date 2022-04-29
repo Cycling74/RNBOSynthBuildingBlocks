@@ -1387,7 +1387,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.mod.rand",
+									"text" : "p @file sbb.mod.rand",
 									"varname" : "osc.analog[1]"
 								}
 

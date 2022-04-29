@@ -1653,7 +1653,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.adsr @title env.adsr",
+									"text" : "p @file sbb.env.adsr @title env.adsr",
 									"varname" : "env.adsr"
 								}
 
@@ -13744,7 +13744,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo @file sbb.osc.analog @title oscC",
+													"text" : "p @file sbb.osc.analog @title oscC",
 													"varname" : "oscC"
 												}
 
@@ -14077,7 +14077,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo @file sbb.osc.analog @title oscB",
+													"text" : "p @file sbb.osc.analog @title oscB",
 													"varname" : "oscB"
 												}
 
@@ -14410,7 +14410,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo @file sbb.osc.analog @title oscA",
+													"text" : "p @file sbb.osc.analog @title oscA",
 													"varname" : "oscA"
 												}
 

@@ -2127,7 +2127,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.filter.lp",
+									"text" : "p @file sbb.filter.lp",
 									"varname" : "filter.lp"
 								}
 
@@ -3396,7 +3396,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.fm",
+									"text" : "p @file sbb.osc.fm",
 									"varname" : "osc.fm"
 								}
 
@@ -3915,7 +3915,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.adsr",
+									"text" : "p @file sbb.env.adsr",
 									"varname" : "env.adsr"
 								}
 

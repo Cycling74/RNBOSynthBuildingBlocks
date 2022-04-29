@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "osc.analog",
-					"text" : "rnbo @file sbb.osc.analog",
+					"text" : "p @file sbb.osc.analog",
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"id" : "obj-38",

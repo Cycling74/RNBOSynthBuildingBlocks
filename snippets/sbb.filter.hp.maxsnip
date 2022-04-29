@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "filter.hp",
-					"text" : "rnbo @file sbb.filter.hp",
+					"text" : "p @file sbb.filter.hp",
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"id" : "obj-1",

@@ -2881,7 +2881,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.adsr.stereo",
+									"text" : "p @file sbb.env.adsr.stereo",
 									"varname" : "env.adsr"
 								}
 

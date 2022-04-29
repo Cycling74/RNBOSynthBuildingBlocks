@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "mod.lfo",
-					"text" : "rnbo @file sbb.mod.lfo",
+					"text" : "p @file sbb.mod.lfo",
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"id" : "obj-15",
@@ -935,7 +935,7 @@
 								"box" : 								{
 									"maxclass" : "newobj",
 									"varname" : "square",
-									"text" : "rnbo @title square",
+									"text" : "p @title square",
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"id" : "obj-24",
@@ -1996,7 +1996,7 @@
 								"box" : 								{
 									"maxclass" : "newobj",
 									"varname" : "rect",
-									"text" : "rnbo @title rect",
+									"text" : "p @title rect",
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"id" : "obj-23",

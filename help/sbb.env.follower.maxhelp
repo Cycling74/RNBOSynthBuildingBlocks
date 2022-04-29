@@ -1790,7 +1790,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.follower",
+									"text" : "p @file sbb.env.follower",
 									"varname" : "env.follower"
 								}
 

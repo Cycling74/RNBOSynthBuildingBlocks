@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "osc.granular",
-					"text" : "rnbo @file sbb.osc.granular",
+					"text" : "p @file sbb.osc.granular",
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"id" : "obj-41",

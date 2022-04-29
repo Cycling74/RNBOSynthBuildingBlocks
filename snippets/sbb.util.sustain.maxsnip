@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "util.sustain",
-					"text" : "rnbo @file sbb.util.sustain",
+					"text" : "p @file sbb.util.sustain",
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"id" : "obj-21",

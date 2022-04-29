@@ -4,7 +4,7 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"varname" : "osc.fm",
-					"text" : "rnbo @file sbb.osc.fm",
+					"text" : "p @file sbb.osc.fm",
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"id" : "obj-39",

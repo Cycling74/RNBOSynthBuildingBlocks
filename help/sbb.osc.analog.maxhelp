@@ -1777,7 +1777,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.analog",
+									"text" : "p @file sbb.osc.analog",
 									"varname" : "osc.analog"
 								}
 
@@ -3381,7 +3381,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.analog",
+									"text" : "p @file sbb.osc.analog",
 									"varname" : "osc.analog"
 								}
 

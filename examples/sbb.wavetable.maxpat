@@ -1021,7 +1021,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.mod.rand @title random",
+									"text" : "p @file sbb.mod.rand @title random",
 									"varname" : "random"
 								}
 
@@ -1536,7 +1536,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.env.ad",
+									"text" : "p @file sbb.env.ad",
 									"varname" : "env.ad"
 								}
 
@@ -1942,7 +1942,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.osc.wavetable @title wavetable",
+									"text" : "p @file sbb.osc.wavetable @title wavetable",
 									"varname" : "wavetable"
 								}
 

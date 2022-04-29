@@ -1215,7 +1215,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo @file sbb.mod.arp"
+													"text" : "p @file sbb.mod.arp"
 												}
 
 											}

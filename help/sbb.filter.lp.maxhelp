@@ -905,7 +905,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo @file sbb.filter.lp",
+									"text" : "p @file sbb.filter.lp",
 									"varname" : "filter.lp"
 								}
 
