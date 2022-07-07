@@ -103,6 +103,10 @@
 		"description" : "A utility for sustaining held notes.",
 		"digest" : "MIDI sustain"
 	}
+	"sbb.util.xfade" : 	{
+		"description" : "A utility for crossfading between two stereo sources.",
+		"digest" : "Stereo Crossfade"
+	}
 
 }
 

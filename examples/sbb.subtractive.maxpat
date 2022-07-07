@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -285,6 +285,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 960.0, 278.0, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -298,6 +299,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 960.0, 473.5, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -311,6 +313,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 960.0, 372.5, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -324,6 +327,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 818.0, 141.0, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -337,6 +341,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 741.0, 477.5, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -350,6 +355,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 741.0, 367.5, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -363,6 +369,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 741.0, 278.0, 179.0, 23.0 ],
 					"text_width" : 123.0
 				}
@@ -469,6 +476,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 446.388888888888914, 417.0, 266.0, 23.0 ],
 					"text_width" : 191.180000000000007
 				}
@@ -482,6 +490,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 446.388888888888914, 341.0, 266.0, 23.0 ],
 					"text_width" : 191.180000000000007
 				}
@@ -495,6 +504,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 446.388888888888914, 278.0, 266.0, 23.0 ],
 					"text_width" : 191.180000000000007
 				}
@@ -537,6 +547,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 611.0, 141.0, 150.0, 23.0 ]
 				}
 
@@ -549,6 +560,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 429.0, 141.0, 162.0, 23.0 ]
 				}
 
@@ -561,6 +573,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 451.5, 213.0, 204.0, 23.0 ],
 					"text_width" : 124.0
 				}
@@ -625,8 +638,8 @@
 					"id" : "obj-68",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 55.5, 668.0, 100.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 32.625, 95.0, 90.0, 40.0 ],
@@ -952,7 +965,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"items" : [ "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1134,8 +1147,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1325,9 +1338,10 @@
 									"rnbo_extra_attributes" : 									{
 										"receivemode" : "local",
 										"args" : "",
+										"notecontroller" : "",
+										"exposevoiceparams" : 0,
 										"patcherPath" : "",
-										"voicecontrol" : "MIDI",
-										"notecontroller" : ""
+										"voicecontrol" : "MIDI"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1829,14 +1843,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 3,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "rnbo",
-										"rect" : [ 726.0, 367.0, 713.0, 469.0 ],
+										"rect" : [ 84.0, 131.0, 727.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2096,18 +2110,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 350.5, 43.0, 140.0, 37.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -2199,7 +2213,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -2228,7 +2241,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -2285,7 +2297,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -2479,18 +2490,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 90.0, 27.0, 229.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 2,
@@ -2582,7 +2593,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -2611,7 +2621,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -2668,7 +2677,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -3105,17 +3113,17 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 63.0, 101.0, 242.0, 37.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 3,
@@ -3207,7 +3215,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -3236,7 +3243,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -3293,7 +3299,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -3962,14 +3967,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 3,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "rnbo",
-														"rect" : [ 76.0, 124.0, 375.0, 412.0 ],
+														"rect" : [ 59.0, 106.0, 343.0, 429.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -4827,16 +4832,17 @@
 														"bgfillcolor_autogradient" : 0.0
 													}
 ,
-													"patching_rect" : [ 63.0, 300.0, 73.0, 23.0 ],
+													"patching_rect" : [ 63.0, 300.0, 55.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : ""
+														"voicecontrol" : "midi"
 													}
 ,
-													"rnbo_serial" : 1,
+													"rnbo_serial" : 5,
 													"rnbo_uniqueid" : "filter.lp",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
@@ -5105,7 +5111,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo filter.lp",
+													"text" : "p filter.lp",
 													"varname" : "filter.lp"
 												}
 
@@ -5281,14 +5287,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 3,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "rnbo",
-														"rect" : [ 53.0, 110.0, 375.0, 412.0 ],
+														"rect" : [ 59.0, 106.0, 380.0, 435.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -6146,16 +6152,17 @@
 														"bgfillcolor_autogradient" : 0.0
 													}
 ,
-													"patching_rect" : [ 233.199999999999989, 300.0, 77.0, 23.0 ],
+													"patching_rect" : [ 233.199999999999989, 300.0, 59.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : ""
+														"voicecontrol" : "midi"
 													}
 ,
-													"rnbo_serial" : 2,
+													"rnbo_serial" : 7,
 													"rnbo_uniqueid" : "filter.bp",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
@@ -6424,7 +6431,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo filter.bp",
+													"text" : "p filter.bp",
 													"varname" : "filter.bp"
 												}
 
@@ -6440,14 +6447,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 3,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "rnbo",
-														"rect" : [ 522.0, 335.0, 375.0, 412.0 ],
+														"rect" : [ 59.0, 106.0, 353.0, 420.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -7305,16 +7312,17 @@
 														"bgfillcolor_autogradient" : 0.0
 													}
 ,
-													"patching_rect" : [ 148.099999999999994, 300.0, 77.0, 23.0 ],
+													"patching_rect" : [ 148.099999999999994, 300.0, 59.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : ""
+														"voicecontrol" : "midi"
 													}
 ,
-													"rnbo_serial" : 3,
+													"rnbo_serial" : 6,
 													"rnbo_uniqueid" : "filter.hp",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
@@ -7583,7 +7591,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo filter.hp",
+													"text" : "p filter.hp",
 													"varname" : "filter.hp"
 												}
 
@@ -7599,14 +7607,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 3,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "rnbo",
-														"rect" : [ 522.0, 335.0, 375.0, 412.0 ],
+														"rect" : [ 59.0, 106.0, 349.0, 427.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -8464,16 +8472,17 @@
 														"bgfillcolor_autogradient" : 0.0
 													}
 ,
-													"patching_rect" : [ 318.300000000000011, 300.0, 75.0, 23.0 ],
+													"patching_rect" : [ 318.300000000000011, 300.0, 57.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : ""
+														"voicecontrol" : "midi"
 													}
 ,
-													"rnbo_serial" : 4,
+													"rnbo_serial" : 8,
 													"rnbo_uniqueid" : "filter.br",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
@@ -8742,7 +8751,7 @@
 														"changesPatcherIO" : 0
 													}
 ,
-													"text" : "rnbo filter.br",
+													"text" : "p filter.br",
 													"varname" : "filter.br"
 												}
 
@@ -8796,7 +8805,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-12", 2 ],
-													"midpoints" : [ 157.599999999999994, 332.0, 214.333333333333343, 332.0 ],
 													"source" : [ "obj-14", 0 ]
 												}
 
@@ -8844,7 +8852,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-12", 3 ],
-													"midpoints" : [ 242.699999999999989, 333.0, 285.25, 333.0 ],
 													"source" : [ "obj-16", 0 ]
 												}
 
@@ -8859,7 +8866,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-12", 4 ],
-													"midpoints" : [ 327.800000000000011, 333.0, 356.166666666666686, 333.0 ],
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -8907,7 +8913,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-12", 1 ],
-													"midpoints" : [ 72.5, 333.0, 143.416666666666686, 333.0 ],
 													"source" : [ "obj-6", 0 ]
 												}
 
@@ -8971,41 +8976,6 @@
 
 											}
  ],
-										"styles" : [ 											{
-												"name" : "rnbo-bubble",
-												"default" : 												{
-													"fontname" : [ "Lato" ]
-												}
-,
-												"parentstyle" : "",
-												"multi" : 0
-											}
-, 											{
-												"name" : "rnbodefault",
-												"default" : 												{
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"bgfillcolor" : 													{
-														"type" : "color",
-														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-														"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-														"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-														"angle" : 270.0,
-														"proportion" : 0.39,
-														"autogradient" : 0.0
-													}
-,
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"fontsize" : [ 12.0 ],
-													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-													"fontname" : [ "Lato" ]
-												}
-,
-												"parentstyle" : "",
-												"multi" : 0
-											}
- ],
 										"default_bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 										"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
@@ -9020,13 +8990,14 @@
 										"bgfillcolor_autogradient" : 0.0
 									}
 ,
-									"patching_rect" : [ 124.0, 356.0, 66.0, 23.0 ],
+									"patching_rect" : [ 124.0, 356.0, 48.0, 23.0 ],
 									"rnbo_extra_attributes" : 									{
 										"receivemode" : "local",
 										"args" : "",
+										"notecontroller" : "",
+										"exposevoiceparams" : 0,
 										"patcherPath" : "",
-										"voicecontrol" : "MIDI",
-										"notecontroller" : ""
+										"voicecontrol" : "midi"
 									}
 ,
 									"rnbo_serial" : 2,
@@ -9294,7 +9265,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo filters",
+									"text" : "p filters",
 									"varname" : "filters"
 								}
 
@@ -9311,14 +9282,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 3,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "rnbo",
-										"rect" : [ 569.0, 159.0, 729.0, 748.0 ],
+										"rect" : [ 59.0, 106.0, 730.0, 780.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9355,18 +9326,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 482.0, 514.0, 87.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -9458,7 +9429,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -9487,7 +9457,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -9544,7 +9513,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -9783,18 +9751,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 108.0, 597.0, 86.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 2,
@@ -9886,7 +9854,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -9915,7 +9882,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -9972,7 +9938,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -10658,18 +10623,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 108.0, 396.0, 86.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 3,
@@ -10761,7 +10726,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -10790,7 +10754,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -10847,7 +10810,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -11379,9 +11341,9 @@
 													"outlettype" : [ "signal", "signal" ],
 													"patching_rect" : [ 108.0, 120.0, 42.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"interp" : "linear",
 														"buffername" : "RNBODefaultSinus",
-														"index" : "freq"
+														"index" : "freq",
+														"interp" : "linear"
 													}
 ,
 													"rnbo_serial" : 1,
@@ -11665,18 +11627,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 176.5, 120.0, 194.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 4,
@@ -11768,7 +11730,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -11797,7 +11758,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -11854,7 +11814,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12156,18 +12115,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 480.5, 367.0, 233.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 5,
@@ -12259,7 +12218,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12288,7 +12246,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12345,7 +12302,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12527,18 +12483,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 108.0, 460.0, 233.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 6,
@@ -12630,7 +12586,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12659,7 +12614,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12716,7 +12670,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -12898,18 +12851,18 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 108.0, 279.0, 233.0, 23.0 ],
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
-														"exponent" : 1.0,
-														"enum" : "",
-														"fromnormalized" : "",
-														"unit" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"noinit" : 0,
-														"preset" : 1,
 														"steps" : 0.0,
+														"enum" : "",
+														"preset" : 1,
+														"unit" : "",
+														"noinit" : 0,
+														"tonormalized" : "",
+														"maximum" : 1.0,
+														"order" : "",
+														"exponent" : 1.0,
+														"minimum" : 0.0,
 														"displayname" : "",
-														"tonormalized" : ""
+														"fromnormalized" : ""
 													}
 ,
 													"rnbo_serial" : 7,
@@ -13001,7 +12954,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Mininum value",
 																"isalias" : 1,
-																"aliasOf" : "minimum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -13030,7 +12982,6 @@
 																"attrOrProp" : 2,
 																"digest" : "Maximum value",
 																"isalias" : 1,
-																"aliasOf" : "maximum",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -13087,7 +13038,6 @@
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the Parameter",
 																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -13427,9 +13377,10 @@
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "internal",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : "internal"
+														"voicecontrol" : "MIDI"
 													}
 ,
 													"rnbo_serial" : 1,
@@ -13760,9 +13711,10 @@
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "internal",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : "internal"
+														"voicecontrol" : "MIDI"
 													}
 ,
 													"rnbo_serial" : 2,
@@ -14093,9 +14045,10 @@
 													"rnbo_extra_attributes" : 													{
 														"receivemode" : "local",
 														"args" : "",
+														"notecontroller" : "internal",
+														"exposevoiceparams" : 0,
 														"patcherPath" : "",
-														"voicecontrol" : "MIDI",
-														"notecontroller" : "internal"
+														"voicecontrol" : "MIDI"
 													}
 ,
 													"rnbo_serial" : 3,
@@ -14642,13 +14595,14 @@
 										"bgfillcolor_autogradient" : 0.0
 									}
 ,
-									"patching_rect" : [ 124.0, 310.0, 89.0, 23.0 ],
+									"patching_rect" : [ 124.0, 311.0, 71.0, 23.0 ],
 									"rnbo_extra_attributes" : 									{
 										"receivemode" : "local",
 										"args" : "",
+										"notecontroller" : "",
+										"exposevoiceparams" : 0,
 										"patcherPath" : "",
-										"voicecontrol" : "MIDI",
-										"notecontroller" : ""
+										"voicecontrol" : "midi"
 									}
 ,
 									"rnbo_serial" : 3,
@@ -14964,7 +14918,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "rnbo oscillators",
+									"text" : "p oscillators",
 									"varname" : "oscillators"
 								}
 
@@ -15825,23 +15779,23 @@
 , 							{
 								"name" : "rnbodefault",
 								"default" : 								{
+									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
-									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-									"fontsize" : [ 12.0 ],
-									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-									"fontname" : [ "Lato" ]
+									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+									"fontname" : [ "Lato" ],
+									"fontsize" : [ 12.0 ],
+									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -15866,32 +15820,32 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 387.939597315436231, 35.0, 56.0, 30.0 ],
 					"rnboattrcache" : 					{
-						"oscillators/wobble" : 						{
-							"label" : "wobble",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"oscillators/detuneB" : 						{
-							"label" : "detuneB",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"oscillators/levelB" : 						{
-							"label" : "levelB",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"oscillators/detuneC" : 						{
 							"label" : "detuneC",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
+						"env.adsr/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"oscillators/detuneA" : 						{
 							"label" : "detuneA",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"filters/resonance_mod" : 						{
+							"label" : "resonance_mod",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"env.adsr/sustain" : 						{
+							"label" : "sustain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -15908,34 +15862,28 @@
 							"parsestring" : ""
 						}
 ,
-						"env.adsr/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"env.adsr/decay" : 						{
 							"label" : "decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"env.adsr/sustain" : 						{
-							"label" : "sustain",
+						"oscillators/wobble" : 						{
+							"label" : "wobble",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"env.adsr/release" : 						{
-							"label" : "release",
+						"env.adsr/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"filters/filtertype" : 						{
-							"label" : "filtertype",
-							"isEnum" : 1,
-							"parsestring" : "lowpass highpass bandpass bandreject comb resonantbp"
+						"oscillators/detuneB" : 						{
+							"label" : "detuneB",
+							"isEnum" : 0,
+							"parsestring" : ""
 						}
 ,
 						"filters/cutoff" : 						{
@@ -15944,10 +15892,16 @@
 							"parsestring" : ""
 						}
 ,
-						"filters/resonance_mod" : 						{
-							"label" : "resonance_mod",
+						"oscillators/levelB" : 						{
+							"label" : "levelB",
 							"isEnum" : 0,
 							"parsestring" : ""
+						}
+,
+						"filters/filtertype" : 						{
+							"label" : "filtertype",
+							"isEnum" : 1,
+							"parsestring" : "lowpass highpass bandpass bandreject comb resonantbp"
 						}
 ,
 						"oscillators/oscB/mode" : 						{
@@ -16016,7 +15970,7 @@
 							"__sps" : 							{
 								"oscillators" : 								{
 									"levelC" : 									{
-										"value" : 0.267910093069077
+										"value" : 0.0
 									}
 ,
 									"detuneC" : 									{
@@ -16038,7 +15992,7 @@
 											}
 ,
 											"mode" : 											{
-												"value" : 4.0
+												"value" : 1.0
 											}
 
 										}
@@ -16060,7 +16014,7 @@
 											}
 ,
 											"mode" : 											{
-												"value" : 3.0
+												"value" : 1.0
 											}
 
 										}
@@ -16076,7 +16030,7 @@
 									}
 ,
 									"levelB" : 									{
-										"value" : 0.282945722341537
+										"value" : 0.0
 									}
 
 								}
@@ -16102,11 +16056,11 @@
 									}
 ,
 									"cutoff" : 									{
-										"value" : 8515.4326171875
+										"value" : 10000.0
 									}
 ,
 									"resonance_mod" : 									{
-										"value" : 0.145669266581535
+										"value" : 1.0
 									}
 ,
 									"filtertype" : 									{
@@ -16117,7 +16071,7 @@
 ,
 								"env.adsr" : 								{
 									"release" : 									{
-										"value" : 1124.9241943359375
+										"value" : 10.0
 									}
 ,
 									"sustain" : 									{
@@ -16125,11 +16079,11 @@
 									}
 ,
 									"decay" : 									{
-										"value" : 8.573323249816895
+										"value" : 10.0
 									}
 ,
 									"attack" : 									{
-										"value" : 148.985824584960938
+										"value" : 10.0
 									}
 
 								}
@@ -16154,7 +16108,7 @@
 										"__sps" : 										{
 											"oscillators" : 											{
 												"levelC" : 												{
-													"value" : 0.267910093069077
+													"value" : 0.0
 												}
 ,
 												"detuneC" : 												{
@@ -16176,7 +16130,7 @@
 														}
 ,
 														"mode" : 														{
-															"value" : 4.0
+															"value" : 1.0
 														}
 
 													}
@@ -16198,7 +16152,7 @@
 														}
 ,
 														"mode" : 														{
-															"value" : 3.0
+															"value" : 1.0
 														}
 
 													}
@@ -16214,7 +16168,7 @@
 												}
 ,
 												"levelB" : 												{
-													"value" : 0.282945722341537
+													"value" : 0.0
 												}
 
 											}
@@ -16240,11 +16194,11 @@
 												}
 ,
 												"cutoff" : 												{
-													"value" : 8515.4326171875
+													"value" : 10000.0
 												}
 ,
 												"resonance_mod" : 												{
-													"value" : 0.145669266581535
+													"value" : 1.0
 												}
 ,
 												"filtertype" : 												{
@@ -16255,7 +16209,7 @@
 ,
 											"env.adsr" : 											{
 												"release" : 												{
-													"value" : 1124.9241943359375
+													"value" : 10.0
 												}
 ,
 												"sustain" : 												{
@@ -16263,11 +16217,11 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 8.573323249816895
+													"value" : 10.0
 												}
 ,
 												"attack" : 												{
-													"value" : 148.985824584960938
+													"value" : 10.0
 												}
 
 											}
@@ -16282,7 +16236,7 @@
 										"filename" : "_20210819.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cffac49b6fe1547d63e042c99e66aa68"
+										"snapshotfileid" : "9d31bb64fd068a2197ea898d50d49035"
 									}
 
 								}
@@ -16725,7 +16679,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 119.0, 720.0, 9.0, 720.0, 9.0, 99.0, 126.0, 99.0, 126.0, 72.0, 150.0, 72.0 ],
+					"midpoints" : [ 105.5, 720.0, 9.0, 720.0, 9.0, 99.0, 126.0, 99.0, 126.0, 72.0, 150.0, 72.0 ],
 					"order" : 0,
 					"source" : [ "obj-68", 2 ]
 				}
@@ -16734,7 +16688,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"midpoints" : [ 119.0, 720.0, 42.0, 720.0, 42.0, 417.0, 67.5, 417.0 ],
+					"midpoints" : [ 105.5, 720.0, 42.0, 720.0, 42.0, 417.0, 67.5, 417.0 ],
 					"order" : 1,
 					"source" : [ "obj-68", 2 ]
 				}
@@ -16808,7 +16762,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "_20210819.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
@@ -16839,23 +16793,23 @@
 , 			{
 				"name" : "rnbodefault",
 				"default" : 				{
+					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-					"fontsize" : [ 12.0 ],
-					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-					"fontname" : [ "Lato" ]
+					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+					"fontname" : [ "Lato" ],
+					"fontsize" : [ 12.0 ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16864,25 +16818,25 @@
 , 			{
 				"name" : "rnbolight",
 				"default" : 				{
+					"accentcolor" : [ 0.443137254901961, 0.505882352941176, 0.556862745098039, 1.0 ],
 					"bgcolor" : [ 0.796078431372549, 0.862745098039216, 0.925490196078431, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.835294117647059, 0.901960784313726, 0.964705882352941, 1.0 ],
 						"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
-					"stripecolor" : [ 0.309803921568627, 0.698039215686274, 0.764705882352941, 1.0 ],
-					"accentcolor" : [ 0.443137254901961, 0.505882352941176, 0.556862745098039, 1.0 ],
-					"elementcolor" : [ 0.337254901960784, 0.384313725490196, 0.462745098039216, 1.0 ],
+					"clearcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
 					"color" : [ 0.815686274509804, 0.509803921568627, 0.262745098039216, 1.0 ],
 					"editing_bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
-					"locked_bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
-					"clearcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+					"elementcolor" : [ 0.337254901960784, 0.384313725490196, 0.462745098039216, 1.0 ],
 					"fontname" : [ "Lato" ],
+					"locked_bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+					"stripecolor" : [ 0.309803921568627, 0.698039215686274, 0.764705882352941, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -16893,8 +16847,8 @@
 				"name" : "stb001",
 				"default" : 				{
 					"fontface" : [ 1 ],
-					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ]
+					"fontname" : [ "Arial Bold" ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",
