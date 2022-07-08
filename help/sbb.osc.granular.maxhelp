@@ -164,7 +164,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 191.5, 197.0, 62.0, 35.0 ],
-									"presentation_linecount" : 2,
 									"text" : "trigger\nfrequency"
 								}
 
@@ -187,7 +186,7 @@
 										"interval" : 100.0
 									}
 ,
-									"rnbo_serial" : 2,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "number~_obj-11",
 									"sig" : 14.0
 								}
@@ -986,7 +985,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 289.0, 192.0, 126.0, 35.0 ],
+									"patching_rect" : [ 289.0, 197.0, 126.0, 35.0 ],
 									"text" : "requires a buffer named osc_gran_buf",
 									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
 								}
@@ -1025,7 +1024,7 @@
 										"interval" : 100.0
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "number~_obj-6",
 									"sig" : 300.0
 								}
@@ -1050,7 +1049,7 @@
 										"size" : 158.0,
 										"order" : "",
 										"preset" : 0,
-										"value" : 3.0
+										"value" : 0.0
 									}
 ,
 									"rnbo_serial" : 1,
