@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -133,7 +133,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -225,7 +225,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 0,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -779,7 +779,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1001,12 +1001,12 @@
 												"name" : "Audiomix",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "gradient",
+														"angle" : 270.0,
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
-														"proportion" : 0.39
+														"proportion" : 0.39,
+														"type" : "gradient"
 													}
 
 												}
@@ -1087,12 +1087,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -1150,7 +1150,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1196,7 +1196,7 @@
 									"patching_rect" : [ 198.5, 639.0, 328.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 236.0, 269.0, 21.0 ],
-									"text" : "MIDI sustain",
+									"text" : "Simple arpeggiator",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1205,14 +1205,13 @@
 								"box" : 								{
 									"fontname" : "Lato",
 									"id" : "obj-48",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 165.5, 671.0, 167.0, 35.0 ],
+									"patching_rect" : [ 165.5, 671.0, 167.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 272.0, 284.0, 21.0 ],
-									"text" : "A utility for sustaining held notes.",
+									"text" : "A simple note argpeggiator.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1229,7 +1228,7 @@
 									"patching_rect" : [ 132.5, 643.0, 276.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 186.0, 284.0, 35.0 ],
-									"text" : "sbb.util.sustain",
+									"text" : "sbb.mod.arp",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1246,7 +1245,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1400,11 +1399,11 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 317.5, 439.0, 144.0, 25.0 ],
+									"patching_rect" : [ 317.5, 417.0, 144.0, 55.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 221.5, 258.0, 144.0, 24.0 ],
+									"presentation_rect" : [ 221.5, 236.0, 144.0, 51.5 ],
 									"tabcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
-									"tabs" : [ "sbb.util.sustain" ]
+									"tabs" : [ "sbb.util.sustain", "sbb.util.xfade" ]
 								}
 
 							}
@@ -1432,7 +1431,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1478,7 +1477,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 0,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1830,10 +1829,14 @@
 , 											{
 												"box" : 												{
 													"coll_data" : 													{
-														"count" : 1,
+														"count" : 2,
 														"data" : [ 															{
 																"key" : 0,
 																"value" : [ "sbb.util.sustain" ]
+															}
+, 															{
+																"key" : 1,
+																"value" : [ "sbb.util.xfade" ]
 															}
  ]
 													}
@@ -2596,12 +2599,12 @@
 								"name" : "Audiomix",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39
+										"proportion" : 0.39,
+										"type" : "gradient"
 									}
 
 								}
@@ -2683,12 +2686,12 @@
 				"name" : "Audiomix",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
