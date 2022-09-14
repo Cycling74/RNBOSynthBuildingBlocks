@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 425.0, 534.0 ],
+		"rect" : [ 132.0, 149.0, 504.0, 588.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -94,7 +94,7 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 100.0, 126.0, 425.0, 508.0 ],
+						"rect" : [ 132.0, 175.0, 504.0, 562.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -132,7 +132,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 280.162460567823359, 75.0, 81.0, 23.0 ],
+									"patching_rect" : [ 296.162460567823359, 102.0, 81.0, 23.0 ],
 									"rnbo_classname" : "loadmess",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "loadmess_obj-39",
@@ -148,7 +148,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 201.62197686645635, 75.0, 77.0, 23.0 ],
+									"patching_rect" : [ 217.62197686645635, 102.0, 77.0, 23.0 ],
 									"rnbo_classname" : "loadmess",
 									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "loadmess_obj-38",
@@ -164,7 +164,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 128.456887486855919, 75.0, 81.0, 23.0 ],
+									"patching_rect" : [ 144.456887486855919, 102.0, 81.0, 23.0 ],
 									"rnbo_classname" : "loadmess",
 									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "loadmess_obj-37",
@@ -180,7 +180,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.5, 75.0, 74.0, 23.0 ],
+									"patching_rect" : [ 69.5, 102.0, 74.0, 23.0 ],
 									"rnbo_classname" : "loadmess",
 									"rnbo_serial" : 4,
 									"rnbo_uniqueid" : "loadmess_obj-36",
@@ -198,7 +198,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 280.162460567823359, 115.0, 50.0, 23.0 ],
+									"patching_rect" : [ 296.162460567823359, 142.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
 										"minimum" : 0.0,
@@ -223,7 +223,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 128.456887486855919, 115.0, 50.0, 23.0 ],
+									"patching_rect" : [ 144.456887486855919, 142.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
 										"minimum" : 0.0,
@@ -248,7 +248,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 201.62197686645635, 115.0, 50.0, 23.0 ],
+									"patching_rect" : [ 217.62197686645635, 142.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
 										"minimum" : 0.0,
@@ -273,7 +273,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 53.5, 115.0, 50.0, 23.0 ],
+									"patching_rect" : [ 69.5, 142.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
 										"minimum" : 0.0,
@@ -295,7 +295,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 338.5, 396.0, 59.0, 35.0 ],
+									"patching_rect" : [ 354.5, 423.0, 59.0, 35.0 ],
 									"text" : "end of envelope"
 								}
 
@@ -306,7 +306,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.5, 238.0, 88.0, 21.0 ],
+									"patching_rect" : [ 67.5, 265.0, 88.0, 21.0 ],
 									"text" : "input signal"
 								}
 
@@ -317,7 +317,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 223.0, 368.0, 88.0, 21.0 ],
+									"patching_rect" : [ 239.0, 395.0, 88.0, 21.0 ],
 									"text" : "envelope"
 								}
 
@@ -329,7 +329,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 51.5, 264.0, 59.0, 23.0 ],
+									"patching_rect" : [ 67.5, 291.0, 59.0, 23.0 ],
 									"rnbo_classname" : "cycle~",
 									"rnbo_extra_attributes" : 									{
 										"interp" : "linear",
@@ -352,7 +352,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 338.5, 368.0, 24.0, 24.0 ],
+									"patching_rect" : [ 354.5, 395.0, 24.0, 24.0 ],
 									"rnbo_classname" : "button",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "button_obj-18"
@@ -367,7 +367,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 195.0, 394.0, 116.0, 82.0 ],
+									"patching_rect" : [ 211.0, 421.0, 116.0, 82.0 ],
 									"rnbo_classname" : "scope~",
 									"rnbo_extra_attributes" : 									{
 										"calccount" : 256.0,
@@ -387,7 +387,7 @@
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.5, 394.0, 116.0, 82.0 ],
+									"patching_rect" : [ 67.5, 421.0, 116.0, 82.0 ],
 									"rnbo_classname" : "scope~",
 									"rnbo_extra_attributes" : 									{
 										"calccount" : 256.0,
@@ -406,7 +406,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 338.5, 270.0, 30.0, 23.0 ],
+									"patching_rect" : [ 354.5, 297.0, 30.0, 23.0 ],
 									"rnbo_classname" : "sig~",
 									"rnbo_extra_attributes" : 									{
 										"unit" : "ms"
@@ -426,7 +426,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 338.5, 234.0, 24.0, 24.0 ],
+									"patching_rect" : [ 354.5, 261.0, 24.0, 24.0 ],
 									"rnbo_classname" : "toggle",
 									"rnbo_extra_attributes" : 									{
 										"preset" : 0,
@@ -445,7 +445,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 51.5, 311.0, 306.0, 23.0 ],
+									"patching_rect" : [ 67.5, 338.0, 306.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
 										"args" : [  ],
@@ -456,7 +456,7 @@
 										"notecontroller" : 0
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "env.adsr",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -759,7 +759,7 @@
 												"name" : "out3",
 												"type" : [ "bang", "number", "list" ],
 												"digest" : "out3",
-												"displayName" : "EOC",
+												"displayName" : "Bang after envelope finished",
 												"docked" : 0
 											}
  ],
@@ -771,7 +771,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "p @file sbb.env.adsr",
+									"text" : "p @file sbb.env.analog",
 									"varname" : "env.adsr"
 								}
 
@@ -786,7 +786,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 228.0, 234.0, 99.0, 25.0 ],
+									"patching_rect" : [ 244.0, 261.0, 99.0, 25.0 ],
 									"text" : "envelope gate",
 									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
 								}
@@ -798,7 +798,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 70.0, 368.0, 96.0, 21.0 ],
+									"patching_rect" : [ 86.0, 395.0, 96.0, 21.0 ],
 									"text" : "enveloped signal"
 								}
 
@@ -812,8 +812,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 62.0, 382.0, 38.0 ],
-									"text" : "A linear attack-decay-sustain-release envelope with built-in attenuator."
+									"patching_rect" : [ 10.0, 62.0, 397.0, 38.0 ],
+									"text" : "An analog-style (exponential) attack-decay-sustain-release envelope with built-in attenuator."
 								}
 
 							}
@@ -825,8 +825,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 10.0, 204.0, 50.0 ],
-									"text" : "sbb.env.adsr"
+									"patching_rect" : [ 10.0, 10.0, 241.0, 50.0 ],
+									"text" : "sbb.env.analog"
 								}
 
 							}
@@ -837,7 +837,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.5, 150.0, 60.0, 23.0 ],
+									"patching_rect" : [ 69.5, 177.0, 60.0, 23.0 ],
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "set_obj-24",
@@ -852,7 +852,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 128.456887486855919, 150.0, 58.0, 23.0 ],
+									"patching_rect" : [ 144.456887486855919, 177.0, 58.0, 23.0 ],
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "set_obj-25",
@@ -867,7 +867,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 201.62197686645635, 150.0, 64.0, 23.0 ],
+									"patching_rect" : [ 217.62197686645635, 177.0, 64.0, 23.0 ],
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "set_obj-26",
@@ -882,7 +882,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 280.162460567823359, 150.0, 64.0, 23.0 ],
+									"patching_rect" : [ 296.162460567823359, 177.0, 64.0, 23.0 ],
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 4,
 									"rnbo_uniqueid" : "set_obj-27",
@@ -915,7 +915,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
-									"midpoints" : [ 63.0, 225.0, 36.0, 225.0, 36.0, 305.0, 61.0, 305.0 ],
+									"midpoints" : [ 79.0, 252.0, 52.0, 252.0, 52.0, 332.0, 77.0, 332.0 ],
 									"source" : [ "obj-24", 0 ]
 								}
 
@@ -923,7 +923,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
-									"midpoints" : [ 137.956887486855919, 226.0, 36.0, 226.0, 36.0, 305.0, 61.0, 305.0 ],
+									"midpoints" : [ 153.956887486855919, 253.0, 52.0, 253.0, 52.0, 332.0, 77.0, 332.0 ],
 									"source" : [ "obj-25", 0 ]
 								}
 
@@ -931,7 +931,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
-									"midpoints" : [ 211.12197686645635, 296.0, 61.0, 296.0 ],
+									"midpoints" : [ 227.12197686645635, 323.0, 77.0, 323.0 ],
 									"source" : [ "obj-26", 0 ]
 								}
 
@@ -939,7 +939,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
-									"midpoints" : [ 289.662460567823359, 221.0, 211.0, 221.0, 211.0, 296.0, 61.0, 296.0 ],
+									"midpoints" : [ 305.662460567823359, 248.0, 227.0, 248.0, 227.0, 323.0, 77.0, 323.0 ],
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -1095,20 +1095,27 @@
 						"snapshot" : 						{
 							"__sps" : 							{
 								"env.adsr" : 								{
+									"__sps" : 									{
+										"p_obj-25" : 										{
+
+										}
+
+									}
+,
 									"release" : 									{
-										"value" : 126.0
+										"value" : 300.0
 									}
 ,
 									"sustain" : 									{
-										"value" : 0.5
+										"value" : 0.9
 									}
 ,
 									"decay" : 									{
-										"value" : 368.0
+										"value" : 200.0
 									}
 ,
 									"attack" : 									{
-										"value" : 57.0
+										"value" : 30.0
 									}
 
 								}
@@ -1132,20 +1139,27 @@
 									"snapshot" : 									{
 										"__sps" : 										{
 											"env.adsr" : 											{
+												"__sps" : 												{
+													"p_obj-25" : 													{
+
+													}
+
+												}
+,
 												"release" : 												{
-													"value" : 126.0
+													"value" : 300.0
 												}
 ,
 												"sustain" : 												{
-													"value" : 0.5
+													"value" : 0.9
 												}
 ,
 												"decay" : 												{
-													"value" : 368.0
+													"value" : 200.0
 												}
 ,
 												"attack" : 												{
-													"value" : 57.0
+													"value" : 30.0
 												}
 
 											}

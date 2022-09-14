@@ -65,7 +65,12 @@
 	}
 ,
 	"sbb.env.adsr" : 	{
-		"description" : "An attack-decay-sustain-release envelope with built-in attenuator.",
+		"description" : "A linear attack-decay-sustain-release envelope with built-in attenuator.",
+		"digest" : "ADSR envelope"
+	}
+,
+	"sbb.env.analog" : 	{
+		"description" : "An exponential attack-decay-sustain-release envelope with built-in attenuator.",
 		"digest" : "ADSR envelope"
 	}
 ,
