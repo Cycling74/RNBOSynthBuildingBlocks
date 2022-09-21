@@ -97,7 +97,7 @@
 									"patching_rect" : [ 36.0, 125.0, 152.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 17.5, 372.0, 127.0, 33.0 ],
+									"presentation_rect" : [ 17.5, 372.0, 128.0, 33.0 ],
 									"text" : "Automate harmonicity or modulation index",
 									"textcolor" : [ 0.376470588235294, 0.384313725490196, 0.4, 1.0 ]
 								}
@@ -6562,7 +6562,7 @@
 																}
 ,
 																"release" : 																{
-																	"value" : 358.455932617187443
+																	"value" : 300.0
 																}
 ,
 																"sustain" : 																{
@@ -6574,7 +6574,7 @@
 																}
 ,
 																"attack" : 																{
-																	"value" : 49.666706085205078
+																	"value" : 30.0
 																}
 
 															}
@@ -6585,15 +6585,15 @@
 ,
 															"p_obj-3" : 															{
 																"right_delay" : 																{
-																	"value" : 313.97637939453125
+																	"value" : 275.0
 																}
 ,
 																"fb" : 																{
-																	"value" : 0.704724431037903
+																	"value" : 0.5
 																}
 ,
 																"left_delay" : 																{
-																	"value" : 433.8582763671875
+																	"value" : 200.0
 																}
 
 															}
@@ -6616,7 +6616,7 @@
 																}
 ,
 																"release" : 																{
-																	"value" : 358.455932617187443
+																	"value" : 300.0
 																}
 ,
 																"sustain" : 																{
@@ -6628,7 +6628,7 @@
 																}
 ,
 																"attack" : 																{
-																	"value" : 49.666706085205078
+																	"value" : 30.0
 																}
 
 															}
@@ -6639,15 +6639,15 @@
 ,
 															"p_obj-3" : 															{
 																"right_delay" : 																{
-																	"value" : 313.97637939453125
+																	"value" : 275.0
 																}
 ,
 																"fb" : 																{
-																	"value" : 0.704724431037903
+																	"value" : 0.5
 																}
 ,
 																"left_delay" : 																{
-																	"value" : 433.8582763671875
+																	"value" : 200.0
 																}
 
 															}
@@ -6670,7 +6670,7 @@
 																}
 ,
 																"release" : 																{
-																	"value" : 358.455932617187443
+																	"value" : 300.0
 																}
 ,
 																"sustain" : 																{
@@ -6682,7 +6682,7 @@
 																}
 ,
 																"attack" : 																{
-																	"value" : 49.666706085205078
+																	"value" : 30.0
 																}
 
 															}
@@ -6693,15 +6693,15 @@
 ,
 															"p_obj-3" : 															{
 																"right_delay" : 																{
-																	"value" : 313.97637939453125
+																	"value" : 275.0
 																}
 ,
 																"fb" : 																{
-																	"value" : 0.704724431037903
+																	"value" : 0.5
 																}
 ,
 																"left_delay" : 																{
-																	"value" : 433.8582763671875
+																	"value" : 200.0
 																}
 
 															}
@@ -6724,7 +6724,7 @@
 																}
 ,
 																"release" : 																{
-																	"value" : 358.455932617187443
+																	"value" : 300.0
 																}
 ,
 																"sustain" : 																{
@@ -6736,7 +6736,7 @@
 																}
 ,
 																"attack" : 																{
-																	"value" : 49.666706085205078
+																	"value" : 30.0
 																}
 
 															}
@@ -6747,15 +6747,15 @@
 ,
 															"p_obj-3" : 															{
 																"right_delay" : 																{
-																	"value" : 313.97637939453125
+																	"value" : 275.0
 																}
 ,
 																"fb" : 																{
-																	"value" : 0.704724431037903
+																	"value" : 0.5
 																}
 ,
 																"left_delay" : 																{
-																	"value" : 433.8582763671875
+																	"value" : 200.0
 																}
 
 															}
@@ -6771,7 +6771,7 @@
 											}
 ,
 											"mod_index" : 											{
-												"value" : 2.0
+												"value" : 1.0
 											}
 ,
 											"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -6805,7 +6805,7 @@
 																			}
 ,
 																			"release" : 																			{
-																				"value" : 358.455932617187443
+																				"value" : 300.0
 																			}
 ,
 																			"sustain" : 																			{
@@ -6817,7 +6817,7 @@
 																			}
 ,
 																			"attack" : 																			{
-																				"value" : 49.666706085205078
+																				"value" : 30.0
 																			}
 
 																		}
@@ -6828,15 +6828,15 @@
 ,
 																		"p_obj-3" : 																		{
 																			"right_delay" : 																			{
-																				"value" : 313.97637939453125
+																				"value" : 275.0
 																			}
 ,
 																			"fb" : 																			{
-																				"value" : 0.704724431037903
+																				"value" : 0.5
 																			}
 ,
 																			"left_delay" : 																			{
-																				"value" : 433.8582763671875
+																				"value" : 200.0
 																			}
 
 																		}
@@ -6859,7 +6859,7 @@
 																			}
 ,
 																			"release" : 																			{
-																				"value" : 358.455932617187443
+																				"value" : 300.0
 																			}
 ,
 																			"sustain" : 																			{
@@ -6871,7 +6871,7 @@
 																			}
 ,
 																			"attack" : 																			{
-																				"value" : 49.666706085205078
+																				"value" : 30.0
 																			}
 
 																		}
@@ -6882,15 +6882,15 @@
 ,
 																		"p_obj-3" : 																		{
 																			"right_delay" : 																			{
-																				"value" : 313.97637939453125
+																				"value" : 275.0
 																			}
 ,
 																			"fb" : 																			{
-																				"value" : 0.704724431037903
+																				"value" : 0.5
 																			}
 ,
 																			"left_delay" : 																			{
-																				"value" : 433.8582763671875
+																				"value" : 200.0
 																			}
 
 																		}
@@ -6913,7 +6913,7 @@
 																			}
 ,
 																			"release" : 																			{
-																				"value" : 358.455932617187443
+																				"value" : 300.0
 																			}
 ,
 																			"sustain" : 																			{
@@ -6925,7 +6925,7 @@
 																			}
 ,
 																			"attack" : 																			{
-																				"value" : 49.666706085205078
+																				"value" : 30.0
 																			}
 
 																		}
@@ -6936,15 +6936,15 @@
 ,
 																		"p_obj-3" : 																		{
 																			"right_delay" : 																			{
-																				"value" : 313.97637939453125
+																				"value" : 275.0
 																			}
 ,
 																			"fb" : 																			{
-																				"value" : 0.704724431037903
+																				"value" : 0.5
 																			}
 ,
 																			"left_delay" : 																			{
-																				"value" : 433.8582763671875
+																				"value" : 200.0
 																			}
 
 																		}
@@ -6967,7 +6967,7 @@
 																			}
 ,
 																			"release" : 																			{
-																				"value" : 358.455932617187443
+																				"value" : 300.0
 																			}
 ,
 																			"sustain" : 																			{
@@ -6979,7 +6979,7 @@
 																			}
 ,
 																			"attack" : 																			{
-																				"value" : 49.666706085205078
+																				"value" : 30.0
 																			}
 
 																		}
@@ -6990,15 +6990,15 @@
 ,
 																		"p_obj-3" : 																		{
 																			"right_delay" : 																			{
-																				"value" : 313.97637939453125
+																				"value" : 275.0
 																			}
 ,
 																			"fb" : 																			{
-																				"value" : 0.704724431037903
+																				"value" : 0.5
 																			}
 ,
 																			"left_delay" : 																			{
-																				"value" : 433.8582763671875
+																				"value" : 200.0
 																			}
 
 																		}
@@ -7014,7 +7014,7 @@
 														}
 ,
 														"mod_index" : 														{
-															"value" : 2.0
+															"value" : 1.0
 														}
 ,
 														"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -7422,9 +7422,9 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 208.5, 396.0, 168.0, 64.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
-									"presentation_rect" : [ 392.5, 215.0, 284.0, 35.0 ],
-									"text" : "A sampler with one-shot and looping options and MIDI input to pitch sample playback.",
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 392.5, 215.0, 284.0, 50.0 ],
+									"text" : "Three analog oscillators, four filter types, an ADSR envelope, and parameters for detuning and pitch wobble.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -7441,7 +7441,7 @@
 									"patching_rect" : [ 142.5, 366.0, 276.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 392.5, 168.0, 284.0, 35.0 ],
-									"text" : "sampler",
+									"text" : "subtractive",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -8521,7 +8521,7 @@
 									"patching_rect" : [ 198.5, 639.0, 328.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 236.0, 269.0, 21.0 ],
-									"text" : "MIDI sustain",
+									"text" : "ADSR envelope",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -8530,14 +8530,15 @@
 								"box" : 								{
 									"fontname" : "Lato",
 									"id" : "obj-48",
-									"linecount" : 2,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 165.5, 671.0, 167.0, 35.0 ],
+									"patching_rect" : [ 165.5, 671.0, 167.0, 64.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 419.5, 272.0, 284.0, 21.0 ],
-									"text" : "A utility for sustaining held notes.",
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 419.5, 272.0, 284.0, 35.0 ],
+									"text" : "An exponential attack-decay-sustain-release envelope with built-in attenuator.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -8554,7 +8555,7 @@
 									"patching_rect" : [ 132.5, 643.0, 276.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 186.0, 284.0, 35.0 ],
-									"text" : "sbb.util.sustain",
+									"text" : "sbb.env.analog",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -8846,7 +8847,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 50.0, 184.0, 59.0, 22.0 ],
 																	"style" : "SDTpackage",
-																	"text" : "append 5"
+																	"text" : "append 1"
 																}
 
 															}
@@ -8870,9 +8871,9 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 50.0, 159.0, 55.0, 22.0 ],
+																	"patching_rect" : [ 50.0, 159.0, 41.0, 22.0 ],
 																	"style" : "SDTpackage",
-																	"text" : "pipe 100"
+																	"text" : "pipe 1"
 																}
 
 															}
