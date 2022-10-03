@@ -24,14 +24,5 @@
 
 	}
 ,
-	"homepatcher" : "synth-building-blocks.maxpat",
-	"filelist" : 	{
-		"examples" : [ "sbb.additive.maxpat", "sbb.fm.maxpat", "sbb.granular.maxpat", "sbb.sampler.maxpat", "sbb.subtractive.maxpat", "sbb.wavetable.maxpat" ],
-		"patchers" : [ "sbb.env.ad.rnbopat", "sbb.env.adsr.rnbopat", "sbb.env.adsr.stereo.rnbopat", "sbb.env.follower.rnbopat", "sbb.env.lpg.rnbopat", "sbb.filter.bp.rnbopat", "sbb.filter.br.rnbopat", "sbb.filter.hp.rnbopat", "sbb.filter.ladder.rnbopat", "sbb.filter.lp.rnbopat", "sbb.mod.arp.rnbopat", "sbb.mod.lfo.rnbopat", "sbb.mod.rand.rnbopat", "sbb.mod.seq.rnbopat", "sbb.osc.additive.rnbopat", "sbb.osc.analog.rnbopat", "sbb.osc.fm.rnbopat", "sbb.osc.granular.rnbopat", "sbb.osc.karplus.rnbopat", "sbb.osc.sampler.rnbopat", "sbb.osc.wavetable.rnbopat", "sbb.util.sustain.rnbopat", "sbb.util.xfade.rnbopat" ],
-		"help" : [ "sbb.env.ad.maxhelp", "sbb.env.adsr.maxhelp", "sbb.env.adsr.stereo.maxhelp", "sbb.env.follower.maxhelp", "sbb.env.lpg.maxhelp", "sbb.filter.bp.maxhelp", "sbb.filter.br.maxhelp", "sbb.filter.hp.maxhelp", "sbb.filter.ladder.maxhelp", "sbb.filter.lp.maxhelp", "sbb.mod.arp.maxhelp", "sbb.mod.lfo.maxhelp", "sbb.mod.rand.maxhelp", "sbb.mod.seq.maxhelp", "sbb.osc.additive.maxhelp", "sbb.osc.analog.maxhelp", "sbb.osc.fm.maxhelp", "sbb.osc.granular.maxhelp", "sbb.osc.karplus.maxhelp", "sbb.osc.sampler.maxhelp", "sbb.osc.wavetable.maxhelp", "sbb.util.sustain.maxhelp", "sbb.util.xfade.maxhelp" ],
-		"media" : [ "wavetable1.wav", "wavetable2.wav", "wavetable3.wav" ],
-		"misc" : [ "sbb-objects.json" ],
-		"extras" : [ "synth-building-blocks.maxpat" ]
-	}
-
+	"homepatcher" : "Synth Building Blocks.maxpat",
 }
