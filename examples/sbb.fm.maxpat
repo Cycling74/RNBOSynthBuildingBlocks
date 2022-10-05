@@ -130,24 +130,6 @@
 					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
-					"id" : "obj-30",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 378.0, 58.0, 30.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 260.625, 209.0, 76.0, 163.240967000000069 ],
-					"rounded" : 16
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
 					"id" : "obj-27",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -723,6 +705,7 @@
 					"presentation_rect" : [ 266.625, 214.810241750000046, 64.0, 69.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_exponent" : 3.0,
 							"parameter_initial" : [ 10000 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
@@ -838,19 +821,19 @@
 					"presentation_rect" : [ 32.625, 95.0, 43.0, 29.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "<invalid>", "live.numbox", "float", 0.300000011920929, 5, "<invalid>", "live.numbox", "float", 15.0, 5, "<invalid>", "live.numbox", "float", 80.0, 5, "<invalid>", "live.numbox", "float", 400.0, 5, "<invalid>", "live.dial", "float", 2.5, 5, "<invalid>", "live.dial", "float", 1.0, 5, "<invalid>", "live.dial", "float", 6000.0, 5, "obj-5", "live.dial", "float", 1.0 ]
+							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "obj-11", "attrui", "attr", "index", 5, "obj-11", "attrui", "float", 1.0, 5, "obj-14", "attrui", "attr", "ratio", 5, "obj-14", "attrui", "float", 1.0, 5, "obj-3", "attrui", "attr", "filtermax", 5, "obj-3", "attrui", "float", 10000.0, 5, "obj-4", "attrui", "attr", "resonance", 5, "obj-4", "attrui", "float", 1.0, 5, "obj-7", "live.dial", "float", 10000.0, 5, "obj-5", "live.dial", "float", 1.0, 5, "obj-28", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 300.0, 5, "obj-29", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5, 5, "obj-8", "attrui", "attr", "poly/p_obj-5/fb", 5, "obj-8", "attrui", "float", 0.4, 5, "obj-13", "attrui", "attr", "poly/p_obj-5/left_delay", 5, "obj-13", "attrui", "float", 348.110236220472245, 5, "obj-21", "attrui", "attr", "poly/p_obj-5/right_delay", 5, "obj-21", "attrui", "float", 500.0, 5, "obj-24", "live.dial", "float", 0.400000005960464, 5, "obj-37", "live.dial", "float", 500.0, 5, "obj-22", "live.dial", "float", 348.1102294921875, 5, "obj-31", "live.numbox", "float", 1.0, 5, "obj-36", "live.numbox", "float", 1.0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "<invalid>", "live.numbox", "float", 0.567716538906097, 5, "<invalid>", "live.numbox", "float", 15.0, 5, "<invalid>", "live.numbox", "float", 2363.464599609375, 5, "<invalid>", "live.numbox", "float", 400.0, 5, "<invalid>", "live.dial", "float", 2.5, 5, "<invalid>", "live.dial", "float", 8.188976287841797, 5, "<invalid>", "live.dial", "float", 5909.6064453125, 5, "obj-5", "live.dial", "float", 0.842519700527191 ]
+							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "obj-11", "attrui", "attr", "index", 5, "obj-11", "attrui", "float", 2.0, 5, "obj-14", "attrui", "attr", "ratio", 5, "obj-14", "attrui", "float", 2.0, 5, "obj-3", "attrui", "attr", "filtermax", 5, "obj-3", "attrui", "float", 800.0, 5, "obj-4", "attrui", "attr", "resonance", 5, "obj-4", "attrui", "float", 3.0, 5, "obj-7", "live.dial", "float", 800.0, 5, "obj-5", "live.dial", "float", 3.0, 5, "obj-28", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 175.497711181640625, 5, "obj-29", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.800000011920929, 5, "obj-8", "attrui", "attr", "poly/p_obj-5/fb", 5, "obj-8", "attrui", "float", 0.628346456692913, 5, "obj-13", "attrui", "attr", "poly/p_obj-5/left_delay", 5, "obj-13", "attrui", "float", 200.0, 5, "obj-21", "attrui", "attr", "poly/p_obj-5/right_delay", 5, "obj-21", "attrui", "float", 250.0, 5, "obj-24", "live.dial", "float", 0.62834644317627, 5, "obj-37", "live.dial", "float", 250.0, 5, "obj-22", "live.dial", "float", 200.0, 5, "obj-31", "live.numbox", "float", 2.0, 5, "obj-36", "live.numbox", "float", 2.0 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "<invalid>", "live.numbox", "float", 0.5961754322052, 5, "<invalid>", "live.numbox", "float", 148.985824584960938, 5, "<invalid>", "live.numbox", "float", 68.758735656738281, 5, "<invalid>", "live.numbox", "float", 631.62567138671875, 5, "<invalid>", "live.dial", "float", 1.0, 5, "<invalid>", "live.dial", "float", 7.0, 5, "<invalid>", "live.dial", "float", 6000.0, 5, "obj-5", "live.dial", "float", 5.0 ]
+							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "obj-11", "attrui", "attr", "index", 5, "obj-11", "attrui", "float", 2.0, 5, "obj-14", "attrui", "attr", "ratio", 5, "obj-14", "attrui", "float", 5.0, 5, "obj-3", "attrui", "attr", "filtermax", 5, "obj-3", "attrui", "float", 1000.0, 5, "obj-4", "attrui", "attr", "resonance", 5, "obj-4", "attrui", "float", 4.0, 5, "obj-7", "live.dial", "float", 1000.0, 5, "obj-5", "live.dial", "float", 4.0, 5, "obj-28", "live.dial", "float", 50.0, 5, "obj-17", "live.dial", "float", 1000.0, 5, "obj-29", "live.dial", "float", 324.306671142578125, 5, "obj-50", "live.dial", "float", 0.5, 5, "obj-8", "attrui", "attr", "poly/p_obj-5/fb", 5, "obj-8", "attrui", "float", 0.2, 5, "obj-13", "attrui", "attr", "poly/p_obj-5/left_delay", 5, "obj-13", "attrui", "float", 200.0, 5, "obj-21", "attrui", "attr", "poly/p_obj-5/right_delay", 5, "obj-21", "attrui", "float", 250.0, 5, "obj-24", "live.dial", "float", 0.200000002980232, 5, "obj-37", "live.dial", "float", 250.0, 5, "obj-22", "live.dial", "float", 200.0, 5, "obj-31", "live.numbox", "float", 5.0, 5, "obj-36", "live.numbox", "float", 2.0 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "<invalid>", "live.numbox", "float", 0.75, 5, "<invalid>", "live.numbox", "float", 50.0, 5, "<invalid>", "live.numbox", "float", 80.0, 5, "<invalid>", "live.numbox", "float", 1341.6181640625, 5, "<invalid>", "live.dial", "float", 3.5, 5, "<invalid>", "live.dial", "float", 82.362205505371094, 5, "<invalid>", "live.dial", "float", 2629.291259765625, 5, "obj-5", "live.dial", "float", 4.685039520263672 ]
+							"data" : [ 5, "obj-9", "umenu", "int", 0, 5, "obj-11", "attrui", "attr", "index", 5, "obj-11", "attrui", "float", 1.0, 5, "obj-14", "attrui", "attr", "ratio", 5, "obj-14", "attrui", "float", 1.5, 5, "obj-3", "attrui", "attr", "filtermax", 5, "obj-3", "attrui", "float", 3476.719923205407213, 5, "obj-4", "attrui", "attr", "resonance", 5, "obj-4", "attrui", "float", 8.322834645669282, 5, "obj-7", "live.dial", "float", 3476.719970703125, 5, "obj-5", "live.dial", "float", 8.322834968566895, 5, "obj-28", "live.dial", "float", 30.0, 5, "obj-17", "live.dial", "float", 124.714859008789062, 5, "obj-29", "live.dial", "float", 30.0, 5, "obj-50", "live.dial", "float", 0.5, 5, "obj-8", "attrui", "attr", "poly/p_obj-5/fb", 5, "obj-8", "attrui", "float", 0.25, 5, "obj-13", "attrui", "attr", "poly/p_obj-5/left_delay", 5, "obj-13", "attrui", "float", 400.0, 5, "obj-21", "attrui", "attr", "poly/p_obj-5/right_delay", 5, "obj-21", "attrui", "float", 500.0, 5, "obj-24", "live.dial", "float", 0.25, 5, "obj-37", "live.dial", "float", 500.0, 5, "obj-22", "live.dial", "float", 400.0, 5, "obj-31", "live.numbox", "float", 1.5, 5, "obj-36", "live.numbox", "float", 1.0 ]
 						}
  ]
 				}
@@ -1253,7 +1236,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"title" : "stereo_delay",
+										"title" : "untitled",
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -7045,7 +7028,7 @@
 ,
 											"env.adsr" : 											{
 												"release" : 												{
-													"value" : 300.0
+													"value" : 124.714859008789062
 												}
 ,
 												"sustain" : 												{
@@ -7068,7 +7051,7 @@
 ,
 											"p_obj-5" : 											{
 												"right_delay" : 												{
-													"value" : 400.0
+													"value" : 500.0
 												}
 ,
 												"fb" : 												{
@@ -7076,7 +7059,7 @@
 												}
 ,
 												"left_delay" : 												{
-													"value" : 300.0
+													"value" : 400.0
 												}
 
 											}
@@ -7092,7 +7075,7 @@
 ,
 											"env.adsr" : 											{
 												"release" : 												{
-													"value" : 300.0
+													"value" : 124.714859008789062
 												}
 ,
 												"sustain" : 												{
@@ -7115,7 +7098,7 @@
 ,
 											"p_obj-5" : 											{
 												"right_delay" : 												{
-													"value" : 400.0
+													"value" : 500.0
 												}
 ,
 												"fb" : 												{
@@ -7123,7 +7106,7 @@
 												}
 ,
 												"left_delay" : 												{
-													"value" : 300.0
+													"value" : 400.0
 												}
 
 											}
@@ -7139,7 +7122,7 @@
 ,
 											"env.adsr" : 											{
 												"release" : 												{
-													"value" : 300.0
+													"value" : 124.714859008789062
 												}
 ,
 												"sustain" : 												{
@@ -7162,7 +7145,7 @@
 ,
 											"p_obj-5" : 											{
 												"right_delay" : 												{
-													"value" : 400.0
+													"value" : 500.0
 												}
 ,
 												"fb" : 												{
@@ -7170,7 +7153,7 @@
 												}
 ,
 												"left_delay" : 												{
-													"value" : 300.0
+													"value" : 400.0
 												}
 
 											}
@@ -7186,7 +7169,7 @@
 ,
 											"env.adsr" : 											{
 												"release" : 												{
-													"value" : 300.0
+													"value" : 124.714859008789062
 												}
 ,
 												"sustain" : 												{
@@ -7209,7 +7192,7 @@
 ,
 											"p_obj-5" : 											{
 												"right_delay" : 												{
-													"value" : 400.0
+													"value" : 500.0
 												}
 ,
 												"fb" : 												{
@@ -7217,7 +7200,7 @@
 												}
 ,
 												"left_delay" : 												{
-													"value" : 300.0
+													"value" : 400.0
 												}
 
 											}
@@ -7229,11 +7212,11 @@
 							}
 ,
 							"filtermax" : 							{
-								"value" : 10000.0
+								"value" : 3476.719970703126364
 							}
 ,
 							"resonance" : 							{
-								"value" : 1.0
+								"value" : 8.322834968566895
 							}
 ,
 							"index" : 							{
@@ -7241,7 +7224,7 @@
 							}
 ,
 							"ratio" : 							{
-								"value" : 1.0
+								"value" : 1.5
 							}
 ,
 							"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -7268,7 +7251,7 @@
 ,
 														"env.adsr" : 														{
 															"release" : 															{
-																"value" : 300.0
+																"value" : 124.714859008789062
 															}
 ,
 															"sustain" : 															{
@@ -7291,7 +7274,7 @@
 ,
 														"p_obj-5" : 														{
 															"right_delay" : 															{
-																"value" : 400.0
+																"value" : 500.0
 															}
 ,
 															"fb" : 															{
@@ -7299,7 +7282,7 @@
 															}
 ,
 															"left_delay" : 															{
-																"value" : 300.0
+																"value" : 400.0
 															}
 
 														}
@@ -7315,7 +7298,7 @@
 ,
 														"env.adsr" : 														{
 															"release" : 															{
-																"value" : 300.0
+																"value" : 124.714859008789062
 															}
 ,
 															"sustain" : 															{
@@ -7338,7 +7321,7 @@
 ,
 														"p_obj-5" : 														{
 															"right_delay" : 															{
-																"value" : 400.0
+																"value" : 500.0
 															}
 ,
 															"fb" : 															{
@@ -7346,7 +7329,7 @@
 															}
 ,
 															"left_delay" : 															{
-																"value" : 300.0
+																"value" : 400.0
 															}
 
 														}
@@ -7362,7 +7345,7 @@
 ,
 														"env.adsr" : 														{
 															"release" : 															{
-																"value" : 300.0
+																"value" : 124.714859008789062
 															}
 ,
 															"sustain" : 															{
@@ -7385,7 +7368,7 @@
 ,
 														"p_obj-5" : 														{
 															"right_delay" : 															{
-																"value" : 400.0
+																"value" : 500.0
 															}
 ,
 															"fb" : 															{
@@ -7393,7 +7376,7 @@
 															}
 ,
 															"left_delay" : 															{
-																"value" : 300.0
+																"value" : 400.0
 															}
 
 														}
@@ -7409,7 +7392,7 @@
 ,
 														"env.adsr" : 														{
 															"release" : 															{
-																"value" : 300.0
+																"value" : 124.714859008789062
 															}
 ,
 															"sustain" : 															{
@@ -7432,7 +7415,7 @@
 ,
 														"p_obj-5" : 														{
 															"right_delay" : 															{
-																"value" : 400.0
+																"value" : 500.0
 															}
 ,
 															"fb" : 															{
@@ -7440,7 +7423,7 @@
 															}
 ,
 															"left_delay" : 															{
-																"value" : 300.0
+																"value" : 400.0
 															}
 
 														}
@@ -7452,11 +7435,11 @@
 										}
 ,
 										"filtermax" : 										{
-											"value" : 10000.0
+											"value" : 3476.719970703126364
 										}
 ,
 										"resonance" : 										{
-											"value" : 1.0
+											"value" : 8.322834968566895
 										}
 ,
 										"index" : 										{
@@ -7464,7 +7447,7 @@
 										}
 ,
 										"ratio" : 										{
-											"value" : 1.0
+											"value" : 1.5
 										}
 ,
 										"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -7521,6 +7504,24 @@
 					"patching_rect" : [ 333.0, 13.0, 30.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.625, 291.620483500000034, 226.0, 80.620483500000034 ],
+					"rounded" : 16
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-30",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 378.0, 58.0, 30.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 260.625, 209.0, 76.0, 163.240967000000069 ],
 					"rounded" : 16
 				}
 
