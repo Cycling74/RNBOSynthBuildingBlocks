@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 245.0, 249.0, 656.0, 495.0 ],
+		"rect" : [ 127.0, 134.0, 656.0, 495.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1165,7 +1165,7 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 416.0, 338.0, 835.0, 460.0 ],
+						"rect" : [ 170.0, 149.0, 835.0, 460.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1207,9 +1207,9 @@
 										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI",
-										"exposevoiceparams" : 0
+										"voicecontrol" : "MIDI"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1561,41 +1561,6 @@
 ,
 									"text" : "p @file sbb.env.adsr.stereo @title env.adsr",
 									"varname" : "env.adsr"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 204.945652173913061, 398.0, 24.0, 24.0 ],
-									"rnbo_classname" : "button",
-									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "button_obj-27"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bufsize" : 128.0,
-									"calccount" : 256.0,
-									"id" : "obj-30",
-									"maxclass" : "scope~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 155.047101449275374, 387.375939849624046, 32.405797101449281, 33.624060150375954 ],
-									"rnbo_classname" : "scope~",
-									"rnbo_extra_attributes" : 									{
-										"calccount" : 256.0,
-										"bufsize" : 128.0
-									}
-,
-									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "scope~_obj-30"
 								}
 
 							}
@@ -2059,19 +2024,19 @@
 									"patching_rect" : [ 468.25, 309.0, 227.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"sendinit" : 1,
-										"fromnormalized" : "",
-										"ctlin" : 0.0,
-										"enum" : "",
-										"exponent" : 1.0,
-										"unit" : "",
 										"minimum" : 0.0,
-										"tonormalized" : "",
-										"order" : "",
-										"maximum" : 1.0,
-										"preset" : 1,
+										"ctlin" : 0.0,
 										"meta" : "",
-										"displayname" : ""
+										"tonormalized" : "",
+										"unit" : "",
+										"order" : "",
+										"fromnormalized" : "",
+										"maximum" : 1.0,
+										"sendinit" : 1,
+										"exponent" : 1.0,
+										"preset" : 1,
+										"displayname" : "",
+										"enum" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -2457,6 +2422,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 4,
@@ -2465,25 +2431,13 @@
 									"rnbo_classname" : "splat~",
 									"rnbo_extra_attributes" : 									{
 										"channelmode" : "wrap",
-										"boundmode" : "wrap",
-										"overdubmode" : "mix"
+										"overdubmode" : "mix",
+										"boundmode" : "wrap"
 									}
 ,
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "splat~_obj-5",
 									"text" : "splat~ osc_gran_buf @indexmode phase"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-38",
-									"linecount" : 7,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 420.75, 41.0, 176.0, 107.0 ],
-									"text" : "The rnbo granulator references this osc_gran_buf. If you'd like to or need to rename it, make sure to do it in both places. You can also change which file it refers to from here without needing to rename."
 								}
 
 							}
@@ -2585,23 +2539,23 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
 									"id" : "obj-34",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 55.25, 296.0, 231.0, 23.0 ],
+									"patching_rect" : [ 55.25, 296.0, 319.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI",
-										"exposevoiceparams" : 0
+										"voicecontrol" : "MIDI"
 									}
 ,
-									"rnbo_serial" : 2,
+									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "granular",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -2921,7 +2875,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "p @file sbb.osc.granular @title granular",
+									"text" : "p @file sbb.osc.granular @title granular @args osc_gran_buf",
 									"varname" : "granular"
 								}
 
@@ -2934,15 +2888,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 606.0, 41.0, 200.0, 23.0 ],
+									"patching_rect" : [ 606.0, 68.0, 209.0, 23.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
 										"fill" : "",
-										"samplerate" : 0.0,
-										"type" : ""
+										"type" : "",
+										"samplerate" : 0.0
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "buffer~_obj-23",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -3210,7 +3164,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "buffer~ osc_gran_buf @file jongly.aif"
+									"text" : "buffer~ osc_gran_buf @file cello-f2.aif"
 								}
 
 							}
@@ -3238,7 +3192,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 236.695652173913061, 200.0, 182.0, 54.0 ],
+									"patching_rect" : [ 146.398550724637687, 194.0, 182.0, 54.0 ],
 									"style" : "rnbo-bubble",
 									"text" : "Capture (latch onto) velocity when non-zero and then scale velocity to (0.0 - 1.0)"
 								}
@@ -3251,7 +3205,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 204.945652173913061, 162.0, 45.0, 23.0 ],
+									"patching_rect" : [ 111.648550724637687, 162.0, 45.0, 23.0 ],
 									"rnbo_classname" : "/~",
 									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "/~_obj-15",
@@ -3266,7 +3220,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 204.945652173913061, 132.0, 30.0, 23.0 ],
+									"patching_rect" : [ 111.648550724637687, 132.0, 30.0, 23.0 ],
 									"rnbo_classname" : "sig~",
 									"rnbo_extra_attributes" : 									{
 										"unit" : "ms"
@@ -3307,8 +3261,8 @@
 									"patching_rect" : [ 55.25, 132.0, 33.0, 23.0 ],
 									"rnbo_classname" : "mtof",
 									"rnbo_extra_attributes" : 									{
-										"scalename" : "",
-										"filter" : 1.0
+										"filter" : 1.0,
+										"scalename" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -3732,13 +3686,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-33", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"source" : [ "obj-33", 1 ]
 								}
@@ -3840,14 +3787,20 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 256.939597315436231, 426.5, 175.0, 30.0 ],
 					"rnboattrcache" : 					{
+						"poly/granular/basefreq" : 						{
+							"label" : "basefreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"record" : 						{
 							"label" : "record",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"poly/granular/starttime" : 						{
-							"label" : "starttime",
+						"poly/env.adsr/decay" : 						{
+							"label" : "decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3858,8 +3811,8 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/granular/basefreq" : 						{
-							"label" : "basefreq",
+						"poly/env.adsr/release" : 						{
+							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3882,8 +3835,8 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/decay" : 						{
-							"label" : "decay",
+						"poly/granular/starttime" : 						{
+							"label" : "starttime",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3893,15 +3846,10 @@
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
-,
-						"poly/env.adsr/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
 
 					}
 ,
+					"rnboversion" : "0.18.0-dev",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -3933,7 +3881,7 @@
 										"__sps" : 										{
 											"granular" : 											{
 												"panpos" : 												{
-													"value" : 0.5
+													"value" : 0.69
 												}
 ,
 												"buffchan" : 												{
@@ -3945,11 +3893,11 @@
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.377952766418457
+													"value" : 0.795275573730469
 												}
 ,
 												"starttime" : 												{
-													"value" : 0.0
+													"value" : 0.795275573730469
 												}
 
 											}
@@ -3964,7 +3912,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 200.0
+													"value" : 30.0
 												}
 ,
 												"attack" : 												{
@@ -3980,7 +3928,7 @@
 										"__sps" : 										{
 											"granular" : 											{
 												"panpos" : 												{
-													"value" : 0.5
+													"value" : 0.69
 												}
 ,
 												"buffchan" : 												{
@@ -3992,11 +3940,11 @@
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.377952766418457
+													"value" : 0.795275573730469
 												}
 ,
 												"starttime" : 												{
-													"value" : 0.0
+													"value" : 0.795275573730469
 												}
 
 											}
@@ -4011,7 +3959,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 200.0
+													"value" : 30.0
 												}
 ,
 												"attack" : 												{
@@ -4027,7 +3975,7 @@
 										"__sps" : 										{
 											"granular" : 											{
 												"panpos" : 												{
-													"value" : 0.5
+													"value" : 0.69
 												}
 ,
 												"buffchan" : 												{
@@ -4039,11 +3987,11 @@
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.377952766418457
+													"value" : 0.795275573730469
 												}
 ,
 												"starttime" : 												{
-													"value" : 0.0
+													"value" : 0.795275573730469
 												}
 
 											}
@@ -4058,7 +4006,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 200.0
+													"value" : 30.0
 												}
 ,
 												"attack" : 												{
@@ -4074,7 +4022,7 @@
 										"__sps" : 										{
 											"granular" : 											{
 												"panpos" : 												{
-													"value" : 0.5
+													"value" : 0.69
 												}
 ,
 												"buffchan" : 												{
@@ -4086,11 +4034,11 @@
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.377952766418457
+													"value" : 0.795275573730469
 												}
 ,
 												"starttime" : 												{
-													"value" : 0.0
+													"value" : 0.795275573730469
 												}
 
 											}
@@ -4105,7 +4053,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 200.0
+													"value" : 30.0
 												}
 ,
 												"attack" : 												{
@@ -4144,7 +4092,7 @@
 													"__sps" : 													{
 														"granular" : 														{
 															"panpos" : 															{
-																"value" : 0.5
+																"value" : 0.69
 															}
 ,
 															"buffchan" : 															{
@@ -4156,11 +4104,11 @@
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.377952766418457
+																"value" : 0.795275573730469
 															}
 ,
 															"starttime" : 															{
-																"value" : 0.0
+																"value" : 0.795275573730469
 															}
 
 														}
@@ -4175,7 +4123,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 200.0
+																"value" : 30.0
 															}
 ,
 															"attack" : 															{
@@ -4191,7 +4139,7 @@
 													"__sps" : 													{
 														"granular" : 														{
 															"panpos" : 															{
-																"value" : 0.5
+																"value" : 0.69
 															}
 ,
 															"buffchan" : 															{
@@ -4203,11 +4151,11 @@
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.377952766418457
+																"value" : 0.795275573730469
 															}
 ,
 															"starttime" : 															{
-																"value" : 0.0
+																"value" : 0.795275573730469
 															}
 
 														}
@@ -4222,7 +4170,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 200.0
+																"value" : 30.0
 															}
 ,
 															"attack" : 															{
@@ -4238,7 +4186,7 @@
 													"__sps" : 													{
 														"granular" : 														{
 															"panpos" : 															{
-																"value" : 0.5
+																"value" : 0.69
 															}
 ,
 															"buffchan" : 															{
@@ -4250,11 +4198,11 @@
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.377952766418457
+																"value" : 0.795275573730469
 															}
 ,
 															"starttime" : 															{
-																"value" : 0.0
+																"value" : 0.795275573730469
 															}
 
 														}
@@ -4269,7 +4217,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 200.0
+																"value" : 30.0
 															}
 ,
 															"attack" : 															{
@@ -4285,7 +4233,7 @@
 													"__sps" : 													{
 														"granular" : 														{
 															"panpos" : 															{
-																"value" : 0.5
+																"value" : 0.69
 															}
 ,
 															"buffchan" : 															{
@@ -4297,11 +4245,11 @@
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.377952766418457
+																"value" : 0.795275573730469
 															}
 ,
 															"starttime" : 															{
-																"value" : 0.0
+																"value" : 0.795275573730469
 															}
 
 														}
@@ -4316,7 +4264,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 200.0
+																"value" : 30.0
 															}
 ,
 															"attack" : 															{
@@ -4864,7 +4812,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jongly.aif",
+				"name" : "cello-f2.aif",
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
 				"implicit" : 1
