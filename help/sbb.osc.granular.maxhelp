@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 171.0, 209.0, 455.0, 463.0 ],
+		"rect" : [ 100.0, 100.0, 455.0, 463.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,33 +41,6 @@
 		"showontab" : 0,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"fontname" : "Lato Light",
-					"fontsize" : 13.0,
-					"id" : "obj-3",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 61.0, 382.0, 38.0 ],
-					"text" : "Generate a periodic waveform. The default waveform is one cycle of a cosine wave, but can be set to reference a named buffer."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Lato",
-					"fontsize" : 36.0,
-					"id" : "obj-5",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 9.0, 143.0, 50.0 ],
-					"text" : "cycle~"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"fontname" : "Lato",
 					"id" : "obj-8",
@@ -109,7 +82,8 @@
 						"IOInfo" : [ 							{
 								"type" : "signal",
 								"index" : 1,
-								"tag" : "out1"
+								"tag" : "out1",
+								"comment" : ""
 							}
  ]
 					}
@@ -119,14 +93,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 171.0, 235.0, 455.0, 437.0 ],
+						"rect" : [ 100.0, 126.0, 455.0, 437.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -188,7 +162,7 @@
 ,
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "number~_obj-11",
-									"sig" : 14.0
+									"sig" : 2.0
 								}
 
 							}
@@ -213,12 +187,15 @@
 									"id" : "obj-9",
 									"maxclass" : "flonum",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 24.0, 101.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
+										"maximum" : "<none>",
+										"minimum" : "<none>",
+										"order" : "",
 										"preset" : 0,
 										"value" : 440.0
 									}
@@ -235,12 +212,15 @@
 									"maximum" : 1.0,
 									"minimum" : 0.0,
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 237.0, 101.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
+										"maximum" : 1.0,
+										"minimum" : 0.0,
+										"order" : "",
 										"preset" : 0,
 										"value" : 0.0
 									}
@@ -273,12 +253,15 @@
 									"maximum" : 1.0,
 									"minimum" : 0.0,
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 124.5, 101.0, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
+										"maximum" : 1.0,
+										"minimum" : 0.0,
+										"order" : "",
 										"preset" : 0,
 										"value" : 0.2
 									}
@@ -313,7 +296,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 204.5, 313.5, 94.0, 39.0 ],
+									"patching_rect" : [ 204.5, 327.5, 94.0, 39.0 ],
 									"text" : "raise gain to hear grains",
 									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
 								}
@@ -327,12 +310,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 289.0, 232.0, 128.0, 37.0 ],
+									"patching_rect" : [ 289.0, 232.0, 129.0, 37.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
-										"type" : "",
 										"fill" : "",
-										"external" : 0,
+										"type" : "",
 										"samplerate" : 0.0
 									}
 ,
@@ -563,7 +545,7 @@
 												"isparam" : 0,
 												"deprecated" : 0,
 												"type" : "bool",
-												"defaultValue" : "false"
+												"doNotShowInMaxInspector" : 1
 											}
 
 										}
@@ -600,11 +582,11 @@
 										"aliasOf" : "data",
 										"classname" : "buffer~",
 										"operator" : 0,
-										"versionId" : -1445552977,
+										"versionId" : -52813114,
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "buffer~ osc_gran_buf @file jongly.aif"
+									"text" : "buffer~ gran_buf @file jongly.aif"
 								}
 
 							}
@@ -630,14 +612,14 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 59.5, 277.0, 151.0, 23.0 ],
+									"patching_rect" : [ 59.5, 277.0, 217.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"polyphony" : -1.0,
 										"receivemode" : "local",
+										"polyphony" : -1.0,
 										"exposevoiceparams" : 0,
-										"voicecontrol" : "MIDI",
-										"notecontroller" : "internal"
+										"notecontroller" : 0,
+										"voicecontrol" : "MIDI"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -866,16 +848,16 @@
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Chooses the way that polyphonic voices are controlled. MIDI (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'None' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"enum" : [ "midi", "none" ],
+												"enum" : [ "simple", "user" ],
 												"type" : "enum",
-												"defaultValue" : "midi"
+												"defaultValue" : "simple"
 											}
 ,
 											"notecontroller" : 											{
@@ -887,7 +869,8 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol"
+												"type" : "symbol",
+												"doNotShowInMaxInspector" : 1
 											}
 ,
 											"receivemode" : 											{
@@ -951,15 +934,15 @@
 												"docked" : 0
 											}
  ],
-										"helpname" : "p",
+										"helpname" : "patcher",
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -1446339910,
+										"versionId" : -843978785,
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "p @file sbb.osc.granular",
+									"text" : "p @file sbb.osc.granular @args gran_buf",
 									"varname" : "osc.analog[1]"
 								}
 
@@ -972,22 +955,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 59.5, 211.0, 62.0, 21.0 ],
 									"text" : "frequency"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubbleside" : 2,
-									"bubbleusescolors" : 1,
-									"fontname" : "Lato",
-									"id" : "obj-15",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 289.0, 197.0, 126.0, 35.0 ],
-									"text" : "requires a buffer named osc_gran_buf",
-									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
 								}
 
 							}
@@ -1041,15 +1008,15 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 59.5, 322.0, 140.0, 22.0 ],
+									"patching_rect" : [ 59.5, 336.0, 140.0, 22.0 ],
 									"rnbo_classname" : "gain~",
 									"rnbo_extra_attributes" : 									{
 										"scale" : 7.943,
-										"inc" : 1.072,
 										"size" : 158.0,
+										"inc" : 1.072,
 										"order" : "",
 										"preset" : 0,
-										"value" : 0.0
+										"value" : 76.0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1070,6 +1037,7 @@
 									"patching_rect" : [ 59.5, 386.0, 46.0, 24.0 ],
 									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
+										"meta" : "",
 										"comment" : ""
 									}
 ,
@@ -1116,6 +1084,21 @@
 												"deprecated" : 0,
 												"type" : "symbol"
 											}
+,
+											"meta" : 											{
+												"attrOrProp" : 2,
+												"digest" : "A JSON formatted string containing metadata for use by the exported code",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "",
+												"label" : "Metadata",
+												"displayorder" : 3
+											}
 
 										}
 ,
@@ -1133,7 +1116,7 @@
 										"aliasOf" : "out~",
 										"classname" : "out~",
 										"operator" : 0,
-										"versionId" : 2063414894,
+										"versionId" : 374499139,
 										"changesPatcherIO" : 1
 									}
 ,
@@ -1274,14 +1257,8 @@
 ,
 					"patching_rect" : [ 112.0, 156.0, 103.0, 23.0 ],
 					"rnboattrcache" : 					{
-						"osc.analog[1]/basefreq" : 						{
-							"label" : "basefreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"osc.analog[1]/panpos" : 						{
-							"label" : "panpos",
+						"osc.analog[1]/starttime" : 						{
+							"label" : "starttime",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1292,20 +1269,27 @@
 							"parsestring" : ""
 						}
 ,
+						"osc.analog[1]/basefreq" : 						{
+							"label" : "basefreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"osc.analog[1]/buffchan" : 						{
 							"label" : "buffchan",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"osc.analog[1]/starttime" : 						{
-							"label" : "starttime",
+						"osc.analog[1]/panpos" : 						{
+							"label" : "panpos",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 
 					}
 ,
+					"rnboversion" : "0.18.0-dev",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1342,15 +1326,15 @@
 									}
 ,
 									"basefreq" : 									{
-										"value" : 163.0
+										"value" : 446.0
 									}
 ,
 									"grainlength" : 									{
-										"value" : 0.772
+										"value" : 1.0
 									}
 ,
 									"starttime" : 									{
-										"value" : 0.6
+										"value" : 0.0
 									}
 
 								}
@@ -1383,15 +1367,15 @@
 												}
 ,
 												"basefreq" : 												{
-													"value" : 163.0
+													"value" : 446.0
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.772
+													"value" : 1.0
 												}
 ,
 												"starttime" : 												{
-													"value" : 0.6
+													"value" : 0.0
 												}
 
 											}
@@ -1403,64 +1387,10 @@
 ,
 									"fileref" : 									{
 										"name" : "basic",
-										"filename" : "_20210929.maxsnap",
+										"filename" : "basic.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "158d42d7533d91f76cdbcd6e034f990c"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "basic",
-									"origin" : "basic",
-									"type" : "rnbo",
-									"subtype" : "",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "basic",
-										"filename" : "_20211203.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "e9c49a1e2c633bca4c5ff0f6fbbb9c48"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "basic",
-									"origin" : "basic",
-									"type" : "rnbo",
-									"subtype" : "",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "basic",
-										"filename" : "_20201104_2.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "785503ea2f7b36d9a013fe6cb4922da2"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "basic",
-									"origin" : "basic",
-									"type" : "rnbo",
-									"subtype" : "",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "basic",
-										"filename" : "_20211209.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "a160ec76c9869b878749a4bff7a6461e"
+										"snapshotfileid" : "4b77aa0e287ec185ed01558bd40388be"
 									}
 
 								}
@@ -1509,28 +1439,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "_20201104_2.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_20210929.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_20211203.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_20211209.maxsnap",
+				"name" : "basic.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
@@ -1541,10 +1450,6 @@
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "rnbo~.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
