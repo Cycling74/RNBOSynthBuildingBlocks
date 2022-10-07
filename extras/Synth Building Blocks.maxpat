@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 87.0, 119.0, 741.0, 496.0 ],
+		"rect" : [ 87.0, 104.0, 741.0, 496.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 87.0, 145.0, 741.0, 470.0 ],
+						"rect" : [ 87.0, 130.0, 741.0, 470.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -7245,7 +7245,7 @@
 											}
 ,
 											"mod_index" : 											{
-												"value" : 1.0
+												"value" : 3.0
 											}
 ,
 											"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -7464,7 +7464,7 @@
 														}
 ,
 														"mod_index" : 														{
-															"value" : 1.0
+															"value" : 3.0
 														}
 ,
 														"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -7928,7 +7928,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 133.0, 486.0, 378.0, 476.0 ],
+										"rect" : [ 130.0, 99.0, 378.0, 476.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -8317,10 +8317,6 @@
 														"granular" : 														{
 															"items" : "A granular synth which pitches grains based on MIDI input."
 														}
-,
-														"sampler" : 														{
-															"items" : "A sampler with one-shot and looping options and MIDI input to pitch sample playback."
-														}
 
 													}
 ,
@@ -8521,7 +8517,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 37.5, 149.0, 308.0, 218.0 ],
 									"tabcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
-									"tabs" : [ "subtractive", "fm", "additive", "wavetable", "granular", "sampler" ]
+									"tabs" : [ "subtractive", "fm", "additive", "wavetable", "granular" ]
 								}
 
 							}
@@ -8985,7 +8981,7 @@
 									"patching_rect" : [ 198.5, 639.0, 328.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 236.0, 269.0, 21.0 ],
-									"text" : "ADSR envelope",
+									"text" : "Analog oscillators",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -9002,7 +8998,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 419.5, 272.0, 284.0, 35.0 ],
-									"text" : "An exponential attack-decay-sustain-release envelope with built-in attenuator.",
+									"text" : "Anti-aliased waveforms and noise oscillators with pulse-width modulation and hard sync.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -9019,7 +9015,7 @@
 									"patching_rect" : [ 132.5, 643.0, 276.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 419.5, 186.0, 284.0, 35.0 ],
-									"text" : "sbb.env.analog",
+									"text" : "sbb.osc.analog",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
