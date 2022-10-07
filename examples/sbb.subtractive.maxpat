@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 79.0, 202.0, 972.0, 493.0 ],
+		"rect" : [ 84.0, 123.0, 972.0, 493.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2877,9 +2877,9 @@
 										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI",
-										"exposevoiceparams" : 0
+										"voicecontrol" : "MIDI"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -3322,20 +3322,20 @@
 													"patching_rect" : [ 350.5, 43.0, 140.0, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -3729,20 +3729,20 @@
 													"patching_rect" : [ 90.0, 27.0, 229.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 2,
@@ -4312,18 +4312,18 @@
 													"patching_rect" : [ 63.0, 101.0, 200.0, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
 														"displayname" : ""
 													}
 ,
@@ -5449,9 +5449,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "midi",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "midi"
 													}
 ,
 													"rnbo_serial" : 1,
@@ -6498,9 +6498,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "midi",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "midi"
 													}
 ,
 													"rnbo_serial" : 2,
@@ -7355,9 +7355,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "midi",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "midi"
 													}
 ,
 													"rnbo_serial" : 3,
@@ -8212,9 +8212,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "midi",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "midi"
 													}
 ,
 													"rnbo_serial" : 4,
@@ -8677,9 +8677,9 @@
 										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "midi",
-										"exposevoiceparams" : 0
+										"voicecontrol" : "midi"
 									}
 ,
 									"rnbo_serial" : 2,
@@ -9002,20 +9002,20 @@
 													"patching_rect" : [ 474.0, 375.0, 87.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -9424,20 +9424,20 @@
 													"patching_rect" : [ 100.0, 458.0, 86.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 2,
@@ -9933,20 +9933,20 @@
 													"patching_rect" : [ 100.0, 257.0, 86.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 3,
@@ -10400,8 +10400,8 @@
 													"patching_rect" : [ 42.0, 68.0, 40.0, 23.0 ],
 													"rnbo_classname" : "mtof~",
 													"rnbo_extra_attributes" : 													{
-														"scalename" : "",
-														"filter" : 1.0
+														"filter" : 1.0,
+														"scalename" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -10580,20 +10580,20 @@
 													"patching_rect" : [ 472.5, 228.0, 233.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 4,
@@ -10987,20 +10987,20 @@
 													"patching_rect" : [ 100.0, 321.0, 233.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 5,
@@ -11394,20 +11394,20 @@
 													"patching_rect" : [ 100.0, 140.0, 233.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"steps" : 0.0,
-														"sendinit" : 1,
-														"fromnormalized" : "",
-														"ctlin" : 0.0,
-														"enum" : "",
-														"exponent" : 1.0,
-														"unit" : "",
 														"minimum" : 0.0,
-														"tonormalized" : "",
-														"order" : "",
-														"maximum" : 1.0,
-														"preset" : 1,
+														"ctlin" : 0.0,
 														"meta" : "",
-														"displayname" : ""
+														"tonormalized" : "",
+														"steps" : 0.0,
+														"unit" : "",
+														"order" : "",
+														"fromnormalized" : "",
+														"maximum" : 1.0,
+														"sendinit" : 1,
+														"exponent" : 1.0,
+														"preset" : 1,
+														"displayname" : "",
+														"enum" : ""
 													}
 ,
 													"rnbo_serial" : 6,
@@ -11995,9 +11995,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "MIDI",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "MIDI"
 													}
 ,
 													"rnbo_serial" : 1,
@@ -12290,9 +12290,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "MIDI",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "MIDI"
 													}
 ,
 													"rnbo_serial" : 2,
@@ -12585,9 +12585,9 @@
 														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
+														"exposevoiceparams" : 0,
 														"notecontroller" : 0,
-														"voicecontrol" : "MIDI",
-														"exposevoiceparams" : 0
+														"voicecontrol" : "MIDI"
 													}
 ,
 													"rnbo_serial" : 3,
@@ -13065,9 +13065,9 @@
 										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "midi",
-										"exposevoiceparams" : 0
+										"voicecontrol" : "midi"
 									}
 ,
 									"rnbo_serial" : 3,
@@ -13790,38 +13790,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 266.254194630872462, 419.5, 173.0, 30.0 ],
 					"rnboattrcache" : 					{
-						"poly/oscillators/levelC" : 						{
-							"label" : "levelC",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"poly/filters/resonance_mod" : 						{
 							"label" : "resonance_mod",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/detuneB" : 						{
-							"label" : "detuneB",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/levelB" : 						{
-							"label" : "levelB",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/levelA" : 						{
-							"label" : "levelA",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/filters/cutoff" : 						{
-							"label" : "cutoff",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -13832,14 +13802,38 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/sustain" : 						{
-							"label" : "sustain",
+						"poly/oscillators/oscC/mode" : 						{
+							"label" : "mode",
+							"isEnum" : 1,
+							"parsestring" : "noise sine saw triangle square pulse"
+						}
+,
+						"poly/env.adsr/decay" : 						{
+							"label" : "decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
+						"poly/oscillators/levelA" : 						{
+							"label" : "levelA",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/oscillators/oscB/mode" : 						{
+							"label" : "mode",
+							"isEnum" : 1,
+							"parsestring" : "noise sine saw triangle square pulse"
+						}
+,
 						"poly/env.adsr/release" : 						{
 							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/oscillators/detuneB" : 						{
+							"label" : "detuneB",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -13856,8 +13850,32 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/decay" : 						{
-							"label" : "decay",
+						"poly/oscillators/levelC" : 						{
+							"label" : "levelC",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/filters/cutoff" : 						{
+							"label" : "cutoff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/oscillators/oscA/mode" : 						{
+							"label" : "mode",
+							"isEnum" : 1,
+							"parsestring" : "noise sine saw triangle square pulse"
+						}
+,
+						"poly/env.adsr/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/oscillators/levelB" : 						{
+							"label" : "levelB",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -13867,27 +13885,10 @@
 							"isEnum" : 1,
 							"parsestring" : "lowpass highpass bandpass bandreject"
 						}
-,
-						"poly/oscillators/oscB/mode" : 						{
-							"label" : "mode",
-							"isEnum" : 1,
-							"parsestring" : "noise sine saw triangle square pulse"
-						}
-,
-						"poly/oscillators/oscA/mode" : 						{
-							"label" : "mode",
-							"isEnum" : 1,
-							"parsestring" : "noise sine saw triangle square pulse"
-						}
-,
-						"poly/oscillators/oscC/mode" : 						{
-							"label" : "mode",
-							"isEnum" : 1,
-							"parsestring" : "noise sine saw triangle square pulse"
-						}
 
 					}
 ,
+					"rnboversion" : "0.18.0-dev",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -13914,447 +13915,7 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"__sps" : 							{
-								"poly" : [ 									{
-										"__sps" : 										{
-											"oscillators" : 											{
-												"levelC" : 												{
-													"value" : 0.0
-												}
-,
-												"detuneA" : 												{
-													"value" : 0.0
-												}
-,
-												"__sps" : 												{
-													"oscC" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
 
-													}
-,
-													"oscA" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscB" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-
-												}
-,
-												"detuneB" : 												{
-													"value" : 0.0
-												}
-,
-												"levelA" : 												{
-													"value" : 0.976190476190476
-												}
-,
-												"detuneC" : 												{
-													"value" : 0.0
-												}
-,
-												"levelB" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"filters" : 											{
-												"__sps" : 												{
-													"filter.br" : 													{
-
-													}
-,
-													"filter.hp" : 													{
-
-													}
-,
-													"filter.bp" : 													{
-
-													}
-,
-													"filter.lp" : 													{
-
-													}
-
-												}
-,
-												"cutoff" : 												{
-													"value" : 927.93475341796875
-												}
-,
-												"resonance_mod" : 												{
-													"value" : 0.709999978542328
-												}
-,
-												"filtertype" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"env.adsr" : 											{
-												"release" : 												{
-													"value" : 300.0
-												}
-,
-												"sustain" : 												{
-													"value" : 0.5
-												}
-,
-												"decay" : 												{
-													"value" : 30.0
-												}
-,
-												"attack" : 												{
-													"value" : 30.0
-												}
-
-											}
-
-										}
-
-									}
-, 									{
-										"__sps" : 										{
-											"oscillators" : 											{
-												"levelC" : 												{
-													"value" : 0.0
-												}
-,
-												"detuneA" : 												{
-													"value" : 0.0
-												}
-,
-												"__sps" : 												{
-													"oscC" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscA" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscB" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-
-												}
-,
-												"detuneB" : 												{
-													"value" : 0.0
-												}
-,
-												"levelA" : 												{
-													"value" : 0.976190476190476
-												}
-,
-												"detuneC" : 												{
-													"value" : 0.0
-												}
-,
-												"levelB" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"filters" : 											{
-												"__sps" : 												{
-													"filter.br" : 													{
-
-													}
-,
-													"filter.hp" : 													{
-
-													}
-,
-													"filter.bp" : 													{
-
-													}
-,
-													"filter.lp" : 													{
-
-													}
-
-												}
-,
-												"cutoff" : 												{
-													"value" : 927.93475341796875
-												}
-,
-												"resonance_mod" : 												{
-													"value" : 0.709999978542328
-												}
-,
-												"filtertype" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"env.adsr" : 											{
-												"release" : 												{
-													"value" : 300.0
-												}
-,
-												"sustain" : 												{
-													"value" : 0.5
-												}
-,
-												"decay" : 												{
-													"value" : 30.0
-												}
-,
-												"attack" : 												{
-													"value" : 30.0
-												}
-
-											}
-
-										}
-
-									}
-, 									{
-										"__sps" : 										{
-											"oscillators" : 											{
-												"levelC" : 												{
-													"value" : 0.0
-												}
-,
-												"detuneA" : 												{
-													"value" : 0.0
-												}
-,
-												"__sps" : 												{
-													"oscC" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscA" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscB" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-
-												}
-,
-												"detuneB" : 												{
-													"value" : 0.0
-												}
-,
-												"levelA" : 												{
-													"value" : 0.976190476190476
-												}
-,
-												"detuneC" : 												{
-													"value" : 0.0
-												}
-,
-												"levelB" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"filters" : 											{
-												"__sps" : 												{
-													"filter.br" : 													{
-
-													}
-,
-													"filter.hp" : 													{
-
-													}
-,
-													"filter.bp" : 													{
-
-													}
-,
-													"filter.lp" : 													{
-
-													}
-
-												}
-,
-												"cutoff" : 												{
-													"value" : 927.93475341796875
-												}
-,
-												"resonance_mod" : 												{
-													"value" : 0.709999978542328
-												}
-,
-												"filtertype" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"env.adsr" : 											{
-												"release" : 												{
-													"value" : 300.0
-												}
-,
-												"sustain" : 												{
-													"value" : 0.5
-												}
-,
-												"decay" : 												{
-													"value" : 30.0
-												}
-,
-												"attack" : 												{
-													"value" : 30.0
-												}
-
-											}
-
-										}
-
-									}
-, 									{
-										"__sps" : 										{
-											"oscillators" : 											{
-												"levelC" : 												{
-													"value" : 0.0
-												}
-,
-												"detuneA" : 												{
-													"value" : 0.0
-												}
-,
-												"__sps" : 												{
-													"oscC" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscA" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-,
-													"oscB" : 													{
-														"mode" : 														{
-															"value" : 2.0
-														}
-
-													}
-
-												}
-,
-												"detuneB" : 												{
-													"value" : 0.0
-												}
-,
-												"levelA" : 												{
-													"value" : 0.976190476190476
-												}
-,
-												"detuneC" : 												{
-													"value" : 0.0
-												}
-,
-												"levelB" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"filters" : 											{
-												"__sps" : 												{
-													"filter.br" : 													{
-
-													}
-,
-													"filter.hp" : 													{
-
-													}
-,
-													"filter.bp" : 													{
-
-													}
-,
-													"filter.lp" : 													{
-
-													}
-
-												}
-,
-												"cutoff" : 												{
-													"value" : 927.93475341796875
-												}
-,
-												"resonance_mod" : 												{
-													"value" : 0.709999978542328
-												}
-,
-												"filtertype" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
-											"env.adsr" : 											{
-												"release" : 												{
-													"value" : 300.0
-												}
-,
-												"sustain" : 												{
-													"value" : 0.5
-												}
-,
-												"decay" : 												{
-													"value" : 30.0
-												}
-,
-												"attack" : 												{
-													"value" : 30.0
-												}
-
-											}
-
-										}
-
-									}
- ]
-							}
-,
-							"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
 						}
 ,
 						"snapshotlist" : 						{
@@ -14369,447 +13930,7 @@
 									"subtype" : "",
 									"embed" : 1,
 									"snapshot" : 									{
-										"__sps" : 										{
-											"poly" : [ 												{
-													"__sps" : 													{
-														"oscillators" : 														{
-															"levelC" : 															{
-																"value" : 0.0
-															}
-,
-															"detuneA" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"oscC" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
 
-																}
-,
-																"oscA" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscB" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-
-															}
-,
-															"detuneB" : 															{
-																"value" : 0.0
-															}
-,
-															"levelA" : 															{
-																"value" : 0.976190476190476
-															}
-,
-															"detuneC" : 															{
-																"value" : 0.0
-															}
-,
-															"levelB" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"filters" : 														{
-															"__sps" : 															{
-																"filter.br" : 																{
-
-																}
-,
-																"filter.hp" : 																{
-
-																}
-,
-																"filter.bp" : 																{
-
-																}
-,
-																"filter.lp" : 																{
-
-																}
-
-															}
-,
-															"cutoff" : 															{
-																"value" : 927.93475341796875
-															}
-,
-															"resonance_mod" : 															{
-																"value" : 0.709999978542328
-															}
-,
-															"filtertype" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"env.adsr" : 														{
-															"release" : 															{
-																"value" : 300.0
-															}
-,
-															"sustain" : 															{
-																"value" : 0.5
-															}
-,
-															"decay" : 															{
-																"value" : 30.0
-															}
-,
-															"attack" : 															{
-																"value" : 30.0
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"__sps" : 													{
-														"oscillators" : 														{
-															"levelC" : 															{
-																"value" : 0.0
-															}
-,
-															"detuneA" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"oscC" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscA" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscB" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-
-															}
-,
-															"detuneB" : 															{
-																"value" : 0.0
-															}
-,
-															"levelA" : 															{
-																"value" : 0.976190476190476
-															}
-,
-															"detuneC" : 															{
-																"value" : 0.0
-															}
-,
-															"levelB" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"filters" : 														{
-															"__sps" : 															{
-																"filter.br" : 																{
-
-																}
-,
-																"filter.hp" : 																{
-
-																}
-,
-																"filter.bp" : 																{
-
-																}
-,
-																"filter.lp" : 																{
-
-																}
-
-															}
-,
-															"cutoff" : 															{
-																"value" : 927.93475341796875
-															}
-,
-															"resonance_mod" : 															{
-																"value" : 0.709999978542328
-															}
-,
-															"filtertype" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"env.adsr" : 														{
-															"release" : 															{
-																"value" : 300.0
-															}
-,
-															"sustain" : 															{
-																"value" : 0.5
-															}
-,
-															"decay" : 															{
-																"value" : 30.0
-															}
-,
-															"attack" : 															{
-																"value" : 30.0
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"__sps" : 													{
-														"oscillators" : 														{
-															"levelC" : 															{
-																"value" : 0.0
-															}
-,
-															"detuneA" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"oscC" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscA" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscB" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-
-															}
-,
-															"detuneB" : 															{
-																"value" : 0.0
-															}
-,
-															"levelA" : 															{
-																"value" : 0.976190476190476
-															}
-,
-															"detuneC" : 															{
-																"value" : 0.0
-															}
-,
-															"levelB" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"filters" : 														{
-															"__sps" : 															{
-																"filter.br" : 																{
-
-																}
-,
-																"filter.hp" : 																{
-
-																}
-,
-																"filter.bp" : 																{
-
-																}
-,
-																"filter.lp" : 																{
-
-																}
-
-															}
-,
-															"cutoff" : 															{
-																"value" : 927.93475341796875
-															}
-,
-															"resonance_mod" : 															{
-																"value" : 0.709999978542328
-															}
-,
-															"filtertype" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"env.adsr" : 														{
-															"release" : 															{
-																"value" : 300.0
-															}
-,
-															"sustain" : 															{
-																"value" : 0.5
-															}
-,
-															"decay" : 															{
-																"value" : 30.0
-															}
-,
-															"attack" : 															{
-																"value" : 30.0
-															}
-
-														}
-
-													}
-
-												}
-, 												{
-													"__sps" : 													{
-														"oscillators" : 														{
-															"levelC" : 															{
-																"value" : 0.0
-															}
-,
-															"detuneA" : 															{
-																"value" : 0.0
-															}
-,
-															"__sps" : 															{
-																"oscC" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscA" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-,
-																"oscB" : 																{
-																	"mode" : 																	{
-																		"value" : 2.0
-																	}
-
-																}
-
-															}
-,
-															"detuneB" : 															{
-																"value" : 0.0
-															}
-,
-															"levelA" : 															{
-																"value" : 0.976190476190476
-															}
-,
-															"detuneC" : 															{
-																"value" : 0.0
-															}
-,
-															"levelB" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"filters" : 														{
-															"__sps" : 															{
-																"filter.br" : 																{
-
-																}
-,
-																"filter.hp" : 																{
-
-																}
-,
-																"filter.bp" : 																{
-
-																}
-,
-																"filter.lp" : 																{
-
-																}
-
-															}
-,
-															"cutoff" : 															{
-																"value" : 927.93475341796875
-															}
-,
-															"resonance_mod" : 															{
-																"value" : 0.709999978542328
-															}
-,
-															"filtertype" : 															{
-																"value" : 0.0
-															}
-
-														}
-,
-														"env.adsr" : 														{
-															"release" : 															{
-																"value" : 300.0
-															}
-,
-															"sustain" : 															{
-																"value" : 0.5
-															}
-,
-															"decay" : 															{
-																"value" : 30.0
-															}
-,
-															"attack" : 															{
-																"value" : 30.0
-															}
-
-														}
-
-													}
-
-												}
- ]
-										}
-,
-										"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
 									}
 ,
 									"fileref" : 									{
@@ -15095,7 +14216,7 @@
 					"patching_rect" : [ 1011.5, 501.608105897903386, 256.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 272.939597315436231, 161.0, 211.0, 99.0 ],
-					"setfilter" : [ 0, 1, 0, 0, 0, 196.53192138671875, 1.0, 0.497559040784836, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 1, 0, 0, 0, 166.415664672851562, 1.0, 0.480787396430969, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
