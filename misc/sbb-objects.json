@@ -30,7 +30,7 @@
 	}
 ,
 	"sbb.osc.sampler" : 	{
-		"description" : "A basic sampler with one-shot and de-clicked looping modes",
+		"description" : "A basic sampler with one-shot looping modes",
 		"digest" : "Simple sampler"
 	}
 ,
