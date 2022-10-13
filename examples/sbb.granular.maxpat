@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 91.0, 119.0, 656.0, 495.0 ],
+		"rect" : [ 218.0, 499.0, 656.0, 495.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1012,7 +1012,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver School Bus", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1220,6 +1220,27 @@
 						"title" : "untitled",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 355.25, 247.0, 77.0, 23.0 ],
+									"rnbo_classname" : "delay~",
+									"rnbo_extra_attributes" : 									{
+										"maxdelayms" : 0.0,
+										"interp" : "linear",
+										"ramp" : 50.0
+									}
+,
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "delay~_obj-2",
+									"text" : "delay~ 10 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-33",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
@@ -1228,12 +1249,12 @@
 									"patching_rect" : [ 55.25, 343.0, 229.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
-										"exposevoiceparams" : 0,
+										"args" : [  ],
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI"
+										"voicecontrol" : "MIDI",
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1579,7 +1600,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -843978785,
+										"versionId" : 1171694799,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -1727,7 +1748,7 @@
 										"aliasOf" : "gate~",
 										"classname" : "gate~",
 										"operator" : 0,
-										"versionId" : 1314142387,
+										"versionId" : 1654863393,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -1832,7 +1853,7 @@
 										"aliasOf" : "gate~",
 										"classname" : "gate~",
 										"operator" : 0,
-										"versionId" : 1314142387,
+										"versionId" : 1654863393,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -2048,19 +2069,19 @@
 									"patching_rect" : [ 468.25, 309.0, 227.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"minimum" : 0.0,
 										"ctlin" : 0.0,
+										"fromnormalized" : "",
+										"sendinit" : 1,
+										"enum" : "",
 										"meta" : "",
-										"tonormalized" : "",
+										"displayname" : "",
+										"maximum" : 1.0,
 										"unit" : "",
 										"order" : "",
-										"fromnormalized" : "",
-										"maximum" : 1.0,
-										"sendinit" : 1,
+										"tonormalized" : "",
+										"minimum" : 0.0,
 										"exponent" : 1.0,
-										"preset" : 1,
-										"displayname" : "",
-										"enum" : ""
+										"preset" : 1
 									}
 ,
 									"rnbo_serial" : 1,
@@ -2454,8 +2475,8 @@
 									"patching_rect" : [ 468.25, 271.5, 218.0, 23.0 ],
 									"rnbo_classname" : "splat~",
 									"rnbo_extra_attributes" : 									{
-										"channelmode" : "wrap",
 										"overdubmode" : "mix",
+										"channelmode" : "wrap",
 										"boundmode" : "wrap"
 									}
 ,
@@ -2574,9 +2595,9 @@
 									"rnbo_extra_attributes" : 									{
 										"receivemode" : "local",
 										"polyphony" : -1.0,
-										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI"
+										"voicecontrol" : "MIDI",
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 2,
@@ -2584,6 +2605,18 @@
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
 										"argnames" : 										{
+											"basefreq" : 											{
+												"attrOrProp" : 1,
+												"digest" : "basefreq",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number"
+											}
+,
 											"starttime" : 											{
 												"attrOrProp" : 1,
 												"digest" : "starttime",
@@ -2599,18 +2632,6 @@
 											"grainlength" : 											{
 												"attrOrProp" : 1,
 												"digest" : "grainlength",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number"
-											}
-,
-											"basefreq" : 											{
-												"attrOrProp" : 1,
-												"digest" : "basefreq",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -2895,7 +2916,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -843978785,
+										"versionId" : 1171694799,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -2916,8 +2937,8 @@
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
 										"fill" : "",
-										"type" : "",
-										"samplerate" : 0.0
+										"samplerate" : 0.0,
+										"type" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -3285,8 +3306,8 @@
 									"patching_rect" : [ 55.25, 132.0, 33.0, 23.0 ],
 									"rnbo_classname" : "mtof",
 									"rnbo_extra_attributes" : 									{
-										"filter" : 1.0,
-										"scalename" : ""
+										"scalename" : "",
+										"filter" : 1.0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -3583,16 +3604,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-34", 1 ],
-									"order" : 0,
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
-									"order" : 1,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -3613,7 +3625,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-33", 2 ],
+									"order" : 1,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -3630,6 +3651,13 @@
 									"destination" : [ "obj-29", 1 ],
 									"midpoints" : [ 477.75, 429.0, 723.0, 429.0, 723.0, 213.0, 723.0, 213.0, 723.0, 195.0, 645.25, 195.0 ],
 									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 1 ],
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -3809,16 +3837,16 @@
 ,
 					"patching_rect" : [ 58.0, 413.5, 173.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.939597315436231, 426.5, 175.0, 30.0 ],
+					"presentation_rect" : [ 256.939597315436231, 426.5, 173.0, 30.0 ],
 					"rnboattrcache" : 					{
-						"poly/granular/basefreq" : 						{
-							"label" : "basefreq",
+						"record" : 						{
+							"label" : "record",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"record" : 						{
-							"label" : "record",
+						"poly/env.adsr/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3829,14 +3857,32 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/granular/grainlength" : 						{
-							"label" : "grainlength",
+						"poly/env.adsr/sustain" : 						{
+							"label" : "sustain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
 						"poly/env.adsr/release" : 						{
 							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/granular/basefreq" : 						{
+							"label" : "basefreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/granular/starttime" : 						{
+							"label" : "starttime",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/granular/grainlength" : 						{
+							"label" : "grainlength",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3849,24 +3895,6 @@
 ,
 						"poly/granular/panpos" : 						{
 							"label" : "panpos",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/env.adsr/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/granular/starttime" : 						{
-							"label" : "starttime",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/env.adsr/sustain" : 						{
-							"label" : "sustain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3904,24 +3932,31 @@
 								"poly" : [ 									{
 										"__sps" : 										{
 											"granular" : 											{
-												"panpos" : 												{
-													"value" : 0.5
+												"__sps" : 												{
+													"p_obj-53" : 													{
+
+													}
+
 												}
 ,
 												"buffchan" : 												{
 													"value" : 0.0
 												}
 ,
-												"basefreq" : 												{
-													"value" : 261.625565410470642
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.1
+													"value" : 1.0
 												}
 ,
 												"starttime" : 												{
 													"value" : 0.0
+												}
+,
+												"basefreq" : 												{
+													"value" : 220.0
 												}
 
 											}
@@ -3936,7 +3971,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 30.0
+													"value" : 200.0
 												}
 ,
 												"attack" : 												{
@@ -3951,24 +3986,31 @@
 , 									{
 										"__sps" : 										{
 											"granular" : 											{
-												"panpos" : 												{
-													"value" : 0.5
+												"__sps" : 												{
+													"p_obj-53" : 													{
+
+													}
+
 												}
 ,
 												"buffchan" : 												{
 													"value" : 0.0
 												}
 ,
-												"basefreq" : 												{
-													"value" : 261.625565410470642
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.1
+													"value" : 1.0
 												}
 ,
 												"starttime" : 												{
 													"value" : 0.0
+												}
+,
+												"basefreq" : 												{
+													"value" : 220.0
 												}
 
 											}
@@ -3983,7 +4025,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 30.0
+													"value" : 200.0
 												}
 ,
 												"attack" : 												{
@@ -3998,24 +4040,31 @@
 , 									{
 										"__sps" : 										{
 											"granular" : 											{
-												"panpos" : 												{
-													"value" : 0.5
+												"__sps" : 												{
+													"p_obj-53" : 													{
+
+													}
+
 												}
 ,
 												"buffchan" : 												{
 													"value" : 0.0
 												}
 ,
-												"basefreq" : 												{
-													"value" : 261.625565410470642
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.1
+													"value" : 1.0
 												}
 ,
 												"starttime" : 												{
 													"value" : 0.0
+												}
+,
+												"basefreq" : 												{
+													"value" : 220.0
 												}
 
 											}
@@ -4030,7 +4079,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 30.0
+													"value" : 200.0
 												}
 ,
 												"attack" : 												{
@@ -4045,24 +4094,31 @@
 , 									{
 										"__sps" : 										{
 											"granular" : 											{
-												"panpos" : 												{
-													"value" : 0.5
+												"__sps" : 												{
+													"p_obj-53" : 													{
+
+													}
+
 												}
 ,
 												"buffchan" : 												{
 													"value" : 0.0
 												}
 ,
-												"basefreq" : 												{
-													"value" : 261.625565410470642
+												"panpos" : 												{
+													"value" : 0.5
 												}
 ,
 												"grainlength" : 												{
-													"value" : 0.1
+													"value" : 1.0
 												}
 ,
 												"starttime" : 												{
 													"value" : 0.0
+												}
+,
+												"basefreq" : 												{
+													"value" : 220.0
 												}
 
 											}
@@ -4077,7 +4133,7 @@
 												}
 ,
 												"decay" : 												{
-													"value" : 30.0
+													"value" : 200.0
 												}
 ,
 												"attack" : 												{
@@ -4115,24 +4171,31 @@
 											"poly" : [ 												{
 													"__sps" : 													{
 														"granular" : 														{
-															"panpos" : 															{
-																"value" : 0.5
+															"__sps" : 															{
+																"p_obj-53" : 																{
+
+																}
+
 															}
 ,
 															"buffchan" : 															{
 																"value" : 0.0
 															}
 ,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.1
+																"value" : 1.0
 															}
 ,
 															"starttime" : 															{
 																"value" : 0.0
+															}
+,
+															"basefreq" : 															{
+																"value" : 220.0
 															}
 
 														}
@@ -4147,7 +4210,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 30.0
+																"value" : 200.0
 															}
 ,
 															"attack" : 															{
@@ -4162,24 +4225,31 @@
 , 												{
 													"__sps" : 													{
 														"granular" : 														{
-															"panpos" : 															{
-																"value" : 0.5
+															"__sps" : 															{
+																"p_obj-53" : 																{
+
+																}
+
 															}
 ,
 															"buffchan" : 															{
 																"value" : 0.0
 															}
 ,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.1
+																"value" : 1.0
 															}
 ,
 															"starttime" : 															{
 																"value" : 0.0
+															}
+,
+															"basefreq" : 															{
+																"value" : 220.0
 															}
 
 														}
@@ -4194,7 +4264,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 30.0
+																"value" : 200.0
 															}
 ,
 															"attack" : 															{
@@ -4209,24 +4279,31 @@
 , 												{
 													"__sps" : 													{
 														"granular" : 														{
-															"panpos" : 															{
-																"value" : 0.5
+															"__sps" : 															{
+																"p_obj-53" : 																{
+
+																}
+
 															}
 ,
 															"buffchan" : 															{
 																"value" : 0.0
 															}
 ,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.1
+																"value" : 1.0
 															}
 ,
 															"starttime" : 															{
 																"value" : 0.0
+															}
+,
+															"basefreq" : 															{
+																"value" : 220.0
 															}
 
 														}
@@ -4241,7 +4318,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 30.0
+																"value" : 200.0
 															}
 ,
 															"attack" : 															{
@@ -4256,24 +4333,31 @@
 , 												{
 													"__sps" : 													{
 														"granular" : 														{
-															"panpos" : 															{
-																"value" : 0.5
+															"__sps" : 															{
+																"p_obj-53" : 																{
+
+																}
+
 															}
 ,
 															"buffchan" : 															{
 																"value" : 0.0
 															}
 ,
-															"basefreq" : 															{
-																"value" : 261.625565410470642
+															"panpos" : 															{
+																"value" : 0.5
 															}
 ,
 															"grainlength" : 															{
-																"value" : 0.1
+																"value" : 1.0
 															}
 ,
 															"starttime" : 															{
 																"value" : 0.0
+															}
+,
+															"basefreq" : 															{
+																"value" : 220.0
 															}
 
 														}
@@ -4288,7 +4372,7 @@
 															}
 ,
 															"decay" : 															{
-																"value" : 30.0
+																"value" : 200.0
 															}
 ,
 															"attack" : 															{
@@ -4312,10 +4396,10 @@
 ,
 									"fileref" : 									{
 										"name" : "untitled",
-										"filename" : "_20210819.maxsnap",
+										"filename" : "_20211025.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cffac49b6fe1547d63e042c99e66aa68"
+										"snapshotfileid" : "3d666bb493a9991bafaf220fe621f8b6"
 									}
 
 								}
@@ -4330,10 +4414,28 @@
 									"embed" : 0,
 									"fileref" : 									{
 										"name" : "untitled",
-										"filename" : "untitled.maxsnap",
+										"filename" : "untitled_20220912.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "36d88b6c9b76dd2c9a666330af2ad635"
+										"snapshotfileid" : "8f10b07bb0660bf92f0784ca568448ff"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "untitled",
+									"origin" : "9ee37473-ba62-11eb-b473-a683e7612c99",
+									"type" : "rnbo",
+									"subtype" : "",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "untitled",
+										"filename" : "_20210819.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "0add770c2e94273b1cfce5797606c080"
 									}
 
 								}
@@ -4850,13 +4952,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "_20211025.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "cello-f2.aif",
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "untitled.maxsnap",
+				"name" : "untitled_20220912.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
