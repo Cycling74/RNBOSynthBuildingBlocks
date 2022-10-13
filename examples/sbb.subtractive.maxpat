@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 123.0, 972.0, 493.0 ],
+		"rect" : [ 250.0, 364.0, 972.0, 493.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1741,7 +1741,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 84.0, 131.0, 640.0, 480.0 ],
+						"rect" : [ 1023.0, 351.0, 347.0, 318.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1771,43 +1771,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"attr" : "poly/oscillators/oscC/mode",
-									"id" : "obj-7",
-									"maxclass" : "attrui",
+									"id" : "obj-2",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 94.611111111111086, 238.0, 266.0, 22.0 ],
-									"text_width" : 191.180000000000007
+									"patching_rect" : [ 99.999996111111102, 162.0, 199.0, 22.0 ],
+									"text" : "prepend poly/oscillators/oscC/mode"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"attr" : "poly/oscillators/oscB/mode",
-									"id" : "obj-4",
-									"maxclass" : "attrui",
+									"id" : "obj-1",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 70.611111111111086, 162.0, 266.0, 22.0 ],
-									"text_width" : 191.180000000000007
+									"patching_rect" : [ 74.999996111111102, 128.0, 198.0, 22.0 ],
+									"text" : "prepend poly/oscillators/oscB/mode"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"attr" : "poly/oscillators/oscA/mode",
-									"id" : "obj-3",
-									"maxclass" : "attrui",
+									"id" : "obj-22",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 50.0, 100.0, 266.0, 22.0 ],
-									"text_width" : 191.180000000000007
+									"patching_rect" : [ 49.999996111111102, 94.0, 198.0, 22.0 ],
+									"text" : "prepend poly/oscillators/oscA/mode"
 								}
 
 							}
@@ -1858,7 +1852,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 65.740750111111083, 321.0, 30.0, 30.0 ]
+									"patching_rect" : [ 49.999996111111102, 232.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1866,42 +1860,42 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
-									"source" : [ "obj-3", 0 ]
+									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
-									"source" : [ "obj-4", 0 ]
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-54", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-45", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-52", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-53", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-54", 0 ],
-									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -2297,6 +2291,7 @@
 			}
 , 			{
 				"box" : 				{
+					"contdata" : 1,
 					"id" : "obj-13",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -2639,7 +2634,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver School Bus", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2874,12 +2869,12 @@
 									"patching_rect" : [ 124.0, 435.0, 206.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
-										"exposevoiceparams" : 0,
+										"args" : [  ],
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI"
+										"voicecontrol" : "MIDI",
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -3186,7 +3181,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -843978785,
+										"versionId" : 1171694799,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -3322,20 +3317,20 @@
 													"patching_rect" : [ 350.5, 43.0, 140.0, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 1,
@@ -3729,20 +3724,20 @@
 													"patching_rect" : [ 90.0, 27.0, 229.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 2,
@@ -4312,19 +4307,19 @@
 													"patching_rect" : [ 63.0, 101.0, 200.0, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
+														"meta" : "",
+														"displayname" : "",
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
 														"exponent" : 1.0,
-														"preset" : 1,
-														"displayname" : ""
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 3,
@@ -4855,7 +4850,7 @@
 														"aliasOf" : "gate~",
 														"classname" : "gate~",
 														"operator" : 0,
-														"versionId" : 1314142387,
+														"versionId" : 1654863393,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -5446,12 +5441,12 @@
 													"patching_rect" : [ 63.0, 300.0, 55.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "midi"
+														"voicecontrol" : "midi",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 1,
@@ -5711,7 +5706,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -6495,12 +6490,12 @@
 													"patching_rect" : [ 233.199999999999989, 300.0, 59.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "midi"
+														"voicecontrol" : "midi",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 2,
@@ -6760,7 +6755,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -7352,12 +7347,12 @@
 													"patching_rect" : [ 148.099999999999994, 300.0, 59.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "midi"
+														"voicecontrol" : "midi",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 3,
@@ -7617,7 +7612,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -8209,12 +8204,12 @@
 													"patching_rect" : [ 318.300000000000011, 300.0, 57.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "midi"
+														"voicecontrol" : "midi",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 4,
@@ -8474,7 +8469,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -8674,12 +8669,12 @@
 									"patching_rect" : [ 124.0, 356.0, 48.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
-										"exposevoiceparams" : 0,
+										"args" : [  ],
 										"notecontroller" : 0,
-										"voicecontrol" : "midi"
+										"voicecontrol" : "midi",
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 2,
@@ -8935,7 +8930,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -843978785,
+										"versionId" : 1171694799,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -9002,20 +8997,20 @@
 													"patching_rect" : [ 474.0, 375.0, 87.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 1,
@@ -9424,20 +9419,20 @@
 													"patching_rect" : [ 100.0, 458.0, 86.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 2,
@@ -9933,20 +9928,20 @@
 													"patching_rect" : [ 100.0, 257.0, 86.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 3,
@@ -10400,8 +10395,8 @@
 													"patching_rect" : [ 42.0, 68.0, 40.0, 23.0 ],
 													"rnbo_classname" : "mtof~",
 													"rnbo_extra_attributes" : 													{
-														"filter" : 1.0,
-														"scalename" : ""
+														"scalename" : "",
+														"filter" : 1.0
 													}
 ,
 													"rnbo_serial" : 1,
@@ -10580,20 +10575,20 @@
 													"patching_rect" : [ 472.5, 228.0, 233.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 4,
@@ -10987,20 +10982,20 @@
 													"patching_rect" : [ 100.0, 321.0, 233.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 5,
@@ -11394,20 +11389,20 @@
 													"patching_rect" : [ 100.0, 140.0, 233.0, 23.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
 														"ctlin" : 0.0,
-														"meta" : "",
-														"tonormalized" : "",
-														"steps" : 0.0,
-														"unit" : "",
-														"order" : "",
 														"fromnormalized" : "",
-														"maximum" : 1.0,
 														"sendinit" : 1,
-														"exponent" : 1.0,
-														"preset" : 1,
+														"enum" : "",
+														"meta" : "",
 														"displayname" : "",
-														"enum" : ""
+														"maximum" : 1.0,
+														"unit" : "",
+														"steps" : 0.0,
+														"order" : "",
+														"tonormalized" : "",
+														"minimum" : 0.0,
+														"exponent" : 1.0,
+														"preset" : 1
 													}
 ,
 													"rnbo_serial" : 6,
@@ -11992,12 +11987,12 @@
 													"patching_rect" : [ 462.0, 341.0, 208.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "MIDI"
+														"voicecontrol" : "MIDI",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 1,
@@ -12268,7 +12263,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -12287,12 +12282,12 @@
 													"patching_rect" : [ 42.0, 428.0, 204.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "MIDI"
+														"voicecontrol" : "MIDI",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 2,
@@ -12563,7 +12558,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -12582,12 +12577,12 @@
 													"patching_rect" : [ 42.0, 218.0, 205.0, 23.0 ],
 													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
-														"args" : [  ],
 														"receivemode" : "local",
 														"polyphony" : -1.0,
-														"exposevoiceparams" : 0,
+														"args" : [  ],
 														"notecontroller" : 0,
-														"voicecontrol" : "MIDI"
+														"voicecontrol" : "MIDI",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 3,
@@ -12858,7 +12853,7 @@
 														"aliasOf" : "rnbo",
 														"classname" : "p",
 														"operator" : 0,
-														"versionId" : -843978785,
+														"versionId" : 1171694799,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -13062,12 +13057,12 @@
 									"patching_rect" : [ 124.0, 311.0, 71.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
-										"exposevoiceparams" : 0,
+										"args" : [  ],
 										"notecontroller" : 0,
-										"voicecontrol" : "midi"
+										"voicecontrol" : "midi",
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 3,
@@ -13359,7 +13354,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -843978785,
+										"versionId" : 1171694799,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -13790,8 +13785,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 266.254194630872462, 419.5, 173.0, 30.0 ],
 					"rnboattrcache" : 					{
-						"poly/filters/resonance_mod" : 						{
-							"label" : "resonance_mod",
+						"poly/oscillators/detuneC" : 						{
+							"label" : "detuneC",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/env.adsr/sustain" : 						{
+							"label" : "sustain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -13802,56 +13803,8 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/oscillators/oscC/mode" : 						{
-							"label" : "mode",
-							"isEnum" : 1,
-							"parsestring" : "noise sine saw triangle square pulse"
-						}
-,
-						"poly/env.adsr/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/levelA" : 						{
-							"label" : "levelA",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/oscB/mode" : 						{
-							"label" : "mode",
-							"isEnum" : 1,
-							"parsestring" : "noise sine saw triangle square pulse"
-						}
-,
 						"poly/env.adsr/release" : 						{
 							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/detuneB" : 						{
-							"label" : "detuneB",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/detuneC" : 						{
-							"label" : "detuneC",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/env.adsr/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/oscillators/levelC" : 						{
-							"label" : "levelC",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -13862,14 +13815,14 @@
 							"parsestring" : ""
 						}
 ,
-						"poly/oscillators/oscA/mode" : 						{
-							"label" : "mode",
-							"isEnum" : 1,
-							"parsestring" : "noise sine saw triangle square pulse"
+						"poly/oscillators/levelA" : 						{
+							"label" : "levelA",
+							"isEnum" : 0,
+							"parsestring" : ""
 						}
 ,
-						"poly/env.adsr/sustain" : 						{
-							"label" : "sustain",
+						"poly/env.adsr/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -13880,10 +13833,52 @@
 							"parsestring" : ""
 						}
 ,
+						"poly/oscillators/detuneB" : 						{
+							"label" : "detuneB",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/filters/resonance_mod" : 						{
+							"label" : "resonance_mod",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/oscillators/levelC" : 						{
+							"label" : "levelC",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/env.adsr/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"poly/filters/filtertype" : 						{
 							"label" : "filtertype",
 							"isEnum" : 1,
 							"parsestring" : "lowpass highpass bandpass bandreject"
+						}
+,
+						"poly/oscillators/oscB/mode" : 						{
+							"label" : "mode",
+							"isEnum" : 1,
+							"parsestring" : "noise sine saw triangle square pulse"
+						}
+,
+						"poly/oscillators/oscA/mode" : 						{
+							"label" : "mode",
+							"isEnum" : 1,
+							"parsestring" : "noise sine saw triangle square pulse"
+						}
+,
+						"poly/oscillators/oscC/mode" : 						{
+							"label" : "mode",
+							"isEnum" : 1,
+							"parsestring" : "noise sine saw triangle square pulse"
 						}
 
 					}
@@ -13915,7 +13910,447 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
+							"__sps" : 							{
+								"poly" : [ 									{
+										"__sps" : 										{
+											"oscillators" : 											{
+												"levelC" : 												{
+													"value" : 0.880952380952381
+												}
+,
+												"detuneA" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"oscC" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
 
+													}
+,
+													"oscA" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscB" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+
+												}
+,
+												"detuneB" : 												{
+													"value" : 4.724409580230713
+												}
+,
+												"levelA" : 												{
+													"value" : 0.976190476190476
+												}
+,
+												"detuneC" : 												{
+													"value" : 6.299212455749512
+												}
+,
+												"levelB" : 												{
+													"value" : 0.845238095238095
+												}
+
+											}
+,
+											"filters" : 											{
+												"__sps" : 												{
+													"filter.br" : 													{
+
+													}
+,
+													"filter.hp" : 													{
+
+													}
+,
+													"filter.bp" : 													{
+
+													}
+,
+													"filter.lp" : 													{
+
+													}
+
+												}
+,
+												"cutoff" : 												{
+													"value" : 1104.70947265625
+												}
+,
+												"resonance_mod" : 												{
+													"value" : 0.709999978542328
+												}
+,
+												"filtertype" : 												{
+													"value" : 2.0
+												}
+
+											}
+,
+											"env.adsr" : 											{
+												"release" : 												{
+													"value" : 1000.0
+												}
+,
+												"sustain" : 												{
+													"value" : 0.5
+												}
+,
+												"decay" : 												{
+													"value" : 30.0
+												}
+,
+												"attack" : 												{
+													"value" : 30.0
+												}
+
+											}
+
+										}
+
+									}
+, 									{
+										"__sps" : 										{
+											"oscillators" : 											{
+												"levelC" : 												{
+													"value" : 0.880952380952381
+												}
+,
+												"detuneA" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"oscC" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscA" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscB" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+
+												}
+,
+												"detuneB" : 												{
+													"value" : 4.724409580230713
+												}
+,
+												"levelA" : 												{
+													"value" : 0.976190476190476
+												}
+,
+												"detuneC" : 												{
+													"value" : 6.299212455749512
+												}
+,
+												"levelB" : 												{
+													"value" : 0.845238095238095
+												}
+
+											}
+,
+											"filters" : 											{
+												"__sps" : 												{
+													"filter.br" : 													{
+
+													}
+,
+													"filter.hp" : 													{
+
+													}
+,
+													"filter.bp" : 													{
+
+													}
+,
+													"filter.lp" : 													{
+
+													}
+
+												}
+,
+												"cutoff" : 												{
+													"value" : 1104.70947265625
+												}
+,
+												"resonance_mod" : 												{
+													"value" : 0.709999978542328
+												}
+,
+												"filtertype" : 												{
+													"value" : 2.0
+												}
+
+											}
+,
+											"env.adsr" : 											{
+												"release" : 												{
+													"value" : 1000.0
+												}
+,
+												"sustain" : 												{
+													"value" : 0.5
+												}
+,
+												"decay" : 												{
+													"value" : 30.0
+												}
+,
+												"attack" : 												{
+													"value" : 30.0
+												}
+
+											}
+
+										}
+
+									}
+, 									{
+										"__sps" : 										{
+											"oscillators" : 											{
+												"levelC" : 												{
+													"value" : 0.880952380952381
+												}
+,
+												"detuneA" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"oscC" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscA" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscB" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+
+												}
+,
+												"detuneB" : 												{
+													"value" : 4.724409580230713
+												}
+,
+												"levelA" : 												{
+													"value" : 0.976190476190476
+												}
+,
+												"detuneC" : 												{
+													"value" : 6.299212455749512
+												}
+,
+												"levelB" : 												{
+													"value" : 0.845238095238095
+												}
+
+											}
+,
+											"filters" : 											{
+												"__sps" : 												{
+													"filter.br" : 													{
+
+													}
+,
+													"filter.hp" : 													{
+
+													}
+,
+													"filter.bp" : 													{
+
+													}
+,
+													"filter.lp" : 													{
+
+													}
+
+												}
+,
+												"cutoff" : 												{
+													"value" : 1104.70947265625
+												}
+,
+												"resonance_mod" : 												{
+													"value" : 0.709999978542328
+												}
+,
+												"filtertype" : 												{
+													"value" : 2.0
+												}
+
+											}
+,
+											"env.adsr" : 											{
+												"release" : 												{
+													"value" : 1000.0
+												}
+,
+												"sustain" : 												{
+													"value" : 0.5
+												}
+,
+												"decay" : 												{
+													"value" : 30.0
+												}
+,
+												"attack" : 												{
+													"value" : 30.0
+												}
+
+											}
+
+										}
+
+									}
+, 									{
+										"__sps" : 										{
+											"oscillators" : 											{
+												"levelC" : 												{
+													"value" : 0.880952380952381
+												}
+,
+												"detuneA" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"oscC" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscA" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+,
+													"oscB" : 													{
+														"mode" : 														{
+															"value" : 1.0
+														}
+
+													}
+
+												}
+,
+												"detuneB" : 												{
+													"value" : 4.724409580230713
+												}
+,
+												"levelA" : 												{
+													"value" : 0.976190476190476
+												}
+,
+												"detuneC" : 												{
+													"value" : 6.299212455749512
+												}
+,
+												"levelB" : 												{
+													"value" : 0.845238095238095
+												}
+
+											}
+,
+											"filters" : 											{
+												"__sps" : 												{
+													"filter.br" : 													{
+
+													}
+,
+													"filter.hp" : 													{
+
+													}
+,
+													"filter.bp" : 													{
+
+													}
+,
+													"filter.lp" : 													{
+
+													}
+
+												}
+,
+												"cutoff" : 												{
+													"value" : 1104.70947265625
+												}
+,
+												"resonance_mod" : 												{
+													"value" : 0.709999978542328
+												}
+,
+												"filtertype" : 												{
+													"value" : 2.0
+												}
+
+											}
+,
+											"env.adsr" : 											{
+												"release" : 												{
+													"value" : 1000.0
+												}
+,
+												"sustain" : 												{
+													"value" : 0.5
+												}
+,
+												"decay" : 												{
+													"value" : 30.0
+												}
+,
+												"attack" : 												{
+													"value" : 30.0
+												}
+
+											}
+
+										}
+
+									}
+ ]
+							}
+,
+							"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
 						}
 ,
 						"snapshotlist" : 						{
@@ -13930,7 +14365,447 @@
 									"subtype" : "",
 									"embed" : 1,
 									"snapshot" : 									{
+										"__sps" : 										{
+											"poly" : [ 												{
+													"__sps" : 													{
+														"oscillators" : 														{
+															"levelC" : 															{
+																"value" : 0.880952380952381
+															}
+,
+															"detuneA" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"oscC" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
 
+																}
+,
+																"oscA" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscB" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+
+															}
+,
+															"detuneB" : 															{
+																"value" : 4.724409580230713
+															}
+,
+															"levelA" : 															{
+																"value" : 0.976190476190476
+															}
+,
+															"detuneC" : 															{
+																"value" : 6.299212455749512
+															}
+,
+															"levelB" : 															{
+																"value" : 0.845238095238095
+															}
+
+														}
+,
+														"filters" : 														{
+															"__sps" : 															{
+																"filter.br" : 																{
+
+																}
+,
+																"filter.hp" : 																{
+
+																}
+,
+																"filter.bp" : 																{
+
+																}
+,
+																"filter.lp" : 																{
+
+																}
+
+															}
+,
+															"cutoff" : 															{
+																"value" : 1104.70947265625
+															}
+,
+															"resonance_mod" : 															{
+																"value" : 0.709999978542328
+															}
+,
+															"filtertype" : 															{
+																"value" : 2.0
+															}
+
+														}
+,
+														"env.adsr" : 														{
+															"release" : 															{
+																"value" : 1000.0
+															}
+,
+															"sustain" : 															{
+																"value" : 0.5
+															}
+,
+															"decay" : 															{
+																"value" : 30.0
+															}
+,
+															"attack" : 															{
+																"value" : 30.0
+															}
+
+														}
+
+													}
+
+												}
+, 												{
+													"__sps" : 													{
+														"oscillators" : 														{
+															"levelC" : 															{
+																"value" : 0.880952380952381
+															}
+,
+															"detuneA" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"oscC" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscA" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscB" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+
+															}
+,
+															"detuneB" : 															{
+																"value" : 4.724409580230713
+															}
+,
+															"levelA" : 															{
+																"value" : 0.976190476190476
+															}
+,
+															"detuneC" : 															{
+																"value" : 6.299212455749512
+															}
+,
+															"levelB" : 															{
+																"value" : 0.845238095238095
+															}
+
+														}
+,
+														"filters" : 														{
+															"__sps" : 															{
+																"filter.br" : 																{
+
+																}
+,
+																"filter.hp" : 																{
+
+																}
+,
+																"filter.bp" : 																{
+
+																}
+,
+																"filter.lp" : 																{
+
+																}
+
+															}
+,
+															"cutoff" : 															{
+																"value" : 1104.70947265625
+															}
+,
+															"resonance_mod" : 															{
+																"value" : 0.709999978542328
+															}
+,
+															"filtertype" : 															{
+																"value" : 2.0
+															}
+
+														}
+,
+														"env.adsr" : 														{
+															"release" : 															{
+																"value" : 1000.0
+															}
+,
+															"sustain" : 															{
+																"value" : 0.5
+															}
+,
+															"decay" : 															{
+																"value" : 30.0
+															}
+,
+															"attack" : 															{
+																"value" : 30.0
+															}
+
+														}
+
+													}
+
+												}
+, 												{
+													"__sps" : 													{
+														"oscillators" : 														{
+															"levelC" : 															{
+																"value" : 0.880952380952381
+															}
+,
+															"detuneA" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"oscC" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscA" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscB" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+
+															}
+,
+															"detuneB" : 															{
+																"value" : 4.724409580230713
+															}
+,
+															"levelA" : 															{
+																"value" : 0.976190476190476
+															}
+,
+															"detuneC" : 															{
+																"value" : 6.299212455749512
+															}
+,
+															"levelB" : 															{
+																"value" : 0.845238095238095
+															}
+
+														}
+,
+														"filters" : 														{
+															"__sps" : 															{
+																"filter.br" : 																{
+
+																}
+,
+																"filter.hp" : 																{
+
+																}
+,
+																"filter.bp" : 																{
+
+																}
+,
+																"filter.lp" : 																{
+
+																}
+
+															}
+,
+															"cutoff" : 															{
+																"value" : 1104.70947265625
+															}
+,
+															"resonance_mod" : 															{
+																"value" : 0.709999978542328
+															}
+,
+															"filtertype" : 															{
+																"value" : 2.0
+															}
+
+														}
+,
+														"env.adsr" : 														{
+															"release" : 															{
+																"value" : 1000.0
+															}
+,
+															"sustain" : 															{
+																"value" : 0.5
+															}
+,
+															"decay" : 															{
+																"value" : 30.0
+															}
+,
+															"attack" : 															{
+																"value" : 30.0
+															}
+
+														}
+
+													}
+
+												}
+, 												{
+													"__sps" : 													{
+														"oscillators" : 														{
+															"levelC" : 															{
+																"value" : 0.880952380952381
+															}
+,
+															"detuneA" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"oscC" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscA" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+,
+																"oscB" : 																{
+																	"mode" : 																	{
+																		"value" : 1.0
+																	}
+
+																}
+
+															}
+,
+															"detuneB" : 															{
+																"value" : 4.724409580230713
+															}
+,
+															"levelA" : 															{
+																"value" : 0.976190476190476
+															}
+,
+															"detuneC" : 															{
+																"value" : 6.299212455749512
+															}
+,
+															"levelB" : 															{
+																"value" : 0.845238095238095
+															}
+
+														}
+,
+														"filters" : 														{
+															"__sps" : 															{
+																"filter.br" : 																{
+
+																}
+,
+																"filter.hp" : 																{
+
+																}
+,
+																"filter.bp" : 																{
+
+																}
+,
+																"filter.lp" : 																{
+
+																}
+
+															}
+,
+															"cutoff" : 															{
+																"value" : 1104.70947265625
+															}
+,
+															"resonance_mod" : 															{
+																"value" : 0.709999978542328
+															}
+,
+															"filtertype" : 															{
+																"value" : 2.0
+															}
+
+														}
+,
+														"env.adsr" : 														{
+															"release" : 															{
+																"value" : 1000.0
+															}
+,
+															"sustain" : 															{
+																"value" : 0.5
+															}
+,
+															"decay" : 															{
+																"value" : 30.0
+															}
+,
+															"attack" : 															{
+																"value" : 30.0
+															}
+
+														}
+
+													}
+
+												}
+ ]
+										}
+,
+										"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
 									}
 ,
 									"fileref" : 									{
@@ -13938,7 +14813,7 @@
 										"filename" : "_20210819.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "cffac49b6fe1547d63e042c99e66aa68"
+										"snapshotfileid" : "0add770c2e94273b1cfce5797606c080"
 									}
 
 								}
@@ -13953,10 +14828,28 @@
 									"embed" : 0,
 									"fileref" : 									{
 										"name" : "untitled",
-										"filename" : "untitled.maxsnap",
+										"filename" : "_20211025.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "36d88b6c9b76dd2c9a666330af2ad635"
+										"snapshotfileid" : "3d666bb493a9991bafaf220fe621f8b6"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "untitled",
+									"origin" : "9ee37473-ba62-11eb-b473-a683e7612c99",
+									"type" : "rnbo",
+									"subtype" : "",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "untitled",
+										"filename" : "untitled_20220912.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "8f10b07bb0660bf92f0784ca568448ff"
 									}
 
 								}
@@ -14216,7 +15109,7 @@
 					"patching_rect" : [ 1011.5, 501.608105897903386, 256.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 272.939597315436231, 161.0, 211.0, 99.0 ],
-					"setfilter" : [ 0, 1, 0, 0, 0, 166.415664672851562, 1.0, 0.480787396430969, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 3, 0, 0, 0, 576.914794921875, 1.0, 0.709999978542328, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -14715,7 +15608,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "untitled.maxsnap",
+				"name" : "_20211025.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "untitled_20220912.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
