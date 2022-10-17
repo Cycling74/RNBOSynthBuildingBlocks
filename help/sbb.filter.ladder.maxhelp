@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 124.0, 184.0, 417.0, 413.0 ],
+		"rect" : [ 100.0, 100.0, 417.0, 413.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -223,7 +223,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 26.0, 53.0, 71.0, 20.0 ],
+					"patching_rect" : [ 26.0, 53.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -242,7 +242,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 20.0, 66.0, 20.0 ],
+					"patching_rect" : [ 26.0, 20.0, 66.0, 22.0 ],
 					"text" : "sbb.filter.lp"
 				}
 
@@ -255,7 +255,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 91.0, 382.0, 19.0 ],
+					"patching_rect" : [ 26.0, 91.0, 382.0, 22.0 ],
 					"text" : "A biquad lowpass filter."
 				}
 
@@ -281,7 +281,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.5, 244.0, 43.0, 25.0 ],
+					"patching_rect" : [ 21.5, 244.0, 43.0, 24.0 ],
 					"text" : "dac~"
 				}
 
@@ -320,7 +320,7 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 124.0, 210.0, 417.0, 387.0 ],
+						"rect" : [ 100.0, 126.0, 417.0, 387.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -376,7 +376,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 164.5, 124.0, 112.0, 40.0 ],
+									"patching_rect" : [ 164.5, 124.0, 95.0, 40.0 ],
 									"text" : "center freq (Hz)",
 									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
 								}
@@ -390,6 +390,8 @@
 									"id" : "obj-7",
 									"interval" : 100.0,
 									"maxclass" : "number~",
+									"maximum" : 10.0,
+									"minimum" : 0.0,
 									"mode" : 1,
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -414,6 +416,8 @@
 									"id" : "obj-6",
 									"interval" : 100.0,
 									"maxclass" : "number~",
+									"maximum" : 21000.0,
+									"minimum" : 20.0,
 									"mode" : 1,
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -440,12 +444,12 @@
 									"patching_rect" : [ 90.0, 217.0, 204.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"polyphony" : -1.0,
 										"receivemode" : "local",
 										"args" : [  ],
-										"exposevoiceparams" : 0,
+										"polyphony" : -1.0,
+										"notecontroller" : 0,
 										"voicecontrol" : "MIDI",
-										"notecontroller" : 0
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -753,7 +757,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 62.0, 382.0, 19.0 ],
+									"patching_rect" : [ 10.0, 62.0, 382.0, 22.0 ],
 									"text" : "A ladder filter emulation"
 								}
 
@@ -773,8 +777,8 @@
 									"rnbo_classname" : "gain~",
 									"rnbo_extra_attributes" : 									{
 										"size" : 158.0,
-										"inc" : 1.072,
 										"scale" : 7.943,
+										"inc" : 1.072,
 										"order" : "",
 										"preset" : 0,
 										"value" : 0.0
@@ -795,7 +799,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 89.0, 314.0, 55.0, 25.0 ],
+									"patching_rect" : [ 89.0, 314.0, 55.0, 24.0 ],
 									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
 										"meta" : "",
@@ -893,7 +897,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 10.0, 313.0, 51.0 ],
+									"patching_rect" : [ 10.0, 10.0, 313.0, 50.0 ],
 									"text" : "sbb.filter.ladder"
 								}
 
@@ -980,7 +984,7 @@
 
 					}
 ,
-					"rnboversion" : "0.18.0-dev",
+					"rnboversion" : "1.1.0-dev",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1055,7 +1059,25 @@
 										"filename" : "basic.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "94674db7af218613b7d59efb09c22850"
+										"snapshotfileid" : "4b77aa0e287ec185ed01558bd40388be"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "basic",
+									"origin" : "basic",
+									"type" : "rnbo",
+									"subtype" : "",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "basic",
+										"filename" : "basic.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "4b77aa0e287ec185ed01558bd40388be"
 									}
 
 								}
@@ -1123,38 +1145,6 @@
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "comment.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "dac~.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "dict.unpack.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "loadmess.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "message.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "prepend.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "rnbo~.mxl_x86_64",
-				"type" : "ELFX"
-			}
-, 			{
-				"name" : "zl.mxl_x86_64",
-				"type" : "ELFX"
 			}
  ],
 		"autosave" : 0,
