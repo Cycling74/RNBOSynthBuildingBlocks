@@ -1,7 +1,7 @@
 {
 	"name" : "RNBO Synth Building Blocks",
 	"displayname" : "",
-	"version" : "1.1.0",
+	"version" : "1.1.1",
 	"author" : "Cycling '74",
 	"authors" : [  ],
 	"description" : "A set of handy abstractions and instructive examples for building synthesizers in RNBO.",
@@ -21,8 +21,7 @@
 			"min_version" : "7",
 			"platform" : [ "x64" ]
 		}
-
 	}
 ,
-	"homepatcher" : "Synth Building Blocks.maxpat",
+	"homepatcher" : "Synth Building Blocks.maxpat"
 }
