@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 92.0, 129.0, 680.0, 529.0 ],
+		"rect" : [ 91.0, 129.0, 680.0, 529.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -247,7 +247,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -288,8 +288,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 101.0, 166.0, 183.0, 22.0 ],
-									"text" : "prepend poly/p_obj-3/right_delay"
+									"patching_rect" : [ 101.0, 166.0, 212.0, 22.0 ],
+									"text" : "prepend poly/stereo_delay/right_delay"
 								}
 
 							}
@@ -300,8 +300,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 81.0, 131.0, 176.0, 22.0 ],
-									"text" : "prepend poly/p_obj-3/left_delay"
+									"patching_rect" : [ 81.0, 131.0, 205.0, 22.0 ],
+									"text" : "prepend poly/stereo_delay/left_delay"
 								}
 
 							}
@@ -312,8 +312,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.5, 93.0, 139.0, 22.0 ],
-									"text" : "prepend poly/p_obj-3/fb"
+									"patching_rect" : [ 27.5, 93.0, 163.0, 22.0 ],
+									"text" : "prepend poly/stereo_delay/fb"
 								}
 
 							}
@@ -902,13 +902,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 0,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 773.0, 470.0, 536.0, 669.0 ],
+						"rect" : [ 736.0, 270.0, 536.0, 669.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -947,9 +947,9 @@
 									"patching_rect" : [ 56.25, 112.0, 130.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"args" : [  ],
 										"voicecontrol" : "MIDI",
 										"exposevoiceparams" : 0,
 										"notecontroller" : 0
@@ -1109,7 +1109,7 @@
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -1199,7 +1199,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : 1171694799,
+										"versionId" : 2039458657,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -1219,13 +1219,13 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 0,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "rnbo",
-										"rect" : [ 368.0, 251.0, 612.0, 348.0 ],
+										"rect" : [ 367.0, 250.0, 612.0, 348.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1253,7 +1253,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"title" : "untitled",
+										"title" : "stereo_delay",
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -1321,20 +1321,19 @@
 													"patching_rect" : [ 59.0, 111.916870000000017, 164.0, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
+														"enum" : "",
+														"meta" : "",
+														"tonormalized" : "",
+														"exponent" : 1.0,
 														"preset" : 1,
 														"unit" : "",
-														"enum" : "",
-														"tonormalized" : "",
-														"order" : "0",
-														"steps" : 0.0,
-														"ctlin" : 0.0,
-														"meta" : "",
-														"displayname" : "",
-														"exponent" : 1.0,
-														"maximum" : 1.0,
 														"fromnormalized" : "",
-														"sendinit" : 1
+														"ctlin" : 0.0,
+														"steps" : 0.0,
+														"displayorder" : "-",
+														"displayname" : "",
+														"sendinit" : 1,
+														"order" : "0"
 													}
 ,
 													"rnbo_serial" : 1,
@@ -1514,26 +1513,23 @@
 																"displayorder" : 8
 															}
 ,
+															"displayName" : 															{
+																"attrOrProp" : 2,
+																"digest" : "DEPRECATED: Use the lower case 'displayname' instead",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 1,
+																"type" : "symbol",
+																"label" : "Display Name"
+															}
+,
 															"displayname" : 															{
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the parameter in an external RNBO target",
 																"isalias" : 0,
-																"aliases" : [ "displayName" ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : "",
-																"label" : "Display Name",
-																"displayorder" : 13
-															}
-,
-															"displayName" : 															{
-																"attrOrProp" : 2,
-																"digest" : "A more readable name for the parameter in an external RNBO target",
-																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -1542,7 +1538,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Display Name",
-																"displayorder" : 13
+																"displayorder" : 14
 															}
 ,
 															"unit" : 															{
@@ -1557,7 +1553,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Unit",
-																"displayorder" : 14
+																"displayorder" : 15
 															}
 ,
 															"tonormalized" : 															{
@@ -1603,6 +1599,21 @@
 																"displayorder" : 12
 															}
 ,
+															"displayorder" : 															{
+																"attrOrProp" : 2,
+																"digest" : "Order in which parameters will show up in a list of all parameters. The order can be numeric or symbolic ('first' and 'last')",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 0,
+																"type" : "symbol",
+																"defaultValue" : "-",
+																"label" : "Display Order",
+																"displayorder" : 13
+															}
+,
 															"sendinit" : 															{
 																"attrOrProp" : 2,
 																"digest" : "Send initial value",
@@ -1629,7 +1640,7 @@
 																"deprecated" : 0,
 																"type" : "number",
 																"label" : "MIDI Controller Number.",
-																"displayorder" : 15
+																"displayorder" : 16
 															}
 ,
 															"meta" : 															{
@@ -1644,7 +1655,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Metadata",
-																"displayorder" : 16
+																"displayorder" : 17
 															}
 ,
 															"nopreset" : 															{
@@ -1709,7 +1720,7 @@
 														"aliasOf" : "param",
 														"classname" : "param",
 														"operator" : 0,
-														"versionId" : -723066504,
+														"versionId" : -1696900560,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -1729,20 +1740,19 @@
 													"patching_rect" : [ 282.0, 18.0, 133.0, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
+														"enum" : "",
+														"meta" : "",
+														"tonormalized" : "",
+														"exponent" : 1.0,
 														"preset" : 1,
 														"unit" : "",
-														"enum" : "",
-														"tonormalized" : "",
-														"order" : "0",
-														"steps" : 0.0,
-														"ctlin" : 0.0,
-														"meta" : "",
-														"displayname" : "",
-														"exponent" : 1.0,
-														"maximum" : 1.0,
 														"fromnormalized" : "",
-														"sendinit" : 1
+														"ctlin" : 0.0,
+														"steps" : 0.0,
+														"displayorder" : "-",
+														"displayname" : "",
+														"sendinit" : 1,
+														"order" : "0"
 													}
 ,
 													"rnbo_serial" : 2,
@@ -1922,26 +1932,23 @@
 																"displayorder" : 8
 															}
 ,
+															"displayName" : 															{
+																"attrOrProp" : 2,
+																"digest" : "DEPRECATED: Use the lower case 'displayname' instead",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 1,
+																"type" : "symbol",
+																"label" : "Display Name"
+															}
+,
 															"displayname" : 															{
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the parameter in an external RNBO target",
 																"isalias" : 0,
-																"aliases" : [ "displayName" ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : "",
-																"label" : "Display Name",
-																"displayorder" : 13
-															}
-,
-															"displayName" : 															{
-																"attrOrProp" : 2,
-																"digest" : "A more readable name for the parameter in an external RNBO target",
-																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -1950,7 +1957,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Display Name",
-																"displayorder" : 13
+																"displayorder" : 14
 															}
 ,
 															"unit" : 															{
@@ -1965,7 +1972,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Unit",
-																"displayorder" : 14
+																"displayorder" : 15
 															}
 ,
 															"tonormalized" : 															{
@@ -2011,6 +2018,21 @@
 																"displayorder" : 12
 															}
 ,
+															"displayorder" : 															{
+																"attrOrProp" : 2,
+																"digest" : "Order in which parameters will show up in a list of all parameters. The order can be numeric or symbolic ('first' and 'last')",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 0,
+																"type" : "symbol",
+																"defaultValue" : "-",
+																"label" : "Display Order",
+																"displayorder" : 13
+															}
+,
 															"sendinit" : 															{
 																"attrOrProp" : 2,
 																"digest" : "Send initial value",
@@ -2037,7 +2059,7 @@
 																"deprecated" : 0,
 																"type" : "number",
 																"label" : "MIDI Controller Number.",
-																"displayorder" : 15
+																"displayorder" : 16
 															}
 ,
 															"meta" : 															{
@@ -2052,7 +2074,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Metadata",
-																"displayorder" : 16
+																"displayorder" : 17
 															}
 ,
 															"nopreset" : 															{
@@ -2117,7 +2139,7 @@
 														"aliasOf" : "param",
 														"classname" : "param",
 														"operator" : 0,
-														"versionId" : -723066504,
+														"versionId" : -1696900560,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -2137,20 +2159,19 @@
 													"patching_rect" : [ 358.0, 111.916870000000017, 174.438874000000055, 37.0 ],
 													"rnbo_classname" : "param",
 													"rnbo_extra_attributes" : 													{
-														"minimum" : 0.0,
+														"enum" : "",
+														"meta" : "",
+														"tonormalized" : "",
+														"exponent" : 1.0,
 														"preset" : 1,
 														"unit" : "",
-														"enum" : "",
-														"tonormalized" : "",
-														"order" : "0",
-														"steps" : 0.0,
-														"ctlin" : 0.0,
-														"meta" : "",
-														"displayname" : "",
-														"exponent" : 1.0,
-														"maximum" : 1.0,
 														"fromnormalized" : "",
-														"sendinit" : 1
+														"ctlin" : 0.0,
+														"steps" : 0.0,
+														"displayorder" : "-",
+														"displayname" : "",
+														"sendinit" : 1,
+														"order" : "0"
 													}
 ,
 													"rnbo_serial" : 3,
@@ -2330,26 +2351,23 @@
 																"displayorder" : 8
 															}
 ,
+															"displayName" : 															{
+																"attrOrProp" : 2,
+																"digest" : "DEPRECATED: Use the lower case 'displayname' instead",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 1,
+																"type" : "symbol",
+																"label" : "Display Name"
+															}
+,
 															"displayname" : 															{
 																"attrOrProp" : 2,
 																"digest" : "A more readable name for the parameter in an external RNBO target",
 																"isalias" : 0,
-																"aliases" : [ "displayName" ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : "",
-																"label" : "Display Name",
-																"displayorder" : 13
-															}
-,
-															"displayName" : 															{
-																"attrOrProp" : 2,
-																"digest" : "A more readable name for the parameter in an external RNBO target",
-																"isalias" : 1,
-																"aliasOf" : "displayname",
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
@@ -2358,7 +2376,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Display Name",
-																"displayorder" : 13
+																"displayorder" : 14
 															}
 ,
 															"unit" : 															{
@@ -2373,7 +2391,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Unit",
-																"displayorder" : 14
+																"displayorder" : 15
 															}
 ,
 															"tonormalized" : 															{
@@ -2419,6 +2437,21 @@
 																"displayorder" : 12
 															}
 ,
+															"displayorder" : 															{
+																"attrOrProp" : 2,
+																"digest" : "Order in which parameters will show up in a list of all parameters. The order can be numeric or symbolic ('first' and 'last')",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 0,
+																"type" : "symbol",
+																"defaultValue" : "-",
+																"label" : "Display Order",
+																"displayorder" : 13
+															}
+,
 															"sendinit" : 															{
 																"attrOrProp" : 2,
 																"digest" : "Send initial value",
@@ -2445,7 +2478,7 @@
 																"deprecated" : 0,
 																"type" : "number",
 																"label" : "MIDI Controller Number.",
-																"displayorder" : 15
+																"displayorder" : 16
 															}
 ,
 															"meta" : 															{
@@ -2460,7 +2493,7 @@
 																"type" : "symbol",
 																"defaultValue" : "",
 																"label" : "Metadata",
-																"displayorder" : 16
+																"displayorder" : 17
 															}
 ,
 															"nopreset" : 															{
@@ -2525,7 +2558,7 @@
 														"aliasOf" : "param",
 														"classname" : "param",
 														"operator" : 0,
-														"versionId" : -723066504,
+														"versionId" : -1696900560,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -2582,8 +2615,8 @@
 													"patching_rect" : [ 501.0, 167.916870000000017, 35.0, 23.0 ],
 													"rnbo_classname" : "in~",
 													"rnbo_extra_attributes" : 													{
-														"comment" : "",
-														"meta" : ""
+														"meta" : "",
+														"comment" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -2745,7 +2778,7 @@
 														"aliasOf" : "feedback~",
 														"classname" : "feedback~",
 														"operator" : 0,
-														"versionId" : -1926392360,
+														"versionId" : -653846986,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -2763,8 +2796,8 @@
 													"patching_rect" : [ 358.0, 238.458435000000009, 104.0, 23.0 ],
 													"rnbo_classname" : "delay~",
 													"rnbo_extra_attributes" : 													{
-														"maxdelayms" : 0.0,
 														"ramp" : 50.0,
+														"maxdelayms" : 0.0,
 														"interp" : "linear"
 													}
 ,
@@ -2783,8 +2816,8 @@
 													"patching_rect" : [ 499.0, 285.958435000000009, 43.0, 23.0 ],
 													"rnbo_classname" : "out~",
 													"rnbo_extra_attributes" : 													{
-														"comment" : "",
-														"meta" : ""
+														"meta" : "",
+														"comment" : ""
 													}
 ,
 													"rnbo_serial" : 1,
@@ -2947,7 +2980,7 @@
 														"aliasOf" : "feedback~",
 														"classname" : "feedback~",
 														"operator" : 0,
-														"versionId" : -1926392360,
+														"versionId" : -653846986,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -2965,8 +2998,8 @@
 													"patching_rect" : [ 45.0, 243.5, 104.0, 23.0 ],
 													"rnbo_classname" : "delay~",
 													"rnbo_extra_attributes" : 													{
-														"maxdelayms" : 0.0,
 														"ramp" : 50.0,
+														"maxdelayms" : 0.0,
 														"interp" : "linear"
 													}
 ,
@@ -2985,8 +3018,8 @@
 													"patching_rect" : [ 186.0, 285.0, 43.0, 23.0 ],
 													"rnbo_classname" : "out~",
 													"rnbo_extra_attributes" : 													{
-														"comment" : "",
-														"meta" : ""
+														"meta" : "",
+														"comment" : ""
 													}
 ,
 													"rnbo_serial" : 2,
@@ -3082,8 +3115,8 @@
 													"patching_rect" : [ 188.0, 155.0, 35.0, 23.0 ],
 													"rnbo_classname" : "in~",
 													"rnbo_extra_attributes" : 													{
-														"comment" : "",
-														"meta" : ""
+														"meta" : "",
+														"comment" : ""
 													}
 ,
 													"rnbo_serial" : 2,
@@ -3332,16 +3365,16 @@
 									"patching_rect" : [ 54.75, 579.0, 85.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"args" : [  ],
 										"voicecontrol" : "simple",
 										"exposevoiceparams" : 0,
 										"notecontroller" : 0
 									}
 ,
 									"rnbo_serial" : 2,
-									"rnbo_uniqueid" : "p_obj-3",
+									"rnbo_uniqueid" : "stereo_delay",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
 										"argnames" : 										{
@@ -3530,7 +3563,7 @@
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -3612,11 +3645,12 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : 1171694799,
+										"versionId" : 2039458657,
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "p stereo_delay"
+									"text" : "p stereo_delay",
+									"varname" : "stereo_delay"
 								}
 
 							}
@@ -3645,21 +3679,20 @@
 									"patching_rect" : [ 288.0, 352.0, 174.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"minimum" : 0.0,
+										"enum" : "",
+										"meta" : "",
+										"tonormalized" : "",
+										"exponent" : 1.0,
 										"preset" : 1,
 										"unit" : "",
-										"enum" : "",
-										"value" : 0.0,
-										"tonormalized" : "",
-										"order" : "0",
-										"steps" : 0.0,
-										"ctlin" : 0.0,
-										"meta" : "",
-										"displayname" : "",
-										"exponent" : 1.0,
-										"maximum" : 1.0,
 										"fromnormalized" : "",
-										"sendinit" : 1
+										"value" : 0.0,
+										"ctlin" : 0.0,
+										"steps" : 0.0,
+										"displayorder" : "-",
+										"displayname" : "",
+										"sendinit" : 1,
+										"order" : "0"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -3839,26 +3872,23 @@
 												"displayorder" : 8
 											}
 ,
+											"displayName" : 											{
+												"attrOrProp" : 2,
+												"digest" : "DEPRECATED: Use the lower case 'displayname' instead",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 1,
+												"type" : "symbol",
+												"label" : "Display Name"
+											}
+,
 											"displayname" : 											{
 												"attrOrProp" : 2,
 												"digest" : "A more readable name for the parameter in an external RNBO target",
 												"isalias" : 0,
-												"aliases" : [ "displayName" ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Display Name",
-												"displayorder" : 13
-											}
-,
-											"displayName" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A more readable name for the parameter in an external RNBO target",
-												"isalias" : 1,
-												"aliasOf" : "displayname",
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 0,
@@ -3867,7 +3897,7 @@
 												"type" : "symbol",
 												"defaultValue" : "",
 												"label" : "Display Name",
-												"displayorder" : 13
+												"displayorder" : 14
 											}
 ,
 											"unit" : 											{
@@ -3882,7 +3912,7 @@
 												"type" : "symbol",
 												"defaultValue" : "",
 												"label" : "Unit",
-												"displayorder" : 14
+												"displayorder" : 15
 											}
 ,
 											"tonormalized" : 											{
@@ -3928,6 +3958,21 @@
 												"displayorder" : 12
 											}
 ,
+											"displayorder" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Order in which parameters will show up in a list of all parameters. The order can be numeric or symbolic ('first' and 'last')",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "-",
+												"label" : "Display Order",
+												"displayorder" : 13
+											}
+,
 											"sendinit" : 											{
 												"attrOrProp" : 2,
 												"digest" : "Send initial value",
@@ -3954,7 +3999,7 @@
 												"deprecated" : 0,
 												"type" : "number",
 												"label" : "MIDI Controller Number.",
-												"displayorder" : 15
+												"displayorder" : 16
 											}
 ,
 											"meta" : 											{
@@ -3969,7 +4014,7 @@
 												"type" : "symbol",
 												"defaultValue" : "",
 												"label" : "Metadata",
-												"displayorder" : 16
+												"displayorder" : 17
 											}
 ,
 											"nopreset" : 											{
@@ -4034,7 +4079,7 @@
 										"aliasOf" : "param",
 										"classname" : "param",
 										"operator" : 0,
-										"versionId" : -723066504,
+										"versionId" : -1696900560,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -4052,8 +4097,8 @@
 									"patching_rect" : [ 120.75, 614.0, 43.0, 23.0 ],
 									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
-										"comment" : "",
-										"meta" : ""
+										"meta" : "",
+										"comment" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -4149,9 +4194,9 @@
 									"patching_rect" : [ 56.25, 492.0, 123.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"args" : [  ],
 										"voicecontrol" : "simple",
 										"exposevoiceparams" : 0,
 										"notecontroller" : 0
@@ -4371,7 +4416,7 @@
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -4454,7 +4499,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : 1171694799,
+										"versionId" : 2039458657,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -4503,9 +4548,9 @@
 									"patching_rect" : [ 56.25, 426.0, 251.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"args" : [  ],
 										"receivemode" : "local",
 										"polyphony" : -1.0,
+										"args" : [  ],
 										"voicecontrol" : "MIDI",
 										"exposevoiceparams" : 0,
 										"notecontroller" : 0
@@ -4677,7 +4722,7 @@
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -4760,7 +4805,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : 1171694799,
+										"versionId" : 2039458657,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -4780,9 +4825,9 @@
 									"patching_rect" : [ 218.75, 97.0, 267.0, 23.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
+										"samplerate" : 0.0,
 										"type" : "",
-										"fill" : "",
-										"samplerate" : 0.0
+										"fill" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -4911,6 +4956,19 @@
 												"type" : "bang"
 											}
 ,
+											"normalize" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Find Maximum and normalize to the value given.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"defaultValue" : "0.995"
+											}
+,
 											"channels" : 											{
 												"attrOrProp" : 1,
 												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
@@ -4966,7 +5024,7 @@
 ,
 											"type" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Type of Data (Float32, Float64)",
+												"digest" : "Type of Data (float32, float64)",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -5049,7 +5107,7 @@
 										"aliasOf" : "data",
 										"classname" : "buffer~",
 										"operator" : 0,
-										"versionId" : -52813114,
+										"versionId" : 51756089,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -5193,8 +5251,8 @@
 									"patching_rect" : [ 56.25, 165.0, 33.0, 23.0 ],
 									"rnbo_classname" : "mtof",
 									"rnbo_extra_attributes" : 									{
-										"scalename" : "",
-										"filter" : 1.0
+										"filter" : 1.0,
+										"scalename" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -5355,7 +5413,7 @@
 										"aliasOf" : "mtof",
 										"classname" : "mtof",
 										"operator" : 0,
-										"versionId" : -632715539,
+										"versionId" : -1849651807,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -5372,8 +5430,8 @@
 									"patching_rect" : [ 54.75, 614.0, 43.0, 23.0 ],
 									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
-										"comment" : "",
-										"meta" : ""
+										"meta" : "",
+										"comment" : ""
 									}
 ,
 									"rnbo_serial" : 2,
@@ -5667,60 +5725,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 254.939597315436231, 432.5, 173.0, 30.0 ],
 					"rnboattrcache" : 					{
-						"poly/p_obj-17/res" : 						{
-							"label" : "res",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-60/duration" : 						{
-							"label" : "duration",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-3/right_delay" : 						{
-							"label" : "right_delay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-17/vca_ness" : 						{
-							"label" : "vca_ness",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-3/left_delay" : 						{
-							"label" : "left_delay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/wavetable/framesize" : 						{
-							"label" : "framesize",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-3/fb" : 						{
-							"label" : "fb",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-60/velocity" : 						{
-							"label" : "velocity",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"poly/p_obj-17/offset" : 						{
-							"label" : "offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"position" : 						{
 							"label" : "position",
 							"isEnum" : 0,
@@ -5733,21 +5737,75 @@
 							"parsestring" : ""
 						}
 ,
+						"poly/p_obj-60/velocity" : 						{
+							"label" : "velocity",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/p_obj-17/res" : 						{
+							"label" : "res",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/wavetable/framesize" : 						{
+							"label" : "framesize",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/p_obj-17/vca_ness" : 						{
+							"label" : "vca_ness",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/p_obj-17/offset" : 						{
+							"label" : "offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/p_obj-60/duration" : 						{
+							"label" : "duration",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/stereo_delay/left_delay" : 						{
+							"label" : "left_delay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/stereo_delay/fb" : 						{
+							"label" : "fb",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"poly/stereo_delay/right_delay" : 						{
+							"label" : "right_delay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"poly/p_obj-17/lp_mode" : 						{
 							"label" : "lp_mode",
 							"isEnum" : 1,
-							"parsestring" : "off on"
+							"parsestring" : "\"off\" \"on\""
 						}
 ,
 						"poly/p_obj-17/nonlin" : 						{
 							"label" : "nonlin",
 							"isEnum" : 1,
-							"parsestring" : "off on"
+							"parsestring" : "\"off\" \"on\""
 						}
 
 					}
 ,
-					"rnboversion" : "1.1.0-dev",
+					"rnboversion" : "1.3.0-dev.10",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -5759,6 +5817,7 @@
 					}
 ,
 					"saved_object_attributes" : 					{
+						"optimization" : "O1",
 						"parameter_enable" : 1,
 						"polyphony" : 4,
 						"uuid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
@@ -5774,63 +5833,16 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
+							"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99",
+							"position" : 							{
+								"value" : 0.0
+							}
+,
 							"__sps" : 							{
 								"poly" : [ 									{
 										"__sps" : 										{
-											"p_obj-60" : 											{
-												"duration" : 												{
-													"value" : 50.0
-												}
-,
-												"interval" : 												{
-													"value" : 500.0
-												}
-,
-												"velocity" : 												{
-													"value" : 100.0
-												}
-
-											}
-,
-											"wavetable" : 											{
-												"framesize" : 												{
-													"value" : 256.0
-												}
-
-											}
-,
-											"p_obj-17" : 											{
-												"__sps" : 												{
-													"p_obj-25" : 													{
-
-													}
-
-												}
-,
-												"nonlin" : 												{
-													"value" : 1.0
-												}
-,
-												"lp_mode" : 												{
-													"value" : 0.0
-												}
-,
-												"offset" : 												{
-													"value" : 0.0
-												}
-,
-												"vca_ness" : 												{
-													"value" : 0.0
-												}
-,
-												"res" : 												{
-													"value" : 0.5
-												}
-
-											}
-,
-											"p_obj-3" : 											{
-												"right_delay" : 												{
+											"stereo_delay" : 											{
+												"left_delay" : 												{
 													"value" : 10.0
 												}
 ,
@@ -5838,8 +5850,60 @@
 													"value" : 0.0
 												}
 ,
-												"left_delay" : 												{
+												"right_delay" : 												{
 													"value" : 10.0
+												}
+
+											}
+,
+											"p_obj-60" : 											{
+												"interval" : 												{
+													"value" : 500.0
+												}
+,
+												"velocity" : 												{
+													"value" : 100.0
+												}
+,
+												"duration" : 												{
+													"value" : 50.0
+												}
+
+											}
+,
+											"p_obj-17" : 											{
+												"res" : 												{
+													"value" : 0.5
+												}
+,
+												"vca_ness" : 												{
+													"value" : 0.0
+												}
+,
+												"offset" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"ping" : 													{
+
+													}
+
+												}
+,
+												"lp_mode" : 												{
+													"value" : 0.0
+												}
+,
+												"nonlin" : 												{
+													"value" : 1.0
+												}
+
+											}
+,
+											"wavetable" : 											{
+												"framesize" : 												{
+													"value" : 256.0
 												}
 
 											}
@@ -5849,60 +5913,8 @@
 									}
 , 									{
 										"__sps" : 										{
-											"p_obj-60" : 											{
-												"duration" : 												{
-													"value" : 50.0
-												}
-,
-												"interval" : 												{
-													"value" : 500.0
-												}
-,
-												"velocity" : 												{
-													"value" : 100.0
-												}
-
-											}
-,
-											"wavetable" : 											{
-												"framesize" : 												{
-													"value" : 256.0
-												}
-
-											}
-,
-											"p_obj-17" : 											{
-												"__sps" : 												{
-													"p_obj-25" : 													{
-
-													}
-
-												}
-,
-												"nonlin" : 												{
-													"value" : 1.0
-												}
-,
-												"lp_mode" : 												{
-													"value" : 0.0
-												}
-,
-												"offset" : 												{
-													"value" : 0.0
-												}
-,
-												"vca_ness" : 												{
-													"value" : 0.0
-												}
-,
-												"res" : 												{
-													"value" : 0.5
-												}
-
-											}
-,
-											"p_obj-3" : 											{
-												"right_delay" : 												{
+											"stereo_delay" : 											{
+												"left_delay" : 												{
 													"value" : 10.0
 												}
 ,
@@ -5910,8 +5922,60 @@
 													"value" : 0.0
 												}
 ,
-												"left_delay" : 												{
+												"right_delay" : 												{
 													"value" : 10.0
+												}
+
+											}
+,
+											"p_obj-60" : 											{
+												"interval" : 												{
+													"value" : 500.0
+												}
+,
+												"velocity" : 												{
+													"value" : 100.0
+												}
+,
+												"duration" : 												{
+													"value" : 50.0
+												}
+
+											}
+,
+											"p_obj-17" : 											{
+												"res" : 												{
+													"value" : 0.5
+												}
+,
+												"vca_ness" : 												{
+													"value" : 0.0
+												}
+,
+												"offset" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"ping" : 													{
+
+													}
+
+												}
+,
+												"lp_mode" : 												{
+													"value" : 0.0
+												}
+,
+												"nonlin" : 												{
+													"value" : 1.0
+												}
+
+											}
+,
+											"wavetable" : 											{
+												"framesize" : 												{
+													"value" : 256.0
 												}
 
 											}
@@ -5921,60 +5985,8 @@
 									}
 , 									{
 										"__sps" : 										{
-											"p_obj-60" : 											{
-												"duration" : 												{
-													"value" : 50.0
-												}
-,
-												"interval" : 												{
-													"value" : 500.0
-												}
-,
-												"velocity" : 												{
-													"value" : 100.0
-												}
-
-											}
-,
-											"wavetable" : 											{
-												"framesize" : 												{
-													"value" : 256.0
-												}
-
-											}
-,
-											"p_obj-17" : 											{
-												"__sps" : 												{
-													"p_obj-25" : 													{
-
-													}
-
-												}
-,
-												"nonlin" : 												{
-													"value" : 1.0
-												}
-,
-												"lp_mode" : 												{
-													"value" : 0.0
-												}
-,
-												"offset" : 												{
-													"value" : 0.0
-												}
-,
-												"vca_ness" : 												{
-													"value" : 0.0
-												}
-,
-												"res" : 												{
-													"value" : 0.5
-												}
-
-											}
-,
-											"p_obj-3" : 											{
-												"right_delay" : 												{
+											"stereo_delay" : 											{
+												"left_delay" : 												{
 													"value" : 10.0
 												}
 ,
@@ -5982,8 +5994,60 @@
 													"value" : 0.0
 												}
 ,
-												"left_delay" : 												{
+												"right_delay" : 												{
 													"value" : 10.0
+												}
+
+											}
+,
+											"p_obj-60" : 											{
+												"interval" : 												{
+													"value" : 500.0
+												}
+,
+												"velocity" : 												{
+													"value" : 100.0
+												}
+,
+												"duration" : 												{
+													"value" : 50.0
+												}
+
+											}
+,
+											"p_obj-17" : 											{
+												"res" : 												{
+													"value" : 0.5
+												}
+,
+												"vca_ness" : 												{
+													"value" : 0.0
+												}
+,
+												"offset" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"ping" : 													{
+
+													}
+
+												}
+,
+												"lp_mode" : 												{
+													"value" : 0.0
+												}
+,
+												"nonlin" : 												{
+													"value" : 1.0
+												}
+
+											}
+,
+											"wavetable" : 											{
+												"framesize" : 												{
+													"value" : 256.0
 												}
 
 											}
@@ -5993,60 +6057,8 @@
 									}
 , 									{
 										"__sps" : 										{
-											"p_obj-60" : 											{
-												"duration" : 												{
-													"value" : 50.0
-												}
-,
-												"interval" : 												{
-													"value" : 500.0
-												}
-,
-												"velocity" : 												{
-													"value" : 100.0
-												}
-
-											}
-,
-											"wavetable" : 											{
-												"framesize" : 												{
-													"value" : 256.0
-												}
-
-											}
-,
-											"p_obj-17" : 											{
-												"__sps" : 												{
-													"p_obj-25" : 													{
-
-													}
-
-												}
-,
-												"nonlin" : 												{
-													"value" : 1.0
-												}
-,
-												"lp_mode" : 												{
-													"value" : 0.0
-												}
-,
-												"offset" : 												{
-													"value" : 0.0
-												}
-,
-												"vca_ness" : 												{
-													"value" : 0.0
-												}
-,
-												"res" : 												{
-													"value" : 0.5
-												}
-
-											}
-,
-											"p_obj-3" : 											{
-												"right_delay" : 												{
+											"stereo_delay" : 											{
+												"left_delay" : 												{
 													"value" : 10.0
 												}
 ,
@@ -6054,8 +6066,60 @@
 													"value" : 0.0
 												}
 ,
-												"left_delay" : 												{
+												"right_delay" : 												{
 													"value" : 10.0
+												}
+
+											}
+,
+											"p_obj-60" : 											{
+												"interval" : 												{
+													"value" : 500.0
+												}
+,
+												"velocity" : 												{
+													"value" : 100.0
+												}
+,
+												"duration" : 												{
+													"value" : 50.0
+												}
+
+											}
+,
+											"p_obj-17" : 											{
+												"res" : 												{
+													"value" : 0.5
+												}
+,
+												"vca_ness" : 												{
+													"value" : 0.0
+												}
+,
+												"offset" : 												{
+													"value" : 0.0
+												}
+,
+												"__sps" : 												{
+													"ping" : 													{
+
+													}
+
+												}
+,
+												"lp_mode" : 												{
+													"value" : 0.0
+												}
+,
+												"nonlin" : 												{
+													"value" : 1.0
+												}
+
+											}
+,
+											"wavetable" : 											{
+												"framesize" : 												{
+													"value" : 256.0
 												}
 
 											}
@@ -6065,12 +6129,7 @@
 									}
  ]
 							}
-,
-							"position" : 							{
-								"value" : 0.0
-							}
-,
-							"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
+
 						}
 ,
 						"snapshotlist" : 						{
@@ -6083,65 +6142,18 @@
 									"origin" : "9ee37473-ba62-11eb-b473-a683e7612c99",
 									"type" : "rnbo",
 									"subtype" : "",
-									"embed" : 0,
+									"embed" : 1,
 									"snapshot" : 									{
+										"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99",
+										"position" : 										{
+											"value" : 0.0
+										}
+,
 										"__sps" : 										{
 											"poly" : [ 												{
 													"__sps" : 													{
-														"p_obj-60" : 														{
-															"duration" : 															{
-																"value" : 50.0
-															}
-,
-															"interval" : 															{
-																"value" : 500.0
-															}
-,
-															"velocity" : 															{
-																"value" : 100.0
-															}
-
-														}
-,
-														"wavetable" : 														{
-															"framesize" : 															{
-																"value" : 256.0
-															}
-
-														}
-,
-														"p_obj-17" : 														{
-															"__sps" : 															{
-																"p_obj-25" : 																{
-
-																}
-
-															}
-,
-															"nonlin" : 															{
-																"value" : 1.0
-															}
-,
-															"lp_mode" : 															{
-																"value" : 0.0
-															}
-,
-															"offset" : 															{
-																"value" : 0.0
-															}
-,
-															"vca_ness" : 															{
-																"value" : 0.0
-															}
-,
-															"res" : 															{
-																"value" : 0.5
-															}
-
-														}
-,
-														"p_obj-3" : 														{
-															"right_delay" : 															{
+														"stereo_delay" : 														{
+															"left_delay" : 															{
 																"value" : 10.0
 															}
 ,
@@ -6149,8 +6161,60 @@
 																"value" : 0.0
 															}
 ,
-															"left_delay" : 															{
+															"right_delay" : 															{
 																"value" : 10.0
+															}
+
+														}
+,
+														"p_obj-60" : 														{
+															"interval" : 															{
+																"value" : 500.0
+															}
+,
+															"velocity" : 															{
+																"value" : 100.0
+															}
+,
+															"duration" : 															{
+																"value" : 50.0
+															}
+
+														}
+,
+														"p_obj-17" : 														{
+															"res" : 															{
+																"value" : 0.5
+															}
+,
+															"vca_ness" : 															{
+																"value" : 0.0
+															}
+,
+															"offset" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"ping" : 																{
+
+																}
+
+															}
+,
+															"lp_mode" : 															{
+																"value" : 0.0
+															}
+,
+															"nonlin" : 															{
+																"value" : 1.0
+															}
+
+														}
+,
+														"wavetable" : 														{
+															"framesize" : 															{
+																"value" : 256.0
 															}
 
 														}
@@ -6160,60 +6224,8 @@
 												}
 , 												{
 													"__sps" : 													{
-														"p_obj-60" : 														{
-															"duration" : 															{
-																"value" : 50.0
-															}
-,
-															"interval" : 															{
-																"value" : 500.0
-															}
-,
-															"velocity" : 															{
-																"value" : 100.0
-															}
-
-														}
-,
-														"wavetable" : 														{
-															"framesize" : 															{
-																"value" : 256.0
-															}
-
-														}
-,
-														"p_obj-17" : 														{
-															"__sps" : 															{
-																"p_obj-25" : 																{
-
-																}
-
-															}
-,
-															"nonlin" : 															{
-																"value" : 1.0
-															}
-,
-															"lp_mode" : 															{
-																"value" : 0.0
-															}
-,
-															"offset" : 															{
-																"value" : 0.0
-															}
-,
-															"vca_ness" : 															{
-																"value" : 0.0
-															}
-,
-															"res" : 															{
-																"value" : 0.5
-															}
-
-														}
-,
-														"p_obj-3" : 														{
-															"right_delay" : 															{
+														"stereo_delay" : 														{
+															"left_delay" : 															{
 																"value" : 10.0
 															}
 ,
@@ -6221,8 +6233,60 @@
 																"value" : 0.0
 															}
 ,
-															"left_delay" : 															{
+															"right_delay" : 															{
 																"value" : 10.0
+															}
+
+														}
+,
+														"p_obj-60" : 														{
+															"interval" : 															{
+																"value" : 500.0
+															}
+,
+															"velocity" : 															{
+																"value" : 100.0
+															}
+,
+															"duration" : 															{
+																"value" : 50.0
+															}
+
+														}
+,
+														"p_obj-17" : 														{
+															"res" : 															{
+																"value" : 0.5
+															}
+,
+															"vca_ness" : 															{
+																"value" : 0.0
+															}
+,
+															"offset" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"ping" : 																{
+
+																}
+
+															}
+,
+															"lp_mode" : 															{
+																"value" : 0.0
+															}
+,
+															"nonlin" : 															{
+																"value" : 1.0
+															}
+
+														}
+,
+														"wavetable" : 														{
+															"framesize" : 															{
+																"value" : 256.0
 															}
 
 														}
@@ -6232,60 +6296,8 @@
 												}
 , 												{
 													"__sps" : 													{
-														"p_obj-60" : 														{
-															"duration" : 															{
-																"value" : 50.0
-															}
-,
-															"interval" : 															{
-																"value" : 500.0
-															}
-,
-															"velocity" : 															{
-																"value" : 100.0
-															}
-
-														}
-,
-														"wavetable" : 														{
-															"framesize" : 															{
-																"value" : 256.0
-															}
-
-														}
-,
-														"p_obj-17" : 														{
-															"__sps" : 															{
-																"p_obj-25" : 																{
-
-																}
-
-															}
-,
-															"nonlin" : 															{
-																"value" : 1.0
-															}
-,
-															"lp_mode" : 															{
-																"value" : 0.0
-															}
-,
-															"offset" : 															{
-																"value" : 0.0
-															}
-,
-															"vca_ness" : 															{
-																"value" : 0.0
-															}
-,
-															"res" : 															{
-																"value" : 0.5
-															}
-
-														}
-,
-														"p_obj-3" : 														{
-															"right_delay" : 															{
+														"stereo_delay" : 														{
+															"left_delay" : 															{
 																"value" : 10.0
 															}
 ,
@@ -6293,8 +6305,60 @@
 																"value" : 0.0
 															}
 ,
-															"left_delay" : 															{
+															"right_delay" : 															{
 																"value" : 10.0
+															}
+
+														}
+,
+														"p_obj-60" : 														{
+															"interval" : 															{
+																"value" : 500.0
+															}
+,
+															"velocity" : 															{
+																"value" : 100.0
+															}
+,
+															"duration" : 															{
+																"value" : 50.0
+															}
+
+														}
+,
+														"p_obj-17" : 														{
+															"res" : 															{
+																"value" : 0.5
+															}
+,
+															"vca_ness" : 															{
+																"value" : 0.0
+															}
+,
+															"offset" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"ping" : 																{
+
+																}
+
+															}
+,
+															"lp_mode" : 															{
+																"value" : 0.0
+															}
+,
+															"nonlin" : 															{
+																"value" : 1.0
+															}
+
+														}
+,
+														"wavetable" : 														{
+															"framesize" : 															{
+																"value" : 256.0
 															}
 
 														}
@@ -6304,60 +6368,8 @@
 												}
 , 												{
 													"__sps" : 													{
-														"p_obj-60" : 														{
-															"duration" : 															{
-																"value" : 50.0
-															}
-,
-															"interval" : 															{
-																"value" : 500.0
-															}
-,
-															"velocity" : 															{
-																"value" : 100.0
-															}
-
-														}
-,
-														"wavetable" : 														{
-															"framesize" : 															{
-																"value" : 256.0
-															}
-
-														}
-,
-														"p_obj-17" : 														{
-															"__sps" : 															{
-																"p_obj-25" : 																{
-
-																}
-
-															}
-,
-															"nonlin" : 															{
-																"value" : 1.0
-															}
-,
-															"lp_mode" : 															{
-																"value" : 0.0
-															}
-,
-															"offset" : 															{
-																"value" : 0.0
-															}
-,
-															"vca_ness" : 															{
-																"value" : 0.0
-															}
-,
-															"res" : 															{
-																"value" : 0.5
-															}
-
-														}
-,
-														"p_obj-3" : 														{
-															"right_delay" : 															{
+														"stereo_delay" : 														{
+															"left_delay" : 															{
 																"value" : 10.0
 															}
 ,
@@ -6365,8 +6377,60 @@
 																"value" : 0.0
 															}
 ,
-															"left_delay" : 															{
+															"right_delay" : 															{
 																"value" : 10.0
+															}
+
+														}
+,
+														"p_obj-60" : 														{
+															"interval" : 															{
+																"value" : 500.0
+															}
+,
+															"velocity" : 															{
+																"value" : 100.0
+															}
+,
+															"duration" : 															{
+																"value" : 50.0
+															}
+
+														}
+,
+														"p_obj-17" : 														{
+															"res" : 															{
+																"value" : 0.5
+															}
+,
+															"vca_ness" : 															{
+																"value" : 0.0
+															}
+,
+															"offset" : 															{
+																"value" : 0.0
+															}
+,
+															"__sps" : 															{
+																"ping" : 																{
+
+																}
+
+															}
+,
+															"lp_mode" : 															{
+																"value" : 0.0
+															}
+,
+															"nonlin" : 															{
+																"value" : 1.0
+															}
+
+														}
+,
+														"wavetable" : 														{
+															"framesize" : 															{
+																"value" : 256.0
 															}
 
 														}
@@ -6376,38 +6440,15 @@
 												}
  ]
 										}
-,
-										"position" : 										{
-											"value" : 0.0
-										}
-,
-										"__presetid" : "9ee37473-ba62-11eb-b473-a683e7612c99"
-									}
-,
-									"fileref" : 									{
-										"name" : "untitled",
-										"filename" : "_20210819.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "cffac49b6fe1547d63e042c99e66aa68"
-									}
 
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "untitled",
-									"origin" : "9ee37473-ba62-11eb-b473-a683e7612c99",
-									"type" : "rnbo",
-									"subtype" : "",
-									"embed" : 0,
+									}
+,
 									"fileref" : 									{
 										"name" : "untitled",
-										"filename" : "untitled.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filename" : "untitled_20231005.maxsnap",
+										"filepath" : "~/OneDrive/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "36d88b6c9b76dd2c9a666330af2ad635"
+										"snapshotfileid" : "7b72eeb0ecb32ab0d7228f4c8ab6386b"
 									}
 
 								}
@@ -6663,22 +6704,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "_20210819.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "untitled.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"name" : "untitled_20231005.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wavetable1.wav",
-				"bootpath" : "~/Documents/Max 8/Packages/RNBOSynthBuildingblocks/media",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/RNBOSynthBuildingBlocks/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
