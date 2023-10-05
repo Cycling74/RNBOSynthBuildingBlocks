@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "sbb.osc.wavetable",
+		"title" : "wavetable",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
@@ -114,19 +114,19 @@
 					"patching_rect" : [ 67.0, 163.0, 232.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"displayname" : "",
-						"meta" : "",
-						"steps" : 0.0,
-						"tonormalized" : "",
-						"ctlin" : 0.0,
 						"enum" : "",
-						"unit" : "",
-						"order" : "",
-						"fromnormalized" : "",
+						"meta" : "",
+						"tonormalized" : "",
 						"exponent" : 1.0,
-						"sendinit" : 1,
+						"preset" : 1,
+						"unit" : "",
+						"fromnormalized" : "",
+						"ctlin" : 0.0,
+						"steps" : 0.0,
 						"displayorder" : "-",
-						"preset" : 1
+						"displayname" : "",
+						"sendinit" : 1,
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -533,6 +533,48 @@
 					"rnbo_classname" : "set",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "set_obj-20",
+					"rnboinfo" : 					{
+						"needsInstanceInfo" : 1,
+						"argnames" : 						{
+							"name" : 							{
+								"attrOrProp" : 2,
+								"digest" : "attribute/param to control",
+								"defaultarg" : 1,
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "symbol",
+								"mandatory" : 1
+							}
+
+						}
+,
+						"inputs" : [ 							{
+								"name" : "input",
+								"type" : [ "bang", "number", "list", "signal" ],
+								"digest" : "attribute or parameter value (bang, number, list)",
+								"hot" : 1,
+								"docked" : 0
+							}
+ ],
+						"outputs" : [ 							{
+								"name" : "output",
+								"type" : [ "bang", "number", "list", "signal" ],
+								"digest" : "connect to first inlet of gen or subpatcher",
+								"docked" : 0
+							}
+ ],
+						"helpname" : "set",
+						"aliasOf" : "set",
+						"classname" : "set",
+						"operator" : 0,
+						"versionId" : 2121358407,
+						"changesPatcherIO" : 0
+					}
+,
 					"text" : "set framesize"
 				}
 
@@ -546,8 +588,8 @@
 					"patching_rect" : [ 35.0, 336.0, 43.0, 23.0 ],
 					"rnbo_classname" : "out~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -831,8 +873,8 @@
 							"fileversion" : 1,
 							"appversion" : 							{
 								"major" : 8,
-								"minor" : 6,
-								"revision" : 0,
+								"minor" : 5,
+								"revision" : 6,
 								"architecture" : "x64",
 								"modernui" : 1
 							}
@@ -870,14 +912,14 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"fontface" : 0,
-										"numoutlets" : 1,
-										"patching_rect" : [ 41.0, 59.0, 719.0, 534.0 ],
-										"id" : "obj-3",
 										"outlettype" : [ "" ],
+										"id" : "obj-3",
 										"fontsize" : 12.0,
-										"fontname" : "<Monospaced>",
 										"numinlets" : 2,
-										"code" : "History phase(0);   // Internal phasor\r\nHistory h1(0);      // History for filter\r\nHistory h2(0);      // History for filter\r\nHistory oldsr(0);   // Keep track of whether the sample rate changed\r\nHistory freq(0);    // Keep track of whether the frequency changed\r\nHistory os(4);      // Oversampling factor\r\nHistory realsr(0);  // \"Real\" samplerate, the sampling rate * oversampling factor\r\n\r\n\r\n// Get in the wavetable\r\nBuffer osc_wavetable_buf(\"osc_wavetable_buf\");\r\nParam framesize(256);\r\nnumFrames = clamp(floor(dim(osc_wavetable_buf) / framesize), 0, dim(osc_wavetable_buf));\r\n\r\n\r\n\r\n// Adjust samplerate and freq for this oversampled phasor as needed\r\nif ((oldsr != samplerate) || freq != in1) {\r\n\t// scale the incoming frequency to a range from 0 to 1. Everything from 200 \r\n    // Hz and below will only be oversampled 2 times, and everything above 1200 Hz\r\n    // will be oversampled 16 times.\r\n    os = int ((44100 / samplerate) * (2 + (14 * (scale(in1, 200, 12000, 0, 1, 0.5)))));\r\n    if (os ==0) os = 1;\r\n    \r\n\trealsr = samplerate * os; \r\n\toldsr = samplerate;\r\n\tfreq = in1;\r\n}\r\n\r\n\r\nt = 0;\r\nomega, _sin, _cos = 0;\r\n\r\nframe_pos, table_pos, terrain_pos, frame_pos_frac, table_pos_frac = 0;\r\nbottom_left, bottom_right, top_left, top_right = 0;\r\nabove, below, frame_pos_left, frame_pos_right = 0;\r\ntable_pos_bottom, table_pos_top = 0;\r\n\r\nfor (i = 0; i < os; i += 1) {\r\n\tt = wrap(phase, 0, 1);\r\n\tphase = fixdenorm(t + (in1 / realsr));\r\n\t\r\n\t\r\n\t/// ----\r\n\tframe_pos = t * framesize;\r\n\tterrain_pos = in2;\r\n\t\r\n\t// Position in the frame\r\n\tframe_pos_left = int(frame_pos);\r\n\tframe_pos_right = 0;\r\n\tif (frame_pos_left == framesize - 1) {\r\n\t\t// End of frame, so wrap to beginning\r\n\t\tframe_pos_right = 0;\r\n\t}\r\n\telse {\r\n\t\tframe_pos_right = frame_pos_left + 1;\r\n\t}\r\n\tframe_pos_frac = frame_pos - frame_pos_left;\r\n\t\r\n\t// Position in the table\r\n\ttable_pos = terrain_pos * (numFrames - 1);  // scale from [0..1] to [0..table_size - 1]\r\n\ttable_pos_bottom = floor(table_pos);\r\n\ttable_pos_top = ceil(table_pos);\r\n\ttable_pos_frac = table_pos - table_pos_bottom;  // [0..1]\r\n\t\r\n\t// Look up nearby samples\r\n\tbottom_left = peek(osc_wavetable_buf, framesize * table_pos_bottom + frame_pos_left);\r\n\tbottom_right = peek(osc_wavetable_buf, framesize * table_pos_bottom + frame_pos_right);\r\n\ttop_left = peek(osc_wavetable_buf, framesize * table_pos_top + frame_pos_left);\r\n\ttop_right = peek(osc_wavetable_buf, framesize * table_pos_top + frame_pos_right);\r\n\t\r\n\t// Interpolate within both of the two above and below frames\r\n\tbelow = bottom_left + frame_pos_frac * (bottom_right - bottom_left);\n\tabove = top_left + frame_pos_frac * (top_right - top_left);\r\n\tt = below + table_pos_frac * (above - below);\r\n\t/// ----\r\n\t\r\n\t\r\n\t// Low-pass the result\r\n\tomega = (20000 * twopi) / realsr;\r\n\t_sin = sin(omega);\r\n\t_cos = cos(omega);\r\n\t\r\n\tb0 = 1 / (1 + _sin);\r\n\ta2 = ((1 - _cos) * 0.5) * b0;\r\n\ta1 = (1 - _cos) * b0;\r\n\tb1 = (-2 * _cos) * b0;\r\n\tb2 = (1 - _sin) * b0;\r\n\t\r\n\tt = (((t * a2) + (h2 * a1)) + (h1 * a2)) - ((h1 * b2) + (h2 * b1));\r\n\t\r\n\th1 = fixdenorm(h2);\r\n\th2 = fixdenorm(t);\r\n}\r\n\r\nout1 = t;\r\n"
+										"patching_rect" : [ 41.0, 59.0, 719.0, 534.0 ],
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 1,
+										"code" : "History phase(0);   // Internal phasor\r\nHistory h1(0);      // History for filter\r\nHistory h2(0);      // History for filter\r\nHistory oldsr(0);   // Keep track of whether the sample rate changed\r\nHistory freq(0);    // Keep track of whether the frequency changed\r\nHistory os(4);      // Oversampling factor\r\nHistory realsr(0);  // \"Real\" samplerate, the sampling rate * oversampling factor\r\n\r\n\r\n// Get in the wavetable\r\nBuffer osc_wavetable_buf(\"osc_wavetable_buf\");\r\nParam framesize(256);\r\nnumFrames = clamp(floor(dim(osc_wavetable_buf) / framesize), 0, dim(osc_wavetable_buf));\r\n\r\n\r\n\r\n// Adjust samplerate and freq for this oversampled phasor as needed\r\nif ((oldsr != samplerate) || freq != in1) {\r\n\t// scale the incoming frequency to a range from 0 to 1. Everything from 200 \r\n    // Hz and below will only be oversampled 2 times, and everything above 1200 Hz\r\n    // will be oversampled 16 times.\r\n    os = int ((44100 / samplerate) * (2 + (14 * (scale(in1, 200, 1200, 0, 1, 0.5)))));\r\n    if (os ==0) os = 1;\r\n    \r\n\trealsr = samplerate * os; \r\n\toldsr = samplerate;\r\n\tfreq = in1;\r\n}\r\n\r\n\r\nt = 0;\r\nomega, _sin, _cos = 0;\r\n\r\nframe_pos, table_pos, terrain_pos, frame_pos_frac, table_pos_frac = 0;\r\nbottom_left, bottom_right, top_left, top_right = 0;\r\nabove, below, frame_pos_left, frame_pos_right = 0;\r\ntable_pos_bottom, table_pos_top = 0;\r\n\r\nfor (i = 0; i < os; i += 1) {\r\n\tt = wrap(phase, 0, 1);\r\n\tphase = fixdenorm(t + (in1 / realsr));\r\n\t\r\n\t\r\n\t/// ----\r\n\tframe_pos = t * framesize;\r\n\tterrain_pos = in2;\r\n\t\r\n\t// Position in the frame\r\n\tframe_pos_left = int(frame_pos);\r\n\tframe_pos_right = 0;\r\n\tif (frame_pos_left == framesize - 1) {\r\n\t\t// End of frame, so wrap to beginning\r\n\t\tframe_pos_right = 0;\r\n\t}\r\n\telse {\r\n\t\tframe_pos_right = frame_pos_left + 1;\r\n\t}\r\n\tframe_pos_frac = frame_pos - frame_pos_left;\r\n\t\r\n\t// Position in the table\r\n\ttable_pos = terrain_pos * (numFrames - 1);  // scale from [0..1] to [0..table_size - 1]\r\n\ttable_pos_bottom = floor(table_pos);\r\n\ttable_pos_top = ceil(table_pos);\r\n\ttable_pos_frac = table_pos - table_pos_bottom;  // [0..1]\r\n\t\r\n\t// Look up nearby samples\r\n\tbottom_left = peek(osc_wavetable_buf, framesize * table_pos_bottom + frame_pos_left);\r\n\tbottom_right = peek(osc_wavetable_buf, framesize * table_pos_bottom + frame_pos_right);\r\n\ttop_left = peek(osc_wavetable_buf, framesize * table_pos_top + frame_pos_left);\r\n\ttop_right = peek(osc_wavetable_buf, framesize * table_pos_top + frame_pos_right);\r\n\t\r\n\t// Interpolate within both of the two above and below frames\r\n\tbelow = bottom_left + frame_pos_frac * (bottom_right - bottom_left);\n\tabove = top_left + frame_pos_frac * (top_right - top_left);\r\n\tt = below + table_pos_frac * (above - below);\r\n\t/// ----\r\n\t\r\n\t\r\n\t// Low-pass the result\r\n\tomega = (20000 * twopi) / realsr;\r\n\t_sin = sin(omega);\r\n\t_cos = cos(omega);\r\n\t\r\n\tb0 = 1 / (1 + _sin);\r\n\ta2 = ((1 - _cos) * 0.5) * b0;\r\n\ta1 = (1 - _cos) * b0;\r\n\tb1 = (-2 * _cos) * b0;\r\n\tb2 = (1 - _sin) * b0;\r\n\t\r\n\tt = (((t * a2) + (h2 * a1)) + (h1 * a2)) - ((h1 * b2) + (h2 * b1));\r\n\t\r\n\th1 = fixdenorm(h2);\r\n\th2 = fixdenorm(t);\r\n}\r\n\r\nout1 = t;\r\n"
 									}
 
 								}
@@ -885,11 +927,11 @@
 									"box" : 									{
 										"maxclass" : "newobj",
 										"text" : "in 1",
-										"numoutlets" : 1,
-										"patching_rect" : [ 41.0, 26.0, 28.0, 22.0 ],
-										"id" : "obj-1",
 										"outlettype" : [ "" ],
-										"numinlets" : 0
+										"id" : "obj-1",
+										"numinlets" : 0,
+										"patching_rect" : [ 41.0, 26.0, 28.0, 22.0 ],
+										"numoutlets" : 1
 									}
 
 								}
@@ -897,11 +939,11 @@
 									"box" : 									{
 										"maxclass" : "newobj",
 										"text" : "in 2",
-										"numoutlets" : 1,
-										"patching_rect" : [ 89.0, 26.0, 28.0, 22.0 ],
-										"id" : "obj-2",
 										"outlettype" : [ "" ],
-										"numinlets" : 0
+										"id" : "obj-2",
+										"numinlets" : 0,
+										"patching_rect" : [ 89.0, 26.0, 28.0, 22.0 ],
+										"numoutlets" : 1
 									}
 
 								}
@@ -909,18 +951,18 @@
 									"box" : 									{
 										"maxclass" : "newobj",
 										"text" : "out 1",
-										"numoutlets" : 0,
-										"patching_rect" : [ 41.0, 623.0, 35.0, 22.0 ],
 										"id" : "obj-4",
-										"numinlets" : 1
+										"numinlets" : 1,
+										"patching_rect" : [ 41.0, 623.0, 35.0, 22.0 ],
+										"numoutlets" : 0
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-3", 0 ]
+										"source" : [ "obj-2", 0 ],
+										"destination" : [ "obj-3", 1 ]
 									}
 
 								}
@@ -933,8 +975,8 @@
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-2", 0 ],
-										"destination" : [ "obj-3", 1 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-3", 0 ]
 									}
 
 								}
@@ -952,7 +994,7 @@
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
 						"exposeparams" : 0,
-						"gencode" : "History phase(0);\nHistory h1(0);\nHistory h2(0);\nHistory oldsr(0);\nHistory freq(0);\nHistory os(4);\nHistory realsr(0);\nBuffer osc_wavetable_buf(\"osc_wavetable_buf\");\nParam framesize(256);\nnumFrames = clamp(floor((dim(osc_wavetable_buf)) / framesize), 0, dim(osc_wavetable_buf));\nif((oldsr != samplerate) || (freq != in1)) {\n\tos = int((44100 / samplerate) * ((2 + (14 * (scale(in1, 200, 12000, 0, 1, 0.5))))));\n\tif(os == 0) {\n\t\tos = 1;\n\t}\n\trealsr = samplerate * os;\n\toldsr = samplerate;\n\tfreq = in1;\n}\nt = 0;\nomega = 0;\n_sin = 0;\n_cos = 0;\nframe_pos = 0;\ntable_pos = 0;\nterrain_pos = 0;\nframe_pos_frac = 0;\ntable_pos_frac = 0;\nbottom_left = 0;\nbottom_right = 0;\ntop_left = 0;\ntop_right = 0;\nabove = 0;\nbelow = 0;\nframe_pos_left = 0;\nframe_pos_right = 0;\ntable_pos_bottom = 0;\ntable_pos_top = 0;\nfor(i = 0; i < os; i = i + 1) {\n\tt = wrap(phase, 0, 1);\n\tphase = fixdenorm(t + (in1 / realsr));\n\tframe_pos = t * framesize;\n\tterrain_pos = in2;\n\tframe_pos_left = int(frame_pos);\n\tframe_pos_right = 0;\n\tif(frame_pos_left == (framesize - 1)) {\n\t\tframe_pos_right = 0;\n\t}\n\telse {\n\t\tframe_pos_right = frame_pos_left + 1;\n\t}\n\tframe_pos_frac = frame_pos - frame_pos_left;\n\ttable_pos = terrain_pos * ((numFrames - 1));\n\ttable_pos_bottom = floor(table_pos);\n\ttable_pos_top = ceil(table_pos);\n\ttable_pos_frac = table_pos - table_pos_bottom;\n\tbottom_left = peek(osc_wavetable_buf, (framesize * table_pos_bottom) + frame_pos_left, 0);\n\tbottom_right = peek(osc_wavetable_buf, (framesize * table_pos_bottom) + frame_pos_right, 0);\n\ttop_left = peek(osc_wavetable_buf, (framesize * table_pos_top) + frame_pos_left, 0);\n\ttop_right = peek(osc_wavetable_buf, (framesize * table_pos_top) + frame_pos_right, 0);\n\tbelow = bottom_left + (frame_pos_frac * ((bottom_right - bottom_left)));\n\tabove = top_left + (frame_pos_frac * ((top_right - top_left)));\n\tt = below + (table_pos_frac * ((above - below)));\n\tomega = 125663.70614359 / realsr;\n\t_sin = sin(omega);\n\t_cos = cos(omega);\n\tb0 = 1 / ((1 + _sin));\n\ta2 = ((((1 - _cos)) * 0.5)) * b0;\n\ta1 = ((1 - _cos)) * b0;\n\tb1 = ((-2 * _cos)) * b0;\n\tb2 = ((1 - _sin)) * b0;\n\tt = (((((t * a2) + (h2 * a1))) + (h1 * a2))) - (((h1 * b2) + (h2 * b1)));\n\th1 = fixdenorm(h2);\n\th2 = fixdenorm(t);\n}\nexpr_1 = t;\nout1 = expr_1;",
+						"gencode" : "History phase(0);\nHistory h1(0);\nHistory h2(0);\nHistory oldsr(0);\nHistory freq(0);\nHistory os(4);\nHistory realsr(0);\nBuffer osc_wavetable_buf(\"osc_wavetable_buf\");\nParam framesize(256);\nnumFrames = clamp(floor((dim(osc_wavetable_buf)) / framesize), 0, dim(osc_wavetable_buf));\nif((oldsr != samplerate) || (freq != in1)) {\n\tos = int((44100 / samplerate) * ((2 + (14 * (scale(in1, 200, 1200, 0, 1, 0.5))))));\n\tif(os == 0) {\n\t\tos = 1;\n\t}\n\trealsr = samplerate * os;\n\toldsr = samplerate;\n\tfreq = in1;\n}\nt = 0;\nomega = 0;\n_sin = 0;\n_cos = 0;\nframe_pos = 0;\ntable_pos = 0;\nterrain_pos = 0;\nframe_pos_frac = 0;\ntable_pos_frac = 0;\nbottom_left = 0;\nbottom_right = 0;\ntop_left = 0;\ntop_right = 0;\nabove = 0;\nbelow = 0;\nframe_pos_left = 0;\nframe_pos_right = 0;\ntable_pos_bottom = 0;\ntable_pos_top = 0;\nfor(i = 0; i < os; i = i + 1) {\n\tt = wrap(phase, 0, 1);\n\tphase = fixdenorm(t + (in1 / realsr));\n\tframe_pos = t * framesize;\n\tterrain_pos = in2;\n\tframe_pos_left = int(frame_pos);\n\tframe_pos_right = 0;\n\tif(frame_pos_left == (framesize - 1)) {\n\t\tframe_pos_right = 0;\n\t}\n\telse {\n\t\tframe_pos_right = frame_pos_left + 1;\n\t}\n\tframe_pos_frac = frame_pos - frame_pos_left;\n\ttable_pos = terrain_pos * ((numFrames - 1));\n\ttable_pos_bottom = floor(table_pos);\n\ttable_pos_top = ceil(table_pos);\n\ttable_pos_frac = table_pos - table_pos_bottom;\n\tbottom_left = peek(osc_wavetable_buf, (framesize * table_pos_bottom) + frame_pos_left, 0);\n\tbottom_right = peek(osc_wavetable_buf, (framesize * table_pos_bottom) + frame_pos_right, 0);\n\ttop_left = peek(osc_wavetable_buf, (framesize * table_pos_top) + frame_pos_left, 0);\n\ttop_right = peek(osc_wavetable_buf, (framesize * table_pos_top) + frame_pos_right, 0);\n\tbelow = bottom_left + (frame_pos_frac * ((bottom_right - bottom_left)));\n\tabove = top_left + (frame_pos_frac * ((top_right - top_left)));\n\tt = below + (table_pos_frac * ((above - below)));\n\tomega = 125663.70614359 / realsr;\n\t_sin = sin(omega);\n\t_cos = cos(omega);\n\tb0 = 1 / ((1 + _sin));\n\ta2 = ((((1 - _cos)) * 0.5)) * b0;\n\ta1 = ((1 - _cos)) * b0;\n\tb1 = ((-2 * _cos)) * b0;\n\tb2 = ((1 - _sin)) * b0;\n\tt = (((((t * a2) + (h2 * a1))) + (h1 * a2))) - (((h1 * b2) + (h2 * b1)));\n\th1 = fixdenorm(h2);\n\th2 = fixdenorm(t);\n}\nexpr_1 = t;\nout1 = expr_1;",
 						"geninlets" : 2,
 						"genoutlets" : 1
 					}
@@ -1202,7 +1244,7 @@
 						"aliasOf" : "gen~",
 						"classname" : "gen~",
 						"operator" : 0,
-						"versionId" : 932019353,
+						"versionId" : 1405647718,
 						"changesPatcherIO" : 0
 					}
 ,
