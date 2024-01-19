@@ -1,0 +1,884 @@
+{
+	"patcher" : 	{
+		"boxes" : [ 			{
+				"box" : 				{
+					"maxclass" : "newobj",
+					"varname" : "filter.lp",
+					"text" : "p @file sbb.filter.bp",
+					"numinlets" : 3,
+					"patching_rect" : [ 10.0, 10.0, 110.0, 23.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"id" : "obj-1",
+					"rnboinfo" : 					{
+						"needsInstanceInfo" : 1,
+						"argnames" : 						{
+							"target" : 							{
+								"attrOrProp" : 1,
+								"digest" : "target",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 0,
+								"attachable" : 1,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "number",
+								"defaultValue" : "0"
+							}
+,
+							"mute" : 							{
+								"attrOrProp" : 1,
+								"digest" : "mute",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 1,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "number"
+							}
+,
+							"in1" : 							{
+								"attrOrProp" : 1,
+								"digest" : "in1",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"inlet" : 1,
+								"type" : "signal"
+							}
+,
+							"in2" : 							{
+								"attrOrProp" : 1,
+								"digest" : "in2",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"inlet" : 1,
+								"type" : "signal"
+							}
+,
+							"in3" : 							{
+								"attrOrProp" : 1,
+								"digest" : "in3",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"inlet" : 1,
+								"type" : "signal"
+							}
+,
+							"__probingout1" : 							{
+								"attrOrProp" : 1,
+								"digest" : "__probingout1",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "signal"
+							}
+,
+							"out1" : 							{
+								"attrOrProp" : 1,
+								"digest" : "out1",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"outlet" : 1,
+								"type" : "signal"
+							}
+,
+							"voicestatus" : 							{
+								"attrOrProp" : 1,
+								"digest" : "voicestatus",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 1,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "list"
+							}
+,
+							"activevoices" : 							{
+								"attrOrProp" : 1,
+								"digest" : "activevoices",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 0,
+								"attachable" : 1,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "number"
+							}
+,
+							"polyphony" : 							{
+								"attrOrProp" : 2,
+								"digest" : "Polyphony of the subpatcher.",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "number",
+								"defaultValue" : "-1"
+							}
+,
+							"exposevoiceparams" : 							{
+								"attrOrProp" : 2,
+								"digest" : "Expose per voice versions of the contained parameters (only valid in polyphonic subpatchers).",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "bool",
+								"defaultValue" : "false"
+							}
+,
+							"title" : 							{
+								"attrOrProp" : 2,
+								"digest" : "Title of the subpatcher",
+								"defaultarg" : 1,
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "symbol",
+								"doNotShowInMaxInspector" : 1
+							}
+,
+							"file" : 							{
+								"attrOrProp" : 2,
+								"digest" : "rnbo file to load",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "symbol",
+								"doNotShowInMaxInspector" : 1
+							}
+,
+							"voicecontrol" : 							{
+								"attrOrProp" : 2,
+								"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"enum" : [ "simple", "user" ],
+								"type" : "enum",
+								"defaultValue" : "simple"
+							}
+,
+							"notecontroller" : 							{
+								"attrOrProp" : 2,
+								"digest" : "DEPRECATED. Use voicecontrol instead.",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "symbol",
+								"doNotShowInMaxInspector" : 1
+							}
+,
+							"receivemode" : 							{
+								"attrOrProp" : 2,
+								"digest" : "Do receive~ objects get the signal from a send~ inside the patcher directly (without latency), or compensated (with latency, aligned with all other voices).",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"enum" : [ "local", "compensated" ],
+								"type" : "enum",
+								"defaultValue" : "local"
+							}
+,
+							"args" : 							{
+								"attrOrProp" : 2,
+								"digest" : "Replacement args for the subpatcher, everything named #1, #2 etc. will be replaced with the according argument.",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"type" : "symbol",
+								"doNotShowInMaxInspector" : 1
+							}
+
+						}
+,
+						"inputs" : [ 							{
+								"name" : "in1",
+								"type" : "signal",
+								"digest" : "in1",
+								"displayName" : "Signal",
+								"hot" : 1,
+								"docked" : 0
+							}
+, 							{
+								"name" : "in2",
+								"type" : "signal",
+								"digest" : "in2",
+								"displayName" : "Center frequency",
+								"hot" : 1,
+								"docked" : 0
+							}
+, 							{
+								"name" : "in3",
+								"type" : "signal",
+								"digest" : "in3",
+								"displayName" : "Q",
+								"hot" : 1,
+								"docked" : 0
+							}
+ ],
+						"outputs" : [ 							{
+								"name" : "out1",
+								"type" : "signal",
+								"digest" : "out1",
+								"displayName" : "Signal",
+								"docked" : 0
+							}
+ ],
+						"helpname" : "patcher",
+						"aliasOf" : "rnbo",
+						"classname" : "p",
+						"operator" : 0,
+						"versionId" : 88895198,
+						"changesPatcherIO" : 0
+					}
+,
+					"rnbo_extra_attributes" : 					{
+						"receivemode" : "local",
+						"polyphony" : -1.0,
+						"args" : [  ],
+						"voicecontrol" : "MIDI",
+						"exposevoiceparams" : 0,
+						"notecontroller" : 0
+					}
+,
+					"rnbo_uniqueid" : "filter.lp",
+					"rnbo_serial" : 1,
+					"rnbo_classname" : "p",
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "rnbo",
+						"rect" : [ 53.0, 110.0, 375.0, 412.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Lato",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"title" : "sbb.filter.bp",
+						"boxes" : [ 							{
+								"box" : 								{
+									"maxclass" : "comment",
+									"text" : "Bandpass filter",
+									"style" : "sbb_subtitle",
+									"numinlets" : 1,
+									"patching_rect" : [ 12.0, 38.0, 157.0, 21.0 ],
+									"numoutlets" : 0,
+									"id" : "obj-11"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "comment",
+									"text" : "filter.bp",
+									"style" : "sbb_title",
+									"numinlets" : 1,
+									"patching_rect" : [ 12.0, 8.0, 157.0, 28.0 ],
+									"numoutlets" : 0,
+									"id" : "obj-10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "newobj",
+									"text" : "out~ 1 @comment Signal",
+									"numinlets" : 1,
+									"patching_rect" : [ 67.0, 355.0, 140.0, 23.0 ],
+									"numoutlets" : 0,
+									"id" : "obj-8",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"in1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "signal sent to outlet with index 1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"inlet" : 1,
+												"type" : "signal"
+											}
+,
+											"index" : 											{
+												"attrOrProp" : 2,
+												"digest" : "outlet number",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"mandatory" : 1
+											}
+,
+											"comment" : 											{
+												"attrOrProp" : 2,
+												"digest" : "mouse over comment",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol"
+											}
+,
+											"meta" : 											{
+												"attrOrProp" : 2,
+												"digest" : "A JSON formatted string containing metadata for use by the exported code",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "",
+												"label" : "Metadata",
+												"displayorder" : 3
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "in1",
+												"type" : "signal",
+												"digest" : "signal sent to outlet with index 1",
+												"displayName" : "Signal",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [  ],
+										"helpname" : "out~",
+										"aliasOf" : "out~",
+										"classname" : "out~",
+										"operator" : 0,
+										"versionId" : 374499139,
+										"changesPatcherIO" : 1
+									}
+,
+									"rnbo_extra_attributes" : 									{
+										"meta" : ""
+									}
+,
+									"rnbo_uniqueid" : "out~_obj-8",
+									"rnbo_serial" : 1,
+									"rnbo_classname" : "out~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "newobj",
+									"text" : "biquad~",
+									"numinlets" : 6,
+									"patching_rect" : [ 67.0, 308.0, 165.5, 23.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"id" : "obj-7",
+									"rnbo_uniqueid" : "biquad~_obj-7",
+									"rnbo_serial" : 1,
+									"rnbo_classname" : "biquad~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "newobj",
+									"text" : "filtercoeff~ bandpass",
+									"numinlets" : 3,
+									"patching_rect" : [ 96.299999999999997, 263.0, 136.199999999999989, 23.0 ],
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "signal", "signal", "signal" ],
+									"id" : "obj-6",
+									"rnbo_extra_attributes" : 									{
+										"resamp" : -1.0
+									}
+,
+									"rnbo_uniqueid" : "filtercoeff~_obj-6",
+									"rnbo_serial" : 1,
+									"rnbo_classname" : "filtercoeff~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "newobj",
+									"text" : "in~ 3 @comment Q",
+									"numinlets" : 0,
+									"patching_rect" : [ 213.5, 229.0, 110.0, 23.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"id" : "obj-5",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "signal from inlet with index 3",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"outlet" : 1,
+												"type" : "signal"
+											}
+,
+											"index" : 											{
+												"attrOrProp" : 2,
+												"digest" : "inlet number",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"mandatory" : 1
+											}
+,
+											"comment" : 											{
+												"attrOrProp" : 2,
+												"digest" : "mouse over comment",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol"
+											}
+,
+											"meta" : 											{
+												"attrOrProp" : 2,
+												"digest" : "A JSON formatted string containing metadata for use by the exported code",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "",
+												"label" : "Metadata",
+												"displayorder" : 3
+											}
+
+										}
+,
+										"inputs" : [  ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "signal",
+												"digest" : "signal from inlet with index 3",
+												"displayName" : "Q",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "in~",
+										"aliasOf" : "in~",
+										"classname" : "in~",
+										"operator" : 0,
+										"versionId" : -176007711,
+										"changesPatcherIO" : 1
+									}
+,
+									"rnbo_extra_attributes" : 									{
+										"meta" : ""
+									}
+,
+									"rnbo_uniqueid" : "in~_obj-5",
+									"rnbo_serial" : 1,
+									"rnbo_classname" : "in~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "newobj",
+									"text" : "in~ 2 @comment \"Center frequency\"",
+									"numinlets" : 0,
+									"patching_rect" : [ 96.299999999999997, 169.0, 201.0, 23.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"id" : "obj-4",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "signal from inlet with index 2",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"outlet" : 1,
+												"type" : "signal"
+											}
+,
+											"index" : 											{
+												"attrOrProp" : 2,
+												"digest" : "inlet number",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"mandatory" : 1
+											}
+,
+											"comment" : 											{
+												"attrOrProp" : 2,
+												"digest" : "mouse over comment",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol"
+											}
+,
+											"meta" : 											{
+												"attrOrProp" : 2,
+												"digest" : "A JSON formatted string containing metadata for use by the exported code",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "",
+												"label" : "Metadata",
+												"displayorder" : 3
+											}
+
+										}
+,
+										"inputs" : [  ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "signal",
+												"digest" : "signal from inlet with index 2",
+												"displayName" : "Center frequency",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "in~",
+										"aliasOf" : "in~",
+										"classname" : "in~",
+										"operator" : 0,
+										"versionId" : -176007711,
+										"changesPatcherIO" : 1
+									}
+,
+									"rnbo_extra_attributes" : 									{
+										"meta" : ""
+									}
+,
+									"rnbo_uniqueid" : "in~_obj-4",
+									"rnbo_serial" : 2,
+									"rnbo_classname" : "in~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"maxclass" : "newobj",
+									"text" : "in~ 1 @comment Signal",
+									"numinlets" : 0,
+									"patching_rect" : [ 67.0, 116.0, 132.0, 23.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"id" : "obj-3",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "signal from inlet with index 1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"outlet" : 1,
+												"type" : "signal"
+											}
+,
+											"index" : 											{
+												"attrOrProp" : 2,
+												"digest" : "inlet number",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"mandatory" : 1
+											}
+,
+											"comment" : 											{
+												"attrOrProp" : 2,
+												"digest" : "mouse over comment",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol"
+											}
+,
+											"meta" : 											{
+												"attrOrProp" : 2,
+												"digest" : "A JSON formatted string containing metadata for use by the exported code",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "",
+												"label" : "Metadata",
+												"displayorder" : 3
+											}
+
+										}
+,
+										"inputs" : [  ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "signal",
+												"digest" : "signal from inlet with index 1",
+												"displayName" : "Signal",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "in~",
+										"aliasOf" : "in~",
+										"classname" : "in~",
+										"operator" : 0,
+										"versionId" : -176007711,
+										"changesPatcherIO" : 1
+									}
+,
+									"rnbo_extra_attributes" : 									{
+										"meta" : ""
+									}
+,
+									"rnbo_uniqueid" : "in~_obj-3",
+									"rnbo_serial" : 3,
+									"rnbo_classname" : "in~"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"source" : [ "obj-7", 0 ],
+									"destination" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-6", 0 ],
+									"destination" : [ "obj-7", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-6", 1 ],
+									"destination" : [ "obj-7", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-6", 2 ],
+									"destination" : [ "obj-7", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-6", 3 ],
+									"destination" : [ "obj-7", 4 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-6", 4 ],
+									"destination" : [ "obj-7", 5 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-5", 0 ],
+									"destination" : [ "obj-6", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-4", 0 ],
+									"destination" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"source" : [ "obj-3", 0 ],
+									"destination" : [ "obj-7", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "sbb_subtitle",
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "sbb_title",
+								"default" : 								{
+									"fontface" : [ 3 ],
+									"fontsize" : [ 18.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ],
+						"default_bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+						"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+						"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+						"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+						"textcolor_inverse" : [ 0.968627, 0.968627, 0.968627, 1.0 ],
+						"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+						"bgfillcolor_type" : "color",
+						"bgfillcolor_color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+						"bgfillcolor_color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+						"bgfillcolor_color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
+						"bgfillcolor_angle" : 270.0,
+						"bgfillcolor_proportion" : 0.39,
+						"bgfillcolor_autogradient" : 0.0
+					}
+
+				}
+
+			}
+ ],
+		"appversion" : 		{
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 0,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "rnbo",
+		"description" : "110 x 23, containing 1 object",
+		"tags" : "rnbo",
+		"snippetinfo" : 		{
+			"name" : "sbb.filter.bp",
+			"type" : "rnbo",
+			"objects" : "p",
+			"tags" : "rnbo",
+			"description" : "110 x 23, containing 1 object",
+			"image" : "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"
+		}
+
+	}
+
+}
