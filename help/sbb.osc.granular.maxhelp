@@ -2,44 +2,18 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 5,
-			"revision" : 0,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 100.0, 100.0, 455.0, 463.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Lato",
@@ -92,43 +66,18 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 0,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "rnbo",
 						"rect" : [ 100.0, 126.0, 455.0, 437.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
 						"default_fontname" : "Lato",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 2,
-						"assistshowspatchername" : 0,
 						"title" : "basic",
 						"boxes" : [ 							{
 								"box" : 								{
@@ -157,7 +106,9 @@
 									"patching_rect" : [ 191.5, 232.0, 56.0, 23.0 ],
 									"rnbo_classname" : "number~",
 									"rnbo_extra_attributes" : 									{
-										"interval" : 100.0
+										"interval" : 100.0,
+										"displaymode" : "first",
+										"initialMode" : "sig"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -178,6 +129,74 @@
 									"rnbo_classname" : "loadmess",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "loadmess_obj-16",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"input" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Bang to trigger message.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"inlet" : 1,
+												"type" : "bang"
+											}
+,
+											"message" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"outlet" : 1,
+												"type" : "list",
+												"defaultValue" : ""
+											}
+,
+											"startupbang" : 											{
+												"attrOrProp" : 1,
+												"digest" : "startupbang",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "bang"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : "bang",
+												"digest" : "Bang to trigger message.",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "message",
+												"type" : "list",
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "loadmess",
+										"aliasOf" : "loadmess",
+										"classname" : "loadmess",
+										"operator" : 0,
+										"versionId" : -361086158,
+										"changesPatcherIO" : 0
+									}
+,
 									"text" : "loadmess 440"
 								}
 
@@ -197,7 +216,7 @@
 										"minimum" : "<none>",
 										"order" : "",
 										"preset" : 0,
-										"value" : 440.0
+										"initialFormat" : "float"
 									}
 ,
 									"rnbo_serial" : 1,
@@ -222,7 +241,7 @@
 										"minimum" : 0.0,
 										"order" : "",
 										"preset" : 0,
-										"value" : 0.0
+										"initialFormat" : "float"
 									}
 ,
 									"rnbo_serial" : 2,
@@ -242,6 +261,74 @@
 									"rnbo_classname" : "loadmess",
 									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "loadmess_obj-21",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"input" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Bang to trigger message.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"inlet" : 1,
+												"type" : "bang"
+											}
+,
+											"message" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"outlet" : 1,
+												"type" : "list",
+												"defaultValue" : ""
+											}
+,
+											"startupbang" : 											{
+												"attrOrProp" : 1,
+												"digest" : "startupbang",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "bang"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : "bang",
+												"digest" : "Bang to trigger message.",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "message",
+												"type" : "list",
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "loadmess",
+										"aliasOf" : "loadmess",
+										"classname" : "loadmess",
+										"operator" : 0,
+										"versionId" : -361086158,
+										"changesPatcherIO" : 0
+									}
+,
 									"text" : "loadmess 0.2"
 								}
 
@@ -263,7 +350,7 @@
 										"minimum" : 0.0,
 										"order" : "",
 										"preset" : 0,
-										"value" : 0.2
+										"initialFormat" : "float"
 									}
 ,
 									"rnbo_serial" : 3,
@@ -282,6 +369,48 @@
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "set_obj-13",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"name" : 											{
+												"attrOrProp" : 2,
+												"digest" : "attribute/param to control",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"mandatory" : 1
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list", "signal" ],
+												"digest" : "attribute or parameter value (bang, number, list)",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "output",
+												"type" : [ "bang", "number", "list", "signal" ],
+												"digest" : "connect to first inlet of gen or subpatcher",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "set",
+										"aliasOf" : "set",
+										"classname" : "set",
+										"operator" : 0,
+										"versionId" : 2121358407,
+										"changesPatcherIO" : 0
+									}
+,
 									"text" : "set starttime"
 								}
 
@@ -297,8 +426,22 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 204.5, 327.5, 94.0, 39.0 ],
-									"text" : "raise gain to hear grains",
-									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
+									"saved_attribute_attributes" : 									{
+										"bubble_bgcolor" : 										{
+											"expression" : "themecolor.theme_bubble_bgcolor"
+										}
+,
+										"bubble_outlinecolor" : 										{
+											"expression" : "themecolor.theme_bubble_outlinecolor"
+										}
+,
+										"textcolor" : 										{
+											"expression" : "themecolor.theme_textcolor"
+										}
+
+									}
+,
+									"text" : "raise gain to hear grains"
 								}
 
 							}
@@ -310,11 +453,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 289.0, 232.0, 129.0, 37.0 ],
+									"patching_rect" : [ 289.0, 232.0, 130.0, 37.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
-										"fill" : "",
 										"type" : "",
+										"fill" : "",
 										"samplerate" : 0.0
 									}
 ,
@@ -444,6 +587,19 @@
 												"type" : "bang"
 											}
 ,
+											"normalize" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Find Maximum and normalize to the value given.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"defaultValue" : "0.995"
+											}
+,
 											"channels" : 											{
 												"attrOrProp" : 1,
 												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
@@ -499,7 +655,7 @@
 ,
 											"type" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Type of Data (Float32, Float64)",
+												"digest" : "Type of Data (float32, float64)",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -582,7 +738,7 @@
 										"aliasOf" : "data",
 										"classname" : "buffer~",
 										"operator" : 0,
-										"versionId" : -52813114,
+										"versionId" : 51756089,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -601,6 +757,48 @@
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "set_obj-20",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"name" : 											{
+												"attrOrProp" : 2,
+												"digest" : "attribute/param to control",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"mandatory" : 1
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list", "signal" ],
+												"digest" : "attribute or parameter value (bang, number, list)",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "output",
+												"type" : [ "bang", "number", "list", "signal" ],
+												"digest" : "connect to first inlet of gen or subpatcher",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "set",
+										"aliasOf" : "set",
+										"classname" : "set",
+										"operator" : 0,
+										"versionId" : 2121358407,
+										"changesPatcherIO" : 0
+									}
+,
 									"text" : "set grainlength"
 								}
 
@@ -617,9 +815,9 @@
 									"rnbo_extra_attributes" : 									{
 										"receivemode" : "local",
 										"polyphony" : -1.0,
-										"exposevoiceparams" : 0,
 										"notecontroller" : 0,
-										"voicecontrol" : "MIDI"
+										"voicecontrol" : "MIDI",
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -627,6 +825,18 @@
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
 										"argnames" : 										{
+											"basefreq" : 											{
+												"attrOrProp" : 1,
+												"digest" : "basefreq",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number"
+											}
+,
 											"starttime" : 											{
 												"attrOrProp" : 1,
 												"digest" : "starttime",
@@ -642,18 +852,6 @@
 											"grainlength" : 											{
 												"attrOrProp" : 1,
 												"digest" : "grainlength",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number"
-											}
-,
-											"basefreq" : 											{
-												"attrOrProp" : 1,
-												"digest" : "basefreq",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -848,7 +1046,7 @@
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -938,7 +1136,7 @@
 										"aliasOf" : "rnbo",
 										"classname" : "p",
 										"operator" : 0,
-										"versionId" : -843978785,
+										"versionId" : 88895198,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -969,6 +1167,48 @@
 									"rnbo_classname" : "set",
 									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "set_obj-8",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"name" : 											{
+												"attrOrProp" : 2,
+												"digest" : "attribute/param to control",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"mandatory" : 1
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list", "signal" ],
+												"digest" : "attribute or parameter value (bang, number, list)",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "output",
+												"type" : [ "bang", "number", "list", "signal" ],
+												"digest" : "connect to first inlet of gen or subpatcher",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "set",
+										"aliasOf" : "set",
+										"classname" : "set",
+										"operator" : 0,
+										"versionId" : 2121358407,
+										"changesPatcherIO" : 0
+									}
+,
 									"text" : "set basefreq"
 								}
 
@@ -988,7 +1228,9 @@
 									"patching_rect" : [ 59.5, 232.0, 56.0, 23.0 ],
 									"rnbo_classname" : "number~",
 									"rnbo_extra_attributes" : 									{
-										"interval" : 100.0
+										"interval" : 100.0,
+										"displaymode" : "first",
+										"initialMode" : "sig"
 									}
 ,
 									"rnbo_serial" : 2,
@@ -1011,12 +1253,11 @@
 									"patching_rect" : [ 59.5, 336.0, 140.0, 22.0 ],
 									"rnbo_classname" : "gain~",
 									"rnbo_extra_attributes" : 									{
-										"scale" : 7.943,
 										"size" : 158.0,
+										"scale" : 7.943,
 										"inc" : 1.072,
 										"order" : "",
-										"preset" : 0,
-										"value" : 76.0
+										"preset" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1037,8 +1278,8 @@
 									"patching_rect" : [ 59.5, 386.0, 46.0, 24.0 ],
 									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
-										"meta" : "",
-										"comment" : ""
+										"comment" : "",
+										"meta" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1241,30 +1482,13 @@
 
 							}
  ],
-						"default_bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-						"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-						"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-						"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-						"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-						"bgfillcolor_type" : "color",
-						"bgfillcolor_color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-						"bgfillcolor_color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-						"bgfillcolor_color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39,
-						"bgfillcolor_autogradient" : 0.0
+						"originid" : "pat-401"
 					}
 ,
 					"patching_rect" : [ 112.0, 156.0, 103.0, 23.0 ],
 					"rnboattrcache" : 					{
-						"osc.analog[1]/starttime" : 						{
-							"label" : "starttime",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"osc.analog[1]/grainlength" : 						{
-							"label" : "grainlength",
+						"osc.analog[1]/panpos" : 						{
+							"label" : "panpos",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1275,25 +1499,33 @@
 							"parsestring" : ""
 						}
 ,
+						"osc.analog[1]/starttime" : 						{
+							"label" : "starttime",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"osc.analog[1]/buffchan" : 						{
 							"label" : "buffchan",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"osc.analog[1]/panpos" : 						{
-							"label" : "panpos",
+						"osc.analog[1]/grainlength" : 						{
+							"label" : "grainlength",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 
 					}
 ,
-					"rnboversion" : "0.18.0-dev",
+					"rnboversion" : "1.3.3",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "rnbo~[2]",
+							"parameter_modmode" : 0,
+							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "rnbo~[2]",
 							"parameter_type" : 3
 						}
@@ -1301,6 +1533,7 @@
 					}
 ,
 					"saved_object_attributes" : 					{
+						"optimization" : "O1",
 						"parameter_enable" : 1,
 						"uuid" : "9a0ece79-f45c-11ea-8e79-faffc250683e"
 					}
@@ -1315,33 +1548,7 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"__sps" : 							{
-								"osc.analog[1]" : 								{
-									"panpos" : 									{
-										"value" : 0.5
-									}
-,
-									"buffchan" : 									{
-										"value" : 0.0
-									}
-,
-									"basefreq" : 									{
-										"value" : 446.0
-									}
-,
-									"grainlength" : 									{
-										"value" : 1.0
-									}
-,
-									"starttime" : 									{
-										"value" : 0.0
-									}
 
-								}
-
-							}
-,
-							"__presetid" : "basic"
 						}
 ,
 						"snapshotlist" : 						{
@@ -1354,43 +1561,17 @@
 									"origin" : "basic",
 									"type" : "rnbo",
 									"subtype" : "",
-									"embed" : 0,
+									"embed" : 1,
 									"snapshot" : 									{
-										"__sps" : 										{
-											"osc.analog[1]" : 											{
-												"panpos" : 												{
-													"value" : 0.5
-												}
-,
-												"buffchan" : 												{
-													"value" : 0.0
-												}
-,
-												"basefreq" : 												{
-													"value" : 446.0
-												}
-,
-												"grainlength" : 												{
-													"value" : 1.0
-												}
-,
-												"starttime" : 												{
-													"value" : 0.0
-												}
 
-											}
-
-										}
-,
-										"__presetid" : "basic"
 									}
 ,
 									"fileref" : 									{
 										"name" : "basic",
-										"filename" : "basic.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filename" : "basic_20250213_1.maxsnap",
+										"filepath" : "~/Documents/Max 9/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "4b77aa0e287ec185ed01558bd40388be"
+										"snapshotfileid" : "5392e69d3fe8961696922ab7b960afcc"
 									}
 
 								}
@@ -1429,6 +1610,7 @@
 
 			}
  ],
+		"originid" : "pat-399",
 		"parameters" : 		{
 			"obj-2" : [ "rnbo~[2]", "rnbo~[2]", 0 ],
 			"parameterbanks" : 			{
@@ -1439,16 +1621,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "basic.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"name" : "basic_20250213_1.maxsnap",
+				"bootpath" : "~/Documents/Max 9/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jongly.aif",
-				"bootpath" : "C74:/media/msp",
-				"type" : "AIFF",
 				"implicit" : 1
 			}
  ],

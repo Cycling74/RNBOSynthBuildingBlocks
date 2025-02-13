@@ -2,44 +2,18 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 131.0, 196.0, 511.0, 446.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
@@ -98,43 +72,17 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
 						"rect" : [ 0.0, 26.0, 511.0, 420.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 2,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-21",
@@ -204,52 +152,45 @@
 									"autosave" : 1,
 									"fontname" : "Lato",
 									"id" : "obj-5",
+									"inletInfo" : 									{
+										"IOInfo" : [ 											{
+												"type" : "midi",
+												"index" : -1,
+												"tag" : "",
+												"comment" : ""
+											}
+ ]
+									}
+,
 									"maxclass" : "newobj",
-									"midiinletcount" : 1,
-									"midioutletcount" : 1,
 									"numinlets" : 2,
 									"numoutlets" : 2,
+									"outletInfo" : 									{
+										"IOInfo" : [ 											{
+												"type" : "midi",
+												"index" : -1,
+												"tag" : "",
+												"comment" : ""
+											}
+ ]
+									}
+,
 									"outlettype" : [ "int", "list" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
-											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"major" : 9,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "rnbo",
 										"rect" : [ 131.0, 222.0, 511.0, 420.0 ],
-										"bglocked" : 0,
-										"openinpresentation" : 0,
-										"default_fontsize" : 12.0,
-										"default_fontface" : 0,
 										"default_fontname" : "Lato",
-										"gridonopen" : 1,
 										"gridsize" : [ 15.0, 15.0 ],
-										"gridsnaponopen" : 1,
-										"objectsnaponopen" : 1,
-										"statusbarvisible" : 2,
-										"toolbarvisible" : 1,
-										"lefttoolbarpinned" : 0,
-										"toptoolbarpinned" : 0,
-										"righttoolbarpinned" : 0,
-										"bottomtoolbarpinned" : 0,
-										"toolbars_unpinned_last_save" : 0,
-										"tallnewobj" : 0,
-										"boxanimatetime" : 200,
-										"enablehscroll" : 1,
-										"enablevscroll" : 1,
-										"devicewidth" : 0.0,
-										"description" : "",
-										"digest" : "",
-										"tags" : "",
-										"style" : "",
-										"subpatcher_template" : "",
 										"showontab" : 2,
-										"assistshowspatchername" : 0,
 										"title" : "basic",
 										"boxes" : [ 											{
 												"box" : 												{
@@ -271,142 +212,9 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 66.5, 303.0, 61.0, 23.0 ],
+													"rnbo_classname" : "noteout",
 													"rnbo_serial" : 1,
 													"rnbo_uniqueid" : "noteout_obj-40",
-													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
-														"argnames" : 														{
-															"notenumber" : 															{
-																"attrOrProp" : 1,
-																"digest" : "note number",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"velocity" : 															{
-																"attrOrProp" : 1,
-																"digest" : "velocity (0 - 127)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"releasevelocity" : 															{
-																"attrOrProp" : 1,
-																"digest" : "release velocity (0 - 127)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"channel" : 															{
-																"attrOrProp" : 1,
-																"digest" : "MIDI channel (1 - 16)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"port" : 															{
-																"attrOrProp" : 1,
-																"digest" : "select port",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"midiout" : 															{
-																"attrOrProp" : 1,
-																"digest" : "connect to midiout",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-
-														}
-,
-														"inputs" : [ 															{
-																"name" : "notenumber",
-																"type" : "number",
-																"digest" : "note number",
-																"hot" : 1,
-																"docked" : 0
-															}
-, 															{
-																"name" : "velocity",
-																"type" : "number",
-																"digest" : "velocity (0 - 127)",
-																"docked" : 0
-															}
-, 															{
-																"name" : "releasevelocity",
-																"type" : "number",
-																"digest" : "release velocity (0 - 127)",
-																"docked" : 0
-															}
-, 															{
-																"name" : "channel",
-																"type" : "number",
-																"digest" : "MIDI channel (1 - 16)",
-																"docked" : 0
-															}
-, 															{
-																"name" : "port",
-																"type" : "number",
-																"digest" : "select port",
-																"docked" : 0
-															}
- ],
-														"outputs" : [ 															{
-																"name" : "midiout",
-																"type" : "number",
-																"digest" : "connect to midiout",
-																"docked" : 0
-															}
- ],
-														"helpname" : "noteout",
-														"classname" : "noteout",
-														"digest" : "generate MIDI note messages",
-														"versionId" : 0,
-														"expressive" : 0,
-														"changesPatcherIO" : 1
-													}
-,
 													"text" : "noteout"
 												}
 
@@ -419,142 +227,9 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
 													"patching_rect" : [ 66.5, 180.0, 50.5, 23.0 ],
+													"rnbo_classname" : "notein",
 													"rnbo_serial" : 1,
 													"rnbo_uniqueid" : "notein_obj-38",
-													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
-														"argnames" : 														{
-															"notenumber" : 															{
-																"attrOrProp" : 1,
-																"digest" : "note number (0-127)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"velocity" : 															{
-																"attrOrProp" : 1,
-																"digest" : "velocity (0-127)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"releasevelocity" : 															{
-																"attrOrProp" : 1,
-																"digest" : "release velocity (0-127)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"outchannel" : 															{
-																"attrOrProp" : 1,
-																"digest" : "MIDI channel (1-16)",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"input" : 															{
-																"attrOrProp" : 1,
-																"digest" : "MIDI Input",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"channel" : 															{
-																"attrOrProp" : 1,
-																"digest" : "MIDI channel (1-16) to output (-1 for all)",
-																"defaultarg" : 1,
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-
-														}
-,
-														"inputs" : [ 															{
-																"name" : "input",
-																"type" : "number",
-																"digest" : "MIDI Input",
-																"hot" : 1,
-																"docked" : 0
-															}
-, 															{
-																"name" : "channel",
-																"type" : "number",
-																"digest" : "MIDI channel (1-16) to output (-1 for all)",
-																"defaultarg" : 1,
-																"docked" : 0
-															}
- ],
-														"outputs" : [ 															{
-																"name" : "notenumber",
-																"type" : "number",
-																"digest" : "note number (0-127)",
-																"docked" : 0
-															}
-, 															{
-																"name" : "velocity",
-																"type" : "number",
-																"digest" : "velocity (0-127)",
-																"docked" : 0
-															}
-, 															{
-																"name" : "releasevelocity",
-																"type" : "number",
-																"digest" : "release velocity (0-127)",
-																"docked" : 0
-															}
-, 															{
-																"name" : "outchannel",
-																"type" : "number",
-																"digest" : "MIDI channel (1-16)",
-																"docked" : 0
-															}
- ],
-														"helpname" : "notein",
-														"classname" : "notein",
-														"digest" : "MIDI note input",
-														"versionId" : 0,
-														"expressive" : 0,
-														"changesPatcherIO" : 1
-													}
-,
 													"text" : "notein"
 												}
 
@@ -580,10 +255,11 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 304.5, 79.0, 74.0, 23.0 ],
+													"rnbo_classname" : "loadmess",
 													"rnbo_serial" : 1,
 													"rnbo_uniqueid" : "loadmess_obj-30",
 													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
+														"needsInstanceInfo" : 1,
 														"argnames" : 														{
 															"input" : 															{
 																"attrOrProp" : 1,
@@ -643,10 +319,10 @@
 															}
  ],
 														"helpname" : "loadmess",
+														"aliasOf" : "loadmess",
 														"classname" : "loadmess",
-														"digest" : "Emits a message when patch is loaded.",
-														"versionId" : 0,
-														"expressive" : 0,
+														"operator" : 0,
+														"versionId" : -361086158,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -657,245 +333,25 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-31",
-													"maxclass" : "number",
-													"maximum" : 10000,
-													"minimum" : 1,
+													"maxclass" : "flonum",
+													"maximum" : 10000.0,
+													"minimum" : 1.0,
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "bang" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 304.5, 121.0, 50.0, 23.0 ],
+													"rnbo_classname" : "number",
 													"rnbo_extra_attributes" : 													{
-														"value" : 157.0,
-														"preset" : 0
+														"maximum" : 10000.0,
+														"minimum" : 1.0,
+														"order" : "",
+														"preset" : 0,
+														"initialFormat" : "float"
 													}
 ,
 													"rnbo_serial" : 1,
-													"rnbo_uniqueid" : "number_obj-31",
-													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
-														"argnames" : 														{
-															"value" : 															{
-																"attrOrProp" : 1,
-																"digest" : "Set displayed Number and repeat to Output.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 1,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"output" : 															{
-																"attrOrProp" : 1,
-																"digest" : "Output incoming or entered Number.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"exponent" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter exponent",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"minimum" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter mininum",
-																"isalias" : 0,
-																"aliases" : [ "min" ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"min" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter mininum",
-																"isalias" : 1,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"maximum" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter maximum",
-																"isalias" : 0,
-																"aliases" : [ "max" ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"max" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter maximum",
-																"isalias" : 1,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"patching_rect" : 															{
-																"attrOrProp" : 2,
-																"digest" : "patching_rect",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "list",
-																"defaultValue" : "0,0,0,0"
-															}
-,
-															"presentation_rect" : 															{
-																"attrOrProp" : 2,
-																"digest" : "presentation_rect",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "list",
-																"defaultValue" : "0,0,0,0"
-															}
-,
-															"presentation" : 															{
-																"attrOrProp" : 2,
-																"digest" : "presentation",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"steps" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter steps",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"displayName" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Display Name",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : ""
-															}
-,
-															"unit" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Unit Style",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : ""
-															}
-,
-															"preset" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Add this value to the preset.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "bool",
-																"defaultValue" : "false"
-															}
-,
-															"order" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Preset restore order.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"mandatory" : 1
-															}
-
-														}
-,
-														"inputs" : [ 															{
-																"name" : "value",
-																"type" : "number",
-																"digest" : "Set displayed Number and repeat to Output.",
-																"hot" : 1,
-																"docked" : 1
-															}
- ],
-														"outputs" : [ 															{
-																"name" : "output",
-																"type" : "number",
-																"digest" : "Output incoming or entered Number.",
-																"docked" : 0
-															}
- ],
-														"helpname" : "number",
-														"classname" : "number",
-														"digest" : "number box",
-														"versionId" : 0,
-														"expressive" : 0,
-														"changesPatcherIO" : 0
-													}
-
+													"rnbo_uniqueid" : "number_obj-31"
 												}
 
 											}
@@ -907,10 +363,11 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 304.5, 163.0, 72.0, 23.0 ],
+													"rnbo_classname" : "set",
 													"rnbo_serial" : 1,
 													"rnbo_uniqueid" : "set_obj-32",
 													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
+														"needsInstanceInfo" : 1,
 														"argnames" : 														{
 															"name" : 															{
 																"attrOrProp" : 2,
@@ -931,7 +388,7 @@
 														"inputs" : [ 															{
 																"name" : "input",
 																"type" : [ "bang", "number", "list", "signal" ],
-																"digest" : "param",
+																"digest" : "attribute or parameter value (bang, number, list)",
 																"hot" : 1,
 																"docked" : 0
 															}
@@ -944,11 +401,10 @@
 															}
  ],
 														"helpname" : "set",
-														"aliases" : [ "setattr", "setparam" ],
+														"aliasOf" : "set",
 														"classname" : "set",
-														"digest" : "Set state of attributes and parameters",
-														"versionId" : 0,
-														"expressive" : 0,
+														"operator" : 0,
+														"versionId" : 2121358407,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -964,16 +420,18 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 66.5, 250.0, 130.0, 23.0 ],
+													"rnbo_classname" : "p",
 													"rnbo_extra_attributes" : 													{
+														"args" : [  ],
 														"receivemode" : "local",
-														"args" : "",
-														"notecontroller" : "",
-														"patcherPath" : "",
-														"voicecontrol" : "MIDI"
+														"polyphony" : -1.0,
+														"notecontroller" : 0,
+														"voicecontrol" : "MIDI",
+														"exposevoiceparams" : 0
 													}
 ,
 													"rnbo_serial" : 1,
-													"rnbo_uniqueid" : "rnbo_obj-60",
+													"rnbo_uniqueid" : "p_obj-60",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
 														"argnames" : 														{
@@ -1080,7 +538,21 @@
 																"attachable" : 0,
 																"isparam" : 0,
 																"deprecated" : 0,
+																"type" : "number",
 																"defaultValue" : "-1"
+															}
+,
+															"exposevoiceparams" : 															{
+																"attrOrProp" : 2,
+																"digest" : "Expose per voice versions of the contained parameters (only valid in polyphonic subpatchers).",
+																"isalias" : 0,
+																"aliases" : [  ],
+																"settable" : 1,
+																"attachable" : 0,
+																"isparam" : 0,
+																"deprecated" : 0,
+																"type" : "bool",
+																"defaultValue" : "false"
 															}
 ,
 															"title" : 															{
@@ -1093,7 +565,8 @@
 																"attachable" : 0,
 																"isparam" : 0,
 																"deprecated" : 0,
-																"type" : "symbol"
+																"type" : "symbol",
+																"doNotShowInMaxInspector" : 1
 															}
 ,
 															"file" : 															{
@@ -1105,21 +578,22 @@
 																"attachable" : 0,
 																"isparam" : 0,
 																"deprecated" : 0,
-																"type" : "symbol"
+																"type" : "symbol",
+																"doNotShowInMaxInspector" : 1
 															}
 ,
 															"voicecontrol" : 															{
 																"attrOrProp" : 2,
-																"digest" : "The way voices are controlled. MIDI (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'None' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+																"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 																"isalias" : 0,
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
 																"isparam" : 0,
 																"deprecated" : 0,
-																"enum" : [ "MIDI", "None" ],
+																"enum" : [ "simple", "user" ],
 																"type" : "enum",
-																"defaultValue" : "MIDI"
+																"defaultValue" : "simple"
 															}
 ,
 															"notecontroller" : 															{
@@ -1131,19 +605,8 @@
 																"attachable" : 0,
 																"isparam" : 0,
 																"deprecated" : 0,
-																"type" : "symbol"
-															}
-,
-															"patcherPath" : 															{
-																"attrOrProp" : 2,
-																"digest" : "patcherPath",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol"
+																"type" : "symbol",
+																"doNotShowInMaxInspector" : 1
 															}
 ,
 															"receivemode" : 															{
@@ -1162,14 +625,15 @@
 ,
 															"args" : 															{
 																"attrOrProp" : 2,
-																"digest" : "Replacement args for the subpatcher, everthing named #1, #2 etc. will be replaced with the according argument.",
+																"digest" : "Replacement args for the subpatcher, everything named #1, #2 etc. will be replaced with the according argument.",
 																"isalias" : 0,
 																"aliases" : [  ],
 																"settable" : 1,
 																"attachable" : 0,
 																"isparam" : 0,
 																"deprecated" : 0,
-																"type" : "symbol"
+																"type" : "symbol",
+																"doNotShowInMaxInspector" : 1
 															}
 
 														}
@@ -1206,12 +670,11 @@
 																"docked" : 0
 															}
  ],
-														"helpname" : "rnbo",
+														"helpname" : "patcher",
 														"aliasOf" : "rnbo",
-														"classname" : "rnbo",
-														"expressive" : 0,
+														"classname" : "p",
 														"operator" : 0,
-														"versionId" : 0,
+														"versionId" : 88895198,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -1240,10 +703,11 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 150.5, 79.0, 81.0, 23.0 ],
+													"rnbo_classname" : "loadmess",
 													"rnbo_serial" : 2,
 													"rnbo_uniqueid" : "loadmess_obj-22",
 													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
+														"needsInstanceInfo" : 1,
 														"argnames" : 														{
 															"input" : 															{
 																"attrOrProp" : 1,
@@ -1303,10 +767,10 @@
 															}
  ],
 														"helpname" : "loadmess",
+														"aliasOf" : "loadmess",
 														"classname" : "loadmess",
-														"digest" : "Emits a message when patch is loaded.",
-														"versionId" : 0,
-														"expressive" : 0,
+														"operator" : 0,
+														"versionId" : -361086158,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -1317,245 +781,25 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-21",
-													"maxclass" : "number",
-													"maximum" : 10000,
-													"minimum" : 1,
+													"maxclass" : "flonum",
+													"maximum" : 10000.0,
+													"minimum" : 1.0,
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "bang" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 150.5, 121.0, 50.0, 23.0 ],
+													"rnbo_classname" : "number",
 													"rnbo_extra_attributes" : 													{
-														"value" : 236.0,
-														"preset" : 0
+														"maximum" : 10000.0,
+														"minimum" : 1.0,
+														"order" : "",
+														"preset" : 0,
+														"initialFormat" : "float"
 													}
 ,
 													"rnbo_serial" : 2,
-													"rnbo_uniqueid" : "number_obj-21",
-													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
-														"argnames" : 														{
-															"value" : 															{
-																"attrOrProp" : 1,
-																"digest" : "Set displayed Number and repeat to Output.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 1,
-																"deprecated" : 0,
-																"inlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"output" : 															{
-																"attrOrProp" : 1,
-																"digest" : "Output incoming or entered Number.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"outlet" : 1,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"exponent" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter exponent",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"minimum" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter mininum",
-																"isalias" : 0,
-																"aliases" : [ "min" ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"min" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter mininum",
-																"isalias" : 1,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"maximum" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter maximum",
-																"isalias" : 0,
-																"aliases" : [ "max" ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"max" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter maximum",
-																"isalias" : 1,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "1"
-															}
-,
-															"patching_rect" : 															{
-																"attrOrProp" : 2,
-																"digest" : "patching_rect",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "list",
-																"defaultValue" : "0,0,0,0"
-															}
-,
-															"presentation_rect" : 															{
-																"attrOrProp" : 2,
-																"digest" : "presentation_rect",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "list",
-																"defaultValue" : "0,0,0,0"
-															}
-,
-															"presentation" : 															{
-																"attrOrProp" : 2,
-																"digest" : "presentation",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"steps" : 															{
-																"attrOrProp" : 2,
-																"digest" : "parameter steps",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "number",
-																"defaultValue" : "0"
-															}
-,
-															"displayName" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Display Name",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : ""
-															}
-,
-															"unit" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Unit Style",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 0,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"defaultValue" : ""
-															}
-,
-															"preset" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Add this value to the preset.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "bool",
-																"defaultValue" : "false"
-															}
-,
-															"order" : 															{
-																"attrOrProp" : 2,
-																"digest" : "Preset restore order.",
-																"isalias" : 0,
-																"aliases" : [  ],
-																"settable" : 1,
-																"attachable" : 0,
-																"isparam" : 0,
-																"deprecated" : 0,
-																"type" : "symbol",
-																"mandatory" : 1
-															}
-
-														}
-,
-														"inputs" : [ 															{
-																"name" : "value",
-																"type" : "number",
-																"digest" : "Set displayed Number and repeat to Output.",
-																"hot" : 1,
-																"docked" : 1
-															}
- ],
-														"outputs" : [ 															{
-																"name" : "output",
-																"type" : "number",
-																"digest" : "Output incoming or entered Number.",
-																"docked" : 0
-															}
- ],
-														"helpname" : "number",
-														"classname" : "number",
-														"digest" : "number box",
-														"versionId" : 0,
-														"expressive" : 0,
-														"changesPatcherIO" : 0
-													}
-
+													"rnbo_uniqueid" : "number_obj-21"
 												}
 
 											}
@@ -1567,10 +811,11 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 150.5, 163.0, 67.0, 23.0 ],
+													"rnbo_classname" : "set",
 													"rnbo_serial" : 2,
 													"rnbo_uniqueid" : "set_obj-19",
 													"rnboinfo" : 													{
-														"needsInstanceInfo" : 0,
+														"needsInstanceInfo" : 1,
 														"argnames" : 														{
 															"name" : 															{
 																"attrOrProp" : 2,
@@ -1591,7 +836,7 @@
 														"inputs" : [ 															{
 																"name" : "input",
 																"type" : [ "bang", "number", "list", "signal" ],
-																"digest" : "param",
+																"digest" : "attribute or parameter value (bang, number, list)",
 																"hot" : 1,
 																"docked" : 0
 															}
@@ -1604,11 +849,10 @@
 															}
  ],
 														"helpname" : "set",
-														"aliases" : [ "setattr", "setparam" ],
+														"aliasOf" : "set",
 														"classname" : "set",
-														"digest" : "Set state of attributes and parameters",
-														"versionId" : 0,
-														"expressive" : 0,
+														"operator" : 0,
+														"versionId" : 2121358407,
 														"changesPatcherIO" : 0
 													}
 ,
@@ -1718,6 +962,7 @@
 
 											}
  ],
+										"originid" : "pat-339",
 										"styles" : [ 											{
 												"name" : "rnbo",
 												"default" : 												{
@@ -1743,23 +988,17 @@
 												"parentstyle" : "",
 												"multi" : 0
 											}
- ],
-										"default_bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-										"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-										"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-										"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-										"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-										"bgfillcolor_type" : "color",
-										"bgfillcolor_color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-										"bgfillcolor_color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-										"bgfillcolor_color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"bgfillcolor_angle" : 270.0,
-										"bgfillcolor_proportion" : 0.39,
-										"bgfillcolor_autogradient" : 0.0
+ ]
 									}
 ,
 									"patching_rect" : [ 105.5, 251.0, 103.0, 23.0 ],
 									"rnboattrcache" : 									{
+										"rnbo_obj-60/interval" : 										{
+											"label" : "interval",
+											"isEnum" : 0,
+											"parsestring" : ""
+										}
+,
 										"rnbo_obj-60/duration" : 										{
 											"label" : "duration",
 											"isEnum" : 0,
@@ -1771,19 +1010,16 @@
 											"isEnum" : 0,
 											"parsestring" : ""
 										}
-,
-										"rnbo_obj-60/interval" : 										{
-											"label" : "interval",
-											"isEnum" : 0,
-											"parsestring" : ""
-										}
 
 									}
 ,
+									"rnboversion" : "1.3.3",
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_invisible" : 1,
 											"parameter_longname" : "rnbo~[2]",
+											"parameter_modmode" : 0,
+											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "rnbo~[2]",
 											"parameter_type" : 3
 										}
@@ -1791,12 +1027,11 @@
 									}
 ,
 									"saved_object_attributes" : 									{
+										"optimization" : "O1",
 										"parameter_enable" : 1,
 										"uuid" : "9a0ece79-f45c-11ea-8e79-faffc250683e"
 									}
 ,
-									"signalinletcount" : 0,
-									"signaloutletcount" : 0,
 									"snapshot" : 									{
 										"filetype" : "C74Snapshot",
 										"version" : 2,
@@ -1807,25 +1042,7 @@
 										"subtype" : "Undefined",
 										"embed" : 1,
 										"snapshot" : 										{
-											"__sps" : 											{
-												"rnbo_obj-60" : 												{
-													"duration" : 													{
-														"value" : 157.0
-													}
-,
-													"interval" : 													{
-														"value" : 236.0
-													}
-,
-													"velocity" : 													{
-														"value" : 100.0
-													}
 
-												}
-
-											}
-,
-											"__presetid" : "basic"
 										}
 ,
 										"snapshotlist" : 										{
@@ -1834,57 +1051,21 @@
 													"filetype" : "C74Snapshot",
 													"version" : 2,
 													"minorversion" : 0,
-													"name" : "",
+													"name" : "basic",
 													"origin" : "basic",
 													"type" : "rnbo",
 													"subtype" : "",
-													"embed" : 0,
+													"embed" : 1,
 													"snapshot" : 													{
-														"__sps" : 														{
-															"rnbo_obj-60" : 															{
-																"duration" : 																{
-																	"value" : 157.0
-																}
-,
-																"interval" : 																{
-																	"value" : 236.0
-																}
-,
-																"velocity" : 																{
-																	"value" : 100.0
-																}
 
-															}
-
-														}
-,
-														"__presetid" : "basic"
 													}
 ,
 													"fileref" : 													{
-														"name" : "",
-														"filename" : "_20210803.maxsnap",
-														"filepath" : "~/Documents/Max 8/Snapshots",
+														"name" : "basic",
+														"filename" : "basic_20250213_13.maxsnap",
+														"filepath" : "~/Documents/Max 9/Snapshots",
 														"filepos" : -1,
-														"snapshotfileid" : "6786a20466268d5deff4c3a049b99bbc"
-													}
-
-												}
-, 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "",
-													"origin" : "basic",
-													"type" : "rnbo",
-													"subtype" : "",
-													"embed" : 0,
-													"fileref" : 													{
-														"name" : "",
-														"filename" : "_20210902_1.maxsnap",
-														"filepath" : "~/Documents/Max 8/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "e922750ad9c30128f47113acc02444df"
+														"snapshotfileid" : "9f349ad4c4f890dfda5d48adad934767"
 													}
 
 												}
@@ -1968,6 +1149,7 @@
 
 							}
  ],
+						"originid" : "pat-337",
 						"styles" : [ 							{
 								"name" : "rnbo",
 								"default" : 								{
@@ -1998,10 +1180,7 @@
 ,
 					"patching_rect" : [ 2.0, 2.0, 78.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p max-usage"
@@ -2032,6 +1211,7 @@
 
 			}
  ],
+		"originid" : "pat-335",
 		"parameters" : 		{
 			"obj-1::obj-5" : [ "rnbo~[2]", "rnbo~[2]", 0 ],
 			"parameterbanks" : 			{
@@ -2042,22 +1222,11 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "_20210803.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"name" : "basic_20250213_13.maxsnap",
+				"bootpath" : "~/Documents/Max 9/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "_20210902_1.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rnbo~.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

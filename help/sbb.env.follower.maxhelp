@@ -2,44 +2,18 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 168.0, 163.0, 432.0, 556.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
+		"rect" : [ 100.0, 100.0, 432.0, 556.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-20",
@@ -50,42 +24,16 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
 						"rect" : [ 84.0, 129.0, 311.0, 396.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -115,9 +63,13 @@
 									"id" : "obj-15",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 126.333333333333343, 192.0, 134.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"legacy" : 1
+									}
+,
 									"text" : "dict.unpack description:"
 								}
 
@@ -139,11 +91,12 @@
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 4,
-									"outlettype" : [ "dictionary", "", "", "" ],
+									"numoutlets" : 5,
+									"outlettype" : [ "dictionary", "", "", "", "" ],
 									"patching_rect" : [ 50.0, 136.0, 140.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
+										"legacy" : 1,
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
 									}
@@ -220,15 +173,13 @@
 								}
 
 							}
- ]
+ ],
+						"originid" : "pat-677"
 					}
 ,
 					"patching_rect" : [ 26.0, 53.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p get-digest"
@@ -291,56 +242,45 @@
 					"autosave" : 1,
 					"fontname" : "Lato",
 					"id" : "obj-2",
+					"inletInfo" : 					{
+						"IOInfo" : [  ]
+					}
+,
 					"maxclass" : "newobj",
-					"midiinletcount" : 0,
-					"midioutletcount" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
+					"outletInfo" : 					{
+						"IOInfo" : [ 							{
+								"type" : "signal",
+								"index" : 1,
+								"tag" : "",
+								"comment" : ""
+							}
+ ]
+					}
+,
 					"outlettype" : [ "signal", "list" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 168.0, 189.0, 432.0, 530.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
+						"rect" : [ 100.0, 126.0, 432.0, 530.0 ],
 						"default_fontname" : "Lato",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 2,
-						"assistshowspatchername" : 0,
 						"title" : "basic",
 						"boxes" : [ 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubble_bgcolor" : [ 0.235, 0.235, 0.235, 1.0 ],
+									"bubble_outlinecolor" : [ 0.85, 0.85, 0.85, 1.0 ],
 									"bubbleside" : 2,
 									"bubbleusescolors" : 1,
 									"fontname" : "Lato",
@@ -350,252 +290,47 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 257.0, 106.0, 119.0, 69.0 ],
+									"saved_attribute_attributes" : 									{
+										"bubble_bgcolor" : 										{
+											"expression" : "themecolor.theme_bubble_bgcolor"
+										}
+,
+										"bubble_outlinecolor" : 										{
+											"expression" : "themecolor.theme_bubble_outlinecolor"
+										}
+,
+										"textcolor" : 										{
+											"expression" : "themecolor.theme_textcolor"
+										}
+
+									}
+,
 									"text" : "number of samples to use in computing envelope",
-									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"maxclass" : "number",
-									"minimum" : 1,
+									"maxclass" : "flonum",
+									"minimum" : 1.0,
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 288.0, 177.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
-										"value" : 1.0,
-										"preset" : 0
+										"maximum" : "<none>",
+										"minimum" : 1.0,
+										"order" : "",
+										"preset" : 0,
+										"initialFormat" : "float"
 									}
 ,
 									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "number_obj-15",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 0,
-										"argnames" : 										{
-											"value" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Set displayed Number and repeat to Output.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 1,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"output" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Output incoming or entered Number.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"exponent" : 											{
-												"attrOrProp" : 2,
-												"digest" : "parameter exponent",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"minimum" : 											{
-												"attrOrProp" : 2,
-												"digest" : "parameter mininum",
-												"isalias" : 0,
-												"aliases" : [ "min" ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"min" : 											{
-												"attrOrProp" : 2,
-												"digest" : "parameter mininum",
-												"isalias" : 1,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"maximum" : 											{
-												"attrOrProp" : 2,
-												"digest" : "parameter maximum",
-												"isalias" : 0,
-												"aliases" : [ "max" ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"max" : 											{
-												"attrOrProp" : 2,
-												"digest" : "parameter maximum",
-												"isalias" : 1,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"patching_rect" : 											{
-												"attrOrProp" : 2,
-												"digest" : "patching_rect",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list",
-												"defaultValue" : "0,0,0,0"
-											}
-,
-											"presentation_rect" : 											{
-												"attrOrProp" : 2,
-												"digest" : "presentation_rect",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list",
-												"defaultValue" : "0,0,0,0"
-											}
-,
-											"presentation" : 											{
-												"attrOrProp" : 2,
-												"digest" : "presentation",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"steps" : 											{
-												"attrOrProp" : 2,
-												"digest" : "parameter steps",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"displayName" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Display Name",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol",
-												"defaultValue" : ""
-											}
-,
-											"unit" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Unit Style",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol",
-												"defaultValue" : ""
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "bool",
-												"defaultValue" : "false"
-											}
-,
-											"order" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Preset restore order.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "value",
-												"type" : "number",
-												"digest" : "Set displayed Number and repeat to Output.",
-												"hot" : 1,
-												"docked" : 1
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "output",
-												"type" : "number",
-												"digest" : "Output incoming or entered Number.",
-												"docked" : 0
-											}
- ],
-										"helpname" : "number",
-										"classname" : "number",
-										"digest" : "number box",
-										"versionId" : 0,
-										"expressive" : 0,
-										"changesPatcherIO" : 0
-									}
-
+									"rnbo_uniqueid" : "number_obj-15"
 								}
 
 							}
@@ -607,10 +342,11 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 288.0, 212.0, 96.0, 23.0 ],
+									"rnbo_classname" : "set",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "set_obj-13",
 									"rnboinfo" : 									{
-										"needsInstanceInfo" : 0,
+										"needsInstanceInfo" : 1,
 										"argnames" : 										{
 											"name" : 											{
 												"attrOrProp" : 2,
@@ -631,7 +367,7 @@
 										"inputs" : [ 											{
 												"name" : "input",
 												"type" : [ "bang", "number", "list", "signal" ],
-												"digest" : "param",
+												"digest" : "attribute or parameter value (bang, number, list)",
 												"hot" : 1,
 												"docked" : 0
 											}
@@ -644,11 +380,10 @@
 											}
  ],
 										"helpname" : "set",
-										"aliases" : [ "setattr", "setparam" ],
+										"aliasOf" : "set",
 										"classname" : "set",
-										"digest" : "Set state of attributes and parameters",
-										"versionId" : 0,
-										"expressive" : 0,
+										"operator" : 0,
+										"versionId" : 2121358407,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -681,6 +416,8 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubble_bgcolor" : [ 0.235, 0.235, 0.235, 1.0 ],
+									"bubble_outlinecolor" : [ 0.85, 0.85, 0.85, 1.0 ],
 									"bubbleusescolors" : 1,
 									"fontname" : "Lato",
 									"id" : "obj-6",
@@ -688,153 +425,43 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 87.0, 128.5, 104.0, 25.0 ],
+									"saved_attribute_attributes" : 									{
+										"bubble_bgcolor" : 										{
+											"expression" : "themecolor.theme_bubble_bgcolor"
+										}
+,
+										"bubble_outlinecolor" : 										{
+											"expression" : "themecolor.theme_bubble_outlinecolor"
+										}
+,
+										"textcolor" : 										{
+											"expression" : "themecolor.theme_textcolor"
+										}
+
+									}
+,
 									"text" : "begin playback",
-									"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
+									"textcolor" : [ 0.85, 0.85, 0.85, 1.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"bufsize" : 128.0,
+									"calccount" : 256.0,
 									"id" : "obj-1",
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
 									"patching_rect" : [ 54.0, 360.0, 133.0, 65.0 ],
+									"rnbo_classname" : "scope~",
 									"rnbo_extra_attributes" : 									{
-										"x_enabled" : 1,
-										"y_enabled" : 0
+										"calccount" : 256.0,
+										"bufsize" : 128.0
 									}
 ,
 									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "scope~_obj-1",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 0,
-										"argnames" : 										{
-											"x" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Audio Signal to display on the X-Axis.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "signal"
-											}
-,
-											"y" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Audio Signal to display on the Y-Axis.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "signal"
-											}
-,
-											"setup" : 											{
-												"attrOrProp" : 1,
-												"digest" : "setup",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list"
-											}
-,
-											"monitor" : 											{
-												"attrOrProp" : 1,
-												"digest" : "monitor",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list"
-											}
-,
-											"bufsize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "bufsize",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "128"
-											}
-,
-											"calccount" : 											{
-												"attrOrProp" : 1,
-												"digest" : "calccount",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "32"
-											}
-,
-											"x_enabled" : 											{
-												"attrOrProp" : 2,
-												"digest" : "x_enabled",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "int",
-												"defaultValue" : "1"
-											}
-,
-											"y_enabled" : 											{
-												"attrOrProp" : 2,
-												"digest" : "y_enabled",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "int",
-												"defaultValue" : "0"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "x",
-												"type" : "signal",
-												"digest" : "Audio Signal to display on the X-Axis.",
-												"hot" : 1,
-												"docked" : 0
-											}
-, 											{
-												"name" : "y",
-												"type" : "signal",
-												"digest" : "Audio Signal to display on the Y-Axis.",
-												"docked" : 0
-											}
- ],
-										"outputs" : [  ],
-										"helpname" : "scope~",
-										"classname" : "scope~",
-										"digest" : "Visualize audio signal using an oscilloscope style display.",
-										"versionId" : 0,
-										"expressive" : 0,
-										"changesPatcherIO" : 0
-									}
-
+									"rnbo_uniqueid" : "scope~_obj-1"
 								}
 
 							}
@@ -847,247 +474,29 @@
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 54.0, 128.5, 24.0, 24.0 ],
+									"rnbo_classname" : "button",
 									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "button_obj-17",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 0,
-										"argnames" : 										{
-											"bangval" : 											{
-												"attrOrProp" : 1,
-												"digest" : "bang",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 1,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"patching_rect" : 											{
-												"attrOrProp" : 2,
-												"digest" : "patching_rect",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list",
-												"defaultValue" : "0,0,0,0"
-											}
-,
-											"presentation_rect" : 											{
-												"attrOrProp" : 2,
-												"digest" : "presentation_rect",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list",
-												"defaultValue" : "0,0,0,0"
-											}
-,
-											"presentation" : 											{
-												"attrOrProp" : 2,
-												"digest" : "presentation",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"displayName" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Display Name",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol",
-												"defaultValue" : ""
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "bangval",
-												"type" : "bang",
-												"digest" : "bang",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "bangval",
-												"type" : "bang",
-												"digest" : "bang",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"helpname" : "button",
-										"classname" : "button",
-										"digest" : "button",
-										"versionId" : 0,
-										"expressive" : 0,
-										"changesPatcherIO" : 0
-									}
-
+									"rnbo_uniqueid" : "button_obj-17"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"bufsize" : 128.0,
+									"calccount" : 256.0,
 									"id" : "obj-12",
 									"maxclass" : "scope~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
 									"patching_rect" : [ 54.0, 283.0, 132.0, 65.0 ],
+									"rnbo_classname" : "scope~",
 									"rnbo_extra_attributes" : 									{
-										"x_enabled" : 1,
-										"y_enabled" : 0
+										"calccount" : 256.0,
+										"bufsize" : 128.0
 									}
 ,
 									"rnbo_serial" : 2,
-									"rnbo_uniqueid" : "scope~_obj-12",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 0,
-										"argnames" : 										{
-											"x" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Audio Signal to display on the X-Axis.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "signal"
-											}
-,
-											"y" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Audio Signal to display on the Y-Axis.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "signal"
-											}
-,
-											"setup" : 											{
-												"attrOrProp" : 1,
-												"digest" : "setup",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list"
-											}
-,
-											"monitor" : 											{
-												"attrOrProp" : 1,
-												"digest" : "monitor",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "list"
-											}
-,
-											"bufsize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "bufsize",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "128"
-											}
-,
-											"calccount" : 											{
-												"attrOrProp" : 1,
-												"digest" : "calccount",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "32"
-											}
-,
-											"x_enabled" : 											{
-												"attrOrProp" : 2,
-												"digest" : "x_enabled",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "int",
-												"defaultValue" : "1"
-											}
-,
-											"y_enabled" : 											{
-												"attrOrProp" : 2,
-												"digest" : "y_enabled",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "int",
-												"defaultValue" : "0"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "x",
-												"type" : "signal",
-												"digest" : "Audio Signal to display on the X-Axis.",
-												"hot" : 1,
-												"docked" : 0
-											}
-, 											{
-												"name" : "y",
-												"type" : "signal",
-												"digest" : "Audio Signal to display on the Y-Axis.",
-												"docked" : 0
-											}
- ],
-										"outputs" : [  ],
-										"helpname" : "scope~",
-										"classname" : "scope~",
-										"digest" : "Visualize audio signal using an oscilloscope style display.",
-										"versionId" : 0,
-										"expressive" : 0,
-										"changesPatcherIO" : 0
-									}
-
+									"rnbo_uniqueid" : "scope~_obj-12"
 								}
 
 							}
@@ -1099,11 +508,31 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
 									"patching_rect" : [ 54.0, 173.0, 192.0, 23.0 ],
+									"rnbo_classname" : "groove~",
+									"rnbo_extra_attributes" : 									{
+										"syncmode" : "phase",
+										"synctype" : "relative"
+									}
+,
 									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "groove_obj-11",
+									"rnbo_uniqueid" : "groove~_obj-11",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
 										"argnames" : 										{
+											"rate" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Playback rate.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"inlet" : 1,
+												"type" : "number",
+												"defaultValue" : "1"
+											}
+,
 											"begin" : 											{
 												"attrOrProp" : 1,
 												"digest" : "Loop min (ms).",
@@ -1134,7 +563,7 @@
 ,
 											"out1" : 											{
 												"attrOrProp" : 1,
-												"digest" : "out1",
+												"digest" : "The sample output.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 0,
@@ -1147,7 +576,7 @@
 ,
 											"sync" : 											{
 												"attrOrProp" : 1,
-												"digest" : "Sync output",
+												"digest" : "Sync output (phase, samples, ms)",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 0,
@@ -1160,7 +589,7 @@
 ,
 											"loop" : 											{
 												"attrOrProp" : 1,
-												"digest" : "loop",
+												"digest" : "The word loop, followed by a `0` or `1`, disables/enables looping.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -1173,7 +602,7 @@
 ,
 											"crossfade" : 											{
 												"attrOrProp" : 1,
-												"digest" : "Attempted crossfade on loop jumpback, actual fade depends on available sample material. (ms)",
+												"digest" : "Enable an attempted crossfade on loop jumpback. The fade depends on available sample material (ms).",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -1186,7 +615,7 @@
 ,
 											"stop" : 											{
 												"attrOrProp" : 1,
-												"digest" : "stop",
+												"digest" : "Stops the playback of the buffer.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"attachable" : 1,
@@ -1197,7 +626,7 @@
 ,
 											"buffer" : 											{
 												"attrOrProp" : 1,
-												"digest" : "buffer",
+												"digest" : "If multiple buffer names are declared to be used, this sets the currently active buffer using an index [0 based].",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"attachable" : 1,
@@ -1209,7 +638,7 @@
 ,
 											"buffername" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Buffer to use.",
+												"digest" : "Buffer to use",
 												"defaultarg" : 1,
 												"isalias" : 0,
 												"aliases" : [  ],
@@ -1233,6 +662,34 @@
 												"deprecated" : 0,
 												"type" : "number",
 												"defaultValue" : "1"
+											}
+,
+											"syncmode" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Determines if the sync outlet reports phase (0..1), samples or milliseconds.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"enum" : [ "phase", "samples", "ms" ],
+												"type" : "enum",
+												"defaultValue" : "phase"
+											}
+,
+											"synctype" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Set the sync signal to be relative to the loop length or absolute to the clip length.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"enum" : [ "relative", "absolute" ],
+												"type" : "enum",
+												"defaultValue" : "relative"
 											}
 
 										}
@@ -1260,22 +717,21 @@
 										"outputs" : [ 											{
 												"name" : "out1",
 												"type" : "signal",
-												"digest" : "out1",
+												"digest" : "The sample output.",
 												"docked" : 0
 											}
 , 											{
 												"name" : "sync",
 												"type" : "signal",
-												"digest" : "Sync output",
+												"digest" : "Sync output (phase, samples, ms)",
 												"docked" : 0
 											}
  ],
 										"helpname" : "groove~",
 										"aliasOf" : "groove~",
-										"classname" : "groove",
-										"expressive" : 0,
+										"classname" : "groove~",
 										"operator" : 0,
-										"versionId" : -2014315476,
+										"versionId" : -1161749990,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -1292,15 +748,15 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 266.0, 447.0, 92.0, 37.0 ],
+									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
-										"samplerate" : 0.0,
-										"fill" : "",
 										"type" : "",
-										"external" : 0
+										"fill" : "",
+										"samplerate" : 0.0
 									}
 ,
 									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "data_obj-9",
+									"rnbo_uniqueid" : "buffer~_obj-9",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
 										"argnames" : 										{
@@ -1368,7 +824,7 @@
 												"attachable" : 1,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol",
+												"type" : "number",
 												"defaultValue" : "0"
 											}
 ,
@@ -1377,12 +833,13 @@
 												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
 												"defaultarg" : 2,
 												"isalias" : 1,
+												"aliasOf" : "size",
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 1,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol",
+												"type" : "number",
 												"defaultValue" : "0"
 											}
 ,
@@ -1403,6 +860,7 @@
 												"attrOrProp" : 1,
 												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
 												"isalias" : 1,
+												"aliasOf" : "sizems",
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 1,
@@ -1410,6 +868,30 @@
 												"deprecated" : 0,
 												"type" : "number",
 												"defaultValue" : "0"
+											}
+,
+											"clear" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Clear the contents of the buffer",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "bang"
+											}
+,
+											"normalize" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Find Maximum and normalize to the value given.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "number",
+												"defaultValue" : "0.995"
 											}
 ,
 											"channels" : 											{
@@ -1428,7 +910,7 @@
 ,
 											"name" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Name of data object or external buffer",
+												"digest" : "Name of the data buffer",
 												"defaultarg" : 1,
 												"isalias" : 0,
 												"aliases" : [  ],
@@ -1452,9 +934,22 @@
 												"type" : "symbol"
 											}
 ,
+											"url" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The name of an audio file to load",
+												"isalias" : 1,
+												"aliasOf" : "file",
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol"
+											}
+,
 											"type" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Type of Data (Float32, Float64)",
+												"digest" : "Type of Data (float32, float64)",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -1492,7 +987,7 @@
 ,
 											"external" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world, buffers with no size are always external.",
+												"digest" : "Await data from the outside world.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -1500,7 +995,7 @@
 												"isparam" : 0,
 												"deprecated" : 0,
 												"type" : "bool",
-												"defaultValue" : "false"
+												"doNotShowInMaxInspector" : 1
 											}
 
 										}
@@ -1535,10 +1030,9 @@
  ],
 										"helpname" : "buffer~",
 										"aliasOf" : "data",
-										"classname" : "data",
-										"expressive" : 0,
+										"classname" : "buffer~",
 										"operator" : 0,
-										"versionId" : -1046160574,
+										"versionId" : 51756089,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -1554,12 +1048,14 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 54.0, 250.0, 152.0, 23.0 ],
+									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
+										"args" : [  ],
 										"receivemode" : "local",
-										"args" : "",
-										"patcherPath" : "",
+										"polyphony" : -1.0,
+										"notecontroller" : 0,
 										"voicecontrol" : "MIDI",
-										"notecontroller" : "internal"
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1670,7 +1166,21 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
+												"type" : "number",
 												"defaultValue" : "-1"
+											}
+,
+											"exposevoiceparams" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Expose per voice versions of the contained parameters (only valid in polyphonic subpatchers).",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "bool",
+												"defaultValue" : "false"
 											}
 ,
 											"title" : 											{
@@ -1683,7 +1193,8 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol"
+												"type" : "symbol",
+												"doNotShowInMaxInspector" : 1
 											}
 ,
 											"file" : 											{
@@ -1695,21 +1206,22 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol"
+												"type" : "symbol",
+												"doNotShowInMaxInspector" : 1
 											}
 ,
 											"voicecontrol" : 											{
 												"attrOrProp" : 2,
-												"digest" : "The way voices are controlled. MIDI (default) will automatically allocate voices for \tincoming MIDI notes. Setting it to 'None' will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+												"digest" : "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"enum" : [ "MIDI", "None" ],
+												"enum" : [ "simple", "user" ],
 												"type" : "enum",
-												"defaultValue" : "MIDI"
+												"defaultValue" : "simple"
 											}
 ,
 											"notecontroller" : 											{
@@ -1721,19 +1233,8 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol"
-											}
-,
-											"patcherPath" : 											{
-												"attrOrProp" : 2,
-												"digest" : "patcherPath",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol"
+												"type" : "symbol",
+												"doNotShowInMaxInspector" : 1
 											}
 ,
 											"receivemode" : 											{
@@ -1752,14 +1253,15 @@
 ,
 											"args" : 											{
 												"attrOrProp" : 2,
-												"digest" : "Replacement args for the subpatcher, everthing named #1, #2 etc. will be replaced with the according argument.",
+												"digest" : "Replacement args for the subpatcher, everything named #1, #2 etc. will be replaced with the according argument.",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
-												"type" : "symbol"
+												"type" : "symbol",
+												"doNotShowInMaxInspector" : 1
 											}
 
 										}
@@ -1781,12 +1283,11 @@
 												"docked" : 0
 											}
  ],
-										"helpname" : "rnbo",
+										"helpname" : "patcher",
 										"aliasOf" : "rnbo",
-										"classname" : "rnbo",
-										"expressive" : 0,
+										"classname" : "p",
 										"operator" : 0,
-										"versionId" : 0,
+										"versionId" : 88895198,
 										"changesPatcherIO" : 0
 									}
 ,
@@ -1820,176 +1321,17 @@
 									"outlettype" : [ "signal", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 50.0, 438.0, 140.0, 22.0 ],
+									"rnbo_classname" : "gain~",
 									"rnbo_extra_attributes" : 									{
-										"inc" : 1.072,
 										"size" : 158.0,
-										"value" : 0.0,
-										"preset" : 0,
 										"scale" : 7.943,
-										"order" : ""
+										"inc" : 1.072,
+										"order" : "",
+										"preset" : 0
 									}
 ,
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "gain~_obj-5",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 0,
-										"argnames" : 										{
-											"value" : 											{
-												"attrOrProp" : 1,
-												"digest" : "value",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 1,
-												"deprecated" : 0,
-												"inlet" : 1,
-												"type" : "number"
-											}
-,
-											"output" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Scaled output",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"outval" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Slider value",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"outlet" : 1,
-												"type" : "number"
-											}
-,
-											"interp" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Ramp time (ms)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "10"
-											}
-,
-											"inc" : 											{
-												"attrOrProp" : 2,
-												"digest" : "inc",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "1.071519",
-												"label" : "Log Increment"
-											}
-,
-											"scale" : 											{
-												"attrOrProp" : 2,
-												"digest" : "scale",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "7.94321",
-												"label" : "Log scale"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 2,
-												"digest" : "size",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "number",
-												"defaultValue" : "158",
-												"label" : "Steps"
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset"
-											}
-,
-											"order" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Preset restore order.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"type" : "symbol"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "input",
-												"type" : [ "number", "signal" ],
-												"digest" : "Input to scale. Number sets scaling",
-												"hot" : 1,
-												"docked" : 0
-											}
-, 											{
-												"name" : "value",
-												"type" : "number",
-												"digest" : "value",
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "output",
-												"type" : "signal",
-												"digest" : "Scaled output",
-												"docked" : 0
-											}
-, 											{
-												"name" : "outval",
-												"type" : "number",
-												"digest" : "Slider value",
-												"docked" : 0
-											}
- ],
-										"helpname" : "gain~",
-										"classname" : "gain~",
-										"digest" : "Gain control",
-										"versionId" : 0,
-										"expressive" : 0,
-										"changesPatcherIO" : 0
-									}
-,
 									"scale" : 7.943,
 									"size" : 158.0
 								}
@@ -2004,12 +1346,14 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 50.0, 486.0, 46.0, 24.0 ],
+									"rnbo_classname" : "out~",
 									"rnbo_extra_attributes" : 									{
-										"comment" : ""
+										"comment" : "",
+										"meta" : ""
 									}
 ,
 									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "signaloutlet_obj-3",
+									"rnbo_uniqueid" : "out~_obj-3",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
 										"argnames" : 										{
@@ -2051,6 +1395,21 @@
 												"deprecated" : 0,
 												"type" : "symbol"
 											}
+,
+											"meta" : 											{
+												"attrOrProp" : 2,
+												"digest" : "A JSON formatted string containing metadata for use by the exported code",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"type" : "symbol",
+												"defaultValue" : "",
+												"label" : "Metadata",
+												"displayorder" : 3
+											}
 
 										}
 ,
@@ -2066,10 +1425,9 @@
 										"outputs" : [  ],
 										"helpname" : "out~",
 										"aliasOf" : "out~",
-										"classname" : "signaloutlet",
-										"expressive" : 0,
+										"classname" : "out~",
 										"operator" : 0,
-										"versionId" : 1920432119,
+										"versionId" : 374499139,
 										"changesPatcherIO" : 1
 									}
 ,
@@ -2153,11 +1511,12 @@
 
 							}
  ],
+						"originid" : "pat-679",
 						"styles" : [ 							{
 								"name" : "rnbo",
 								"default" : 								{
-									"fontsize" : [ 12 ],
-									"fontname" : [ "Lato" ]
+									"fontname" : [ "Lato" ],
+									"fontsize" : [ 12 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2178,19 +1537,7 @@
 								"parentstyle" : "",
 								"multi" : 0
 							}
- ],
-						"default_bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-						"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-						"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-						"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-						"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-						"bgfillcolor_type" : "color",
-						"bgfillcolor_color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-						"bgfillcolor_color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-						"bgfillcolor_color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39,
-						"bgfillcolor_autogradient" : 0.0
+ ]
 					}
 ,
 					"patching_rect" : [ 87.5, 174.0, 103.0, 23.0 ],
@@ -2203,10 +1550,13 @@
 
 					}
 ,
+					"rnboversion" : "1.3.3",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "rnbo~[2]",
+							"parameter_modmode" : 0,
+							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "rnbo~[2]",
 							"parameter_type" : 3
 						}
@@ -2214,12 +1564,11 @@
 					}
 ,
 					"saved_object_attributes" : 					{
+						"optimization" : "O1",
 						"parameter_enable" : 1,
 						"uuid" : "9a0ece79-f45c-11ea-8e79-faffc250683e"
 					}
 ,
-					"signalinletcount" : 0,
-					"signaloutletcount" : 1,
 					"snapshot" : 					{
 						"filetype" : "C74Snapshot",
 						"version" : 2,
@@ -2249,11 +1598,11 @@
 									"filetype" : "C74Snapshot",
 									"version" : 2,
 									"minorversion" : 0,
-									"name" : "",
+									"name" : "basic",
 									"origin" : "basic",
 									"type" : "rnbo",
 									"subtype" : "",
-									"embed" : 0,
+									"embed" : 1,
 									"snapshot" : 									{
 										"__sps" : 										{
 											"env.follower" : 											{
@@ -2269,29 +1618,11 @@
 									}
 ,
 									"fileref" : 									{
-										"name" : "",
-										"filename" : "_20210803.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
+										"name" : "basic",
+										"filename" : "basic_20250213_7.maxsnap",
+										"filepath" : "~/Documents/Max 9/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "6786a20466268d5deff4c3a049b99bbc"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "",
-									"origin" : "basic",
-									"type" : "rnbo",
-									"subtype" : "",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "",
-										"filename" : "_20210902_1.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "e922750ad9c30128f47113acc02444df"
+										"snapshotfileid" : "08cda358eeb8e155385a16ad6d8bc9ab"
 									}
 
 								}
@@ -2344,6 +1675,7 @@
 
 			}
  ],
+		"originid" : "pat-675",
 		"parameters" : 		{
 			"obj-2" : [ "rnbo~[2]", "rnbo~[2]", 0 ],
 			"parameterbanks" : 			{
@@ -2354,30 +1686,25 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "_20210803.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"name" : "basic_20250213_7.maxsnap",
+				"bootpath" : "~/Documents/Max 9/Snapshots",
 				"patcherrelativepath" : "../../../Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_20210902_1.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
-				"type" : "mx@s",
+				"name" : "jongly.aif",
+				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "rnbo~.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "rnbo",
 				"default" : 				{
-					"fontsize" : [ 12 ],
-					"fontname" : [ "Lato" ]
+					"fontname" : [ "Lato" ],
+					"fontsize" : [ 12 ]
 				}
 ,
 				"parentstyle" : "",
